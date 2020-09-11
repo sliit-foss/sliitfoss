@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "sliitfoss"
+    }
+  },
+  "defaultProject": "sliitfoss",
+  "cli": {
+    "analytics": false
+  }
 }
