@@ -1,0 +1,10 @@
+.page-footer{
+    color: white;
+    position:fixed;
+    bottom:0px;
+    width:100%;
+}
+
+.footer-copyright{
+    background-color: black;
+}
