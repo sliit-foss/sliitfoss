@@ -15,6 +15,10 @@
   color: #464646;
 }
 
+button{
+    background-color: #7700CF;
+}
+
 img {
   position: absolute;
 }
