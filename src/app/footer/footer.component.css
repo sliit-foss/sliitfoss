@@ -6,6 +6,11 @@
   background-color: #222222;
 }
 
+.sm-icons {
+  padding-right: 5px;
+  color: white;
+}
+
 .content {
   padding-left: 20px;
 }
