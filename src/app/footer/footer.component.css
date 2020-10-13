@@ -8,7 +8,7 @@
 
 .sm-icons {
   padding-right: 5px;
-  color: white;
+  color: #7700cf;
 }
 
 .content {
@@ -22,4 +22,14 @@
 
 ul {
   list-style-type: none;
+}
+
+p,
+i,
+h2 {
+  color: #7700cf;
+}
+
+a {
+  color: white;
 }
