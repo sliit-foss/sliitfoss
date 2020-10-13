@@ -1147,6 +1147,20 @@
   dependencies:
     mkdirp "^1.0.4"
 
+"@primer/css@^15.2.0":
+  version "15.2.0"
+  resolved "https://registry.yarnpkg.com/@primer/css/-/css-15.2.0.tgz#ddf9651a9db2b9be03e7dfccfa612284ba1325ae"
+  integrity sha512-/vNDchWrxlXqd6E+SWQcChPHJVzGia9aCaTYoz8O9sJTnUSiTKOgSNCQuOXyUInPruTRSqj+z3MZxayKcTsWhA==
+  dependencies:
+    "@primer/octicons" "^9.1.1"
+
+"@primer/octicons@^9.1.1":
+  version "9.6.0"
+  resolved "https://registry.yarnpkg.com/@primer/octicons/-/octicons-9.6.0.tgz#e195f2dd5f30b6918ad5d8ff224c12f778d02408"
+  integrity sha512-B5Wzk5izRXXz0JqEXJkVUtqhCXSpUKgqYkVwegMkp5sziBW+ksd9LPbONlCWyyLODwf9GsI2sBXekR7m+JJDBw==
+  dependencies:
+    object-assign "^4.1.1"
+
 "@schematics/angular@10.1.6":
   version "10.1.6"
   resolved "https://registry.yarnpkg.com/@schematics/angular/-/angular-10.1.6.tgz#0ea81c5cf753fe5d4c7e27a481c1e0f268d3e77f"
