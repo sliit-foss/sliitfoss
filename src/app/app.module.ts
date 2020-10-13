@@ -9,7 +9,7 @@ import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { HomeComponent } from './components/home/home.component';
 import { MemberComponent } from './components/member/member.component';
-import { WeDoComponent } from './we-do/we-do.component';
+import { WeDoComponent } from './components/we-do/we-do.component';
 
 @NgModule({
   declarations: [
