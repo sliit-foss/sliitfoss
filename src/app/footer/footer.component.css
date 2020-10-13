@@ -1,10 +1,20 @@
-.page-footer{
-    color: white;
-    position:fixed;
-    bottom:0px;
-    width:100%;
+.page-footer {
+  color: white;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  background-color: #222222;
 }
 
-.footer-copyright{
-    background-color: black;
+.content {
+  padding-left: 20px;
+}
+
+.footer-copyright {
+  /* background-color: black;*/
+  background-color: #222222;
+}
+
+ul {
+  list-style-type: none;
 }
