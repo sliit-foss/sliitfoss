@@ -16,7 +16,7 @@ jobs:
       with:
         node-version: '10.x'
     - run: yarn
-    - run: ng build --prod
+    - run: yarn build
     - uses: w9jds/firebase-action@master
       with:
         args: deploy --only hosting
