@@ -1,0 +1,81 @@
+.txt {
+  position: absolute;
+  text-align: justify;
+}
+
+.p1 {
+  color: #7700cf;
+}
+
+.p2 {
+  text-transform: uppercase;
+}
+
+.p3 {
+  color: #464646;
+}
+
+img {
+  position: absolute;
+}
+
+.box {
+  position: absolute;
+  width: 270px;
+  height: 275px;
+  left: 0px;
+  top: 0px;
+
+  /* White */
+  background: #ffffff;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.box > img {
+  position: absolute;
+  width: 109.29px;
+  height: 102px;
+  left: 80px;
+  top: 34px;
+}
+
+.box > p {
+  /* Lorem Ipsum */
+
+  position: absolute;
+  width: 118px;
+  height: 27px;
+  left: 76px;
+  top: 156px;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+
+  /* identical to box height */
+
+  /* Secondary */
+  color: #7700cf;
+}
+
+.box > h5 {
+  /* Lorem Ipsum is simply dummy text of the printing and typesetting industry. */
+
+  position: absolute;
+  width: 172px;
+  height: 54px;
+  left: 49px;
+  top: 188px;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+
+  /* Main Black */
+  color: #222222;
+}
