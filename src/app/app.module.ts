@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FooterComponent } from './footer/footer.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { AboutComponent } from './about/about.component';
-import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './components/common/footer/footer.component';
+import { NavbarComponent } from './components/common/navbar/navbar.component';
+import { AboutComponent } from './components/about/about.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { HomeComponent } from './components/home/home.component';
+import { MemberComponent } from './components/member/member.component';
 
 @NgModule({
   declarations: [
@@ -14,13 +16,12 @@ import { ContactComponent } from './contact/contact.component';
     FooterComponent,
     NavbarComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    HomeComponent,
+    MemberComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

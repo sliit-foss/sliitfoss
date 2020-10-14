@@ -1,0 +1,35 @@
+.page-footer {
+  color: white;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  background-color: #222222;
+}
+
+.sm-icons {
+  padding-right: 5px;
+  color: #7700cf;
+}
+
+.content {
+  padding-left: 20px;
+}
+
+.footer-copyright {
+  /* background-color: black;*/
+  background-color: #222222;
+}
+
+ul {
+  list-style-type: none;
+}
+
+p,
+i,
+h2 {
+  color: #7700cf;
+}
+
+a {
+  color: white;
+}

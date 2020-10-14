@@ -1,0 +1,24 @@
+.txt {
+  position: absolute;
+  text-align: justify;
+}
+
+.p1 {
+  color: #7700cf;
+}
+
+.p2 {
+  text-transform: uppercase;
+}
+
+.p3 {
+  color: #464646;
+}
+
+button {
+  background-color: #7700cf;
+}
+
+img {
+  position: absolute;
+}
