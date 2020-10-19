@@ -1,6 +1,6 @@
 .page-footer {
   color: white;
-  position: fixed;
+  position: fixed; /*Remove this*/
   bottom: 0px;
   width: 100%;
   background-color: #222222;
