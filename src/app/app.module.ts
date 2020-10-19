@@ -10,6 +10,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { HomeComponent } from './components/home/home.component';
 import { MemberComponent } from './components/member/member.component';
 import { CeoComponent } from './components/ceo/ceo.component';
+import { WeDoComponent } from './components/we-do/we-do.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { CeoComponent } from './components/ceo/ceo.component';
     HomeComponent,
     MemberComponent,
     CeoComponent,
+    WeDoComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
