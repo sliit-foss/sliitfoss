@@ -24,6 +24,7 @@ img {
   line-height: 36px;
   text-align: justify;
   color: #222222;
+  margin-bottom: 0px;
 }
 
 .p3 {
@@ -34,4 +35,10 @@ img {
   line-height: 27px;
   text-align: justify;
   color: #7700cf;
+  margin-bottom: 0px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
 }
