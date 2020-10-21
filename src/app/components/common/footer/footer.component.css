@@ -1,6 +1,6 @@
 .page-footer {
   color: white;
-  position: fixed; /*Remove this*/
+  position: static;
   bottom: 0px;
   width: 100%;
   background-color: #222222;
@@ -32,4 +32,10 @@ h2 {
 
 a {
   color: white;
+}
+
+.content,
+.links {
+  background-color: #222222;
+  padding-bottom: 10px;
 }
