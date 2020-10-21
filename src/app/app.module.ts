@@ -11,6 +11,7 @@ import { HomeComponent } from './components/home/home.component';
 import { MemberComponent } from './components/member/member.component';
 import { CeoComponent } from './components/ceo/ceo.component';
 import { WeDoComponent } from './components/we-do/we-do.component';
+import { CountComponent } from './components/count/count.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { WeDoComponent } from './components/we-do/we-do.component';
     MemberComponent,
     CeoComponent,
     WeDoComponent,
+    CountComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
