@@ -79,3 +79,27 @@ img {
   /* Main Black */
   color: #222222;
 }
+
+
+.head-title::before{
+  content: '';
+  background: #7700cf;
+  height: 5px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  transform: translateY(63px);
+}
+
+.head-title::after{
+  content: '';
+  background: #7700cf;
+  height: 10px;
+  width: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  display: block;
+  transform: translateY(8px);
+}
