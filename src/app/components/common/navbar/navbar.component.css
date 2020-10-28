@@ -1,3 +1,15 @@
 .active {
   color: #7700cf;
 }
+
+.vectornav {
+  position: absolute;
+  margin-top: 80px;
+  z-index: -1;
+}
+
+.navbar-brand {
+  position: absolute;
+  margin-top: 25px;
+  margin-left: 15px;
+}
