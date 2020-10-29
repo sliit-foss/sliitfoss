@@ -9,9 +9,15 @@ import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { HomeComponent } from './components/home/home.component';
 import { MemberComponent } from './components/member/member.component';
-import { CeoComponent } from './components/ceo/ceo.component';
-import { WeDoComponent } from './components/we-do/we-do.component';
-import { CountComponent } from './components/count/count.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material/button';
+import { CodeOfConductComponent } from './components/code-of-conduct/code-of-conduct.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faFilm } from '@fortawesome/free-solid-svg-icons';
+import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { WhatWeDoComponent } from './components/what-we-do/what-we-do.component';
+import { TestimonialsComponent } from './components/testimonials/testimonials.component';
 
 @NgModule({
   declarations: [
@@ -22,12 +28,22 @@ import { CountComponent } from './components/count/count.component';
     ContactComponent,
     HomeComponent,
     MemberComponent,
-    CeoComponent,
-    WeDoComponent,
-    CountComponent,
+    CodeOfConductComponent,
+    WhatWeDoComponent,
+    TestimonialsComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    FontAwesomeModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule {
+  constructor() {
+    library.add(faFilm, faFacebook, faInstagram);
+  }
+}
