@@ -11,6 +11,17 @@
 
 .navbar-brand {
   position: absolute;
-  margin-top: 3rem;
+  margin-top: 3.2rem;
   margin-left: 1.8rem;
+}
+
+ul > li > a {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+ul > li > a:hover {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #5449cc;
 }

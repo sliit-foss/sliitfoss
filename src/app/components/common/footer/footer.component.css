@@ -16,8 +16,8 @@
 }
 
 .footer-copyright {
-  /* background-color: black;*/
   background-color: #222222;
+  font-family: 'Baloo Thambi 2', sans-serif;
 }
 
 ul {
@@ -27,7 +27,8 @@ ul {
 p,
 i,
 h2 {
-  color: #7700cf;
+  color: snow;
+  font-family: 'Baloo Thambi 2', sans-serif;
 }
 
 a {
@@ -38,4 +39,11 @@ a {
 .links {
   background-color: #222222;
   padding-bottom: 10px;
+}
+
+.footer-heading {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  font-family: 'Baloo Thambi 2', sans-serif;
 }

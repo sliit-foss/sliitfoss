@@ -9,6 +9,9 @@ import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { HomeComponent } from './components/home/home.component';
 import { MemberComponent } from './components/member/member.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material/button';
+import { CodeOfConductComponent } from './components/code-of-conduct/code-of-conduct.component';
 
 @NgModule({
   declarations: [
@@ -19,8 +22,14 @@ import { MemberComponent } from './components/member/member.component';
     ContactComponent,
     HomeComponent,
     MemberComponent,
+    CodeOfConductComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
