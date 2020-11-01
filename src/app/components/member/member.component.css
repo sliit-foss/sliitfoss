@@ -4,7 +4,10 @@
 }
 
 .p1 {
-  color: #7700cf;
+  color: #5449cc;
+  font-family: 'Baloo Thambi 2', sans-serif;
+  font-size: 2.2rem;
+  font-weight: bold;
 }
 
 .p2 {
@@ -16,9 +19,17 @@
 }
 
 button {
-  background-color: #7700cf;
+  background-color: #373085;
 }
 
 img {
   position: absolute;
+}
+
+.description-text {
+  font-family: 'Baloo Thambi 2', sans-serif;
+}
+
+.vector-styles {
+  padding-top: 2rem;
 }
