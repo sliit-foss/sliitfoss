@@ -27,7 +27,9 @@ img {
 }
 
 .description-text {
-  font-family: 'Baloo Thambi 2', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .vector-styles {

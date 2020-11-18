@@ -4,15 +4,15 @@
 
 .vector-nav {
   position: absolute;
-  margin-top: 7rem;
+  margin-top: 15rem;
   margin-left: -2rem;
   z-index: -1;
 }
 
 .navbar-brand {
   position: absolute;
-  margin-top: 3.2rem;
-  margin-left: 1.8rem;
+  margin-top: 4.5rem;
+  margin-left: 1.2rem;
 }
 
 ul > li > a {
