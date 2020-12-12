@@ -25,3 +25,35 @@ ul > li > a:hover {
   font-weight: bold;
   color: #5449cc;
 }
+
+@media (max-width: 500px) {
+  .vector-nav {
+    margin-top: 0rem;
+    float: none;
+    margin-left: -8rem;
+    z-index: -1;
+  }
+
+  .navbar-brand {
+    position: absolute;
+    margin-top: -6.5rem;
+    margin-left: 1.2rem;
+    z-index: 0;
+  }
+}
+
+@media (max-width: 766px) {
+  .vector-nav {
+    margin-top: 0rem;
+    margin-left: -2rem;
+    z-index: -1;
+  }
+
+  .navbar-brand {
+    position: absolute;
+
+    margin-top: -6.5rem;
+    margin-left: 1.2rem;
+    z-index: 0;
+  }
+}
