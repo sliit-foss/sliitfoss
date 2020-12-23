@@ -25,8 +25,8 @@ import {
   faYoutube,
   faLinkedinIn,
 } from '@fortawesome/free-brands-svg-icons';
-import { WhatWeDoComponent } from './components/what-we-do/what-we-do.component';
-import { TestimonialsComponent } from './components/testimonials/testimonials.component';
+import { PastEventsComponent } from './components//past-events/past-events.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 @NgModule({
   declarations: [
@@ -38,8 +38,7 @@ import { TestimonialsComponent } from './components/testimonials/testimonials.co
     HomeComponent,
     MemberComponent,
     CodeOfConductComponent,
-    WhatWeDoComponent,
-    TestimonialsComponent,
+    PastEventsComponent,
   ],
   imports: [
     BrowserModule,
@@ -47,6 +46,7 @@ import { TestimonialsComponent } from './components/testimonials/testimonials.co
     BrowserAnimationsModule,
     MatButtonModule,
     FontAwesomeModule,
+    CarouselModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

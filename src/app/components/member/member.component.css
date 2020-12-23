@@ -1,13 +1,10 @@
+#member {
+  padding-bottom: 120px;
+}
+
 .txt {
   position: absolute;
   text-align: justify;
-}
-
-.p1 {
-  color: #5449cc;
-  font-family: 'Baloo Thambi 2', sans-serif;
-  font-size: 2.2rem;
-  font-weight: bold;
 }
 
 .p2 {
@@ -16,6 +13,15 @@
 
 .p3 {
   color: #464646;
+}
+
+.h2 {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 50px;
+  margin-bottom: 20px;
+  color: #434175;
+  font-family: 'Raleway', sans-serif;
 }
 
 button {
@@ -27,11 +33,33 @@ img {
 }
 
 .description-text {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 18px;
-  color: rgba(0, 0, 0, 0.5);
+  font-size: 15pt;
+  line-height: normal;
+  font-family: 'Raleway', sans-serif;
+  color: #444444;
+}
+
+ul {
+  list-style-type: none;
 }
 
 .vector-styles {
   padding-top: 2rem;
+}
+
+.member-btn {
+  background: #5a5af3;
+  color: #fff;
+  border: 2px solid #5a5af3;
+  margin-right: 10px;
+  border-radius: 50px;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  padding: 8px 20px 9px 20px;
+}
+
+.member-btn:hover {
+  background: #7272f5;
+  border-color: #7272f5;
 }
