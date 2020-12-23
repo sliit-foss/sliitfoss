@@ -27,6 +27,9 @@
     "@fortawesome/free-regular-svg-icons": "^5.13.0",
     "@fortawesome/free-solid-svg-icons": "^5.13.0",
     "bootstrap": "^4.4.1",
+    "jquery": "^3.5.1",
+    "ngx-owl-carousel": "^2.0.7",
+    "owl.carousel": "^2.3.4",
     "rxjs": "~6.5.4",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"
