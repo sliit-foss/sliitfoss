@@ -25,3 +25,25 @@
   margin-top: 60px;
   margin-bottom: 60px;
 }
+
+.card-title {
+  font-size: 11pt;
+  font-weight: bold;
+}
+
+.member-btn {
+  width: 90px;
+  background: #5a5af3;
+  color: #fff;
+  border: 2px solid #5a5af3;
+  border-radius: 50px;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.member-btn:hover {
+  background: #7272f5;
+  border-color: #7272f5;
+}
