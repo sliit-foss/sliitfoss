@@ -11,10 +11,20 @@ import { MemberComponent } from './components/member/member.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { CodeOfConductComponent } from './components/code-of-conduct/code-of-conduct.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import {
+  FontAwesomeModule,
+  FaIconLibrary,
+} from '@fortawesome/angular-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faFilm } from '@fortawesome/free-solid-svg-icons';
-import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import {
+  faFacebook,
+  faInstagram,
+  faLinkedin,
+  faTwitter,
+  faYoutube,
+  faLinkedinIn,
+} from '@fortawesome/free-brands-svg-icons';
 import { TestimonialsComponent } from './components/testimonials/testimonials.component';
 import { PastEventsComponent } from './components//past-events/past-events.component';
 import { OwlModule } from 'ngx-owl-carousel';
@@ -44,7 +54,7 @@ import { OwlModule } from 'ngx-owl-carousel';
   bootstrap: [AppComponent],
 })
 export class AppModule {
-  constructor() {
-    library.add(faFilm, faFacebook, faInstagram);
+  constructor(private library: FaIconLibrary) {
+    library.addIcons(faLinkedin, faFacebook, faInstagram, faTwitter, faYoutube);
   }
 }
