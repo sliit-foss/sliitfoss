@@ -1,15 +1,10 @@
+#member {
+  padding-bottom: 120px;
+}
+
 .txt {
   position: absolute;
   text-align: justify;
-}
-
-.p1 {
-  margin: 0;
-  font-size: 45px;
-  font-weight: 500;
-  line-height: 56px;
-  color: #434175;
-  font-family: 'Poppins', sans-serif;
 }
 
 .p2 {
@@ -18,6 +13,15 @@
 
 .p3 {
   color: #464646;
+}
+
+.h2 {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 50px;
+  margin-bottom: 20px;
+  color: #434175;
+  font-family: 'Raleway', sans-serif;
 }
 
 button {
@@ -33,6 +37,10 @@ img {
   line-height: normal;
   font-family: 'Raleway', sans-serif;
   color: #444444;
+}
+
+ul {
+  list-style-type: none;
 }
 
 .vector-styles {

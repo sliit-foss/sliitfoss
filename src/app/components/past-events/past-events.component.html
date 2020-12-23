@@ -2,22 +2,27 @@
   <div class="text-center">
     <h1 class="head-title">PAST EVENTS</h1>
   </div>
-  <owl-carousel
-    [options]="SlideOptions"
-    [carouselClasses]="['owl-theme', 'row', 'sliding']"
-  >
-    <div class="row">
-      <div class="col-3" *ngFor="let slide of slides; let i = index">
-        <div class="card" style="width: 16rem">
-          <img src="{{ slide.img }}" class="card-img-top" />
-          <div class="card-body">
-            <h5 class="card-title">{{ slide.title }}</h5>
-            <p class="card-text">
-              {{ slide.description }}
-            </p>
+  <div style="padding-top: 40px">
+    <owl-carousel-o [options]="customOptions">
+      <ng-template carouselSlide *ngFor="let slide of slides; let i = index">
+        <div class="row">
+          <div class="col-3">
+            <div
+              class="card"
+              style="width: 16.5rem; text-align: center; display: block"
+            >
+              <img src="{{ slide.img }}" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title">{{ slide.title }}</h5>
+                <p class="card-text">
+                  {{ slide.description }}
+                </p>
+              </div>
+              <button class="member-btn">View More</button>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-  </owl-carousel>
+      </ng-template>
+    </owl-carousel-o>
+  </div>
 </section>
