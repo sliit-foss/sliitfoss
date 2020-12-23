@@ -4,10 +4,12 @@
 }
 
 .p1 {
-  color: #5449cc;
-  font-family: 'Baloo Thambi 2', sans-serif;
-  font-size: 2.2rem;
-  font-weight: bold;
+  margin: 0;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 56px;
+  color: #434175;
+  font-family: 'Poppins', sans-serif;
 }
 
 .p2 {
@@ -27,11 +29,29 @@ img {
 }
 
 .description-text {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 18px;
-  color: rgba(0, 0, 0, 0.5);
+  font-size: 15pt;
+  line-height: normal;
+  font-family: 'Raleway', sans-serif;
+  color: #444444;
 }
 
 .vector-styles {
   padding-top: 2rem;
+}
+
+.member-btn {
+  background: #5a5af3;
+  color: #fff;
+  border: 2px solid #5a5af3;
+  margin-right: 10px;
+  border-radius: 50px;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  padding: 8px 20px 9px 20px;
+}
+
+.member-btn:hover {
+  background: #7272f5;
+  border-color: #7272f5;
 }

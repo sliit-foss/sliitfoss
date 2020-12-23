@@ -1,0 +1,23 @@
+<section class="past-events-section">
+  <div class="text-center">
+    <h1 class="head-title">PAST EVENTS</h1>
+  </div>
+  <owl-carousel
+    [options]="SlideOptions"
+    [carouselClasses]="['owl-theme', 'row', 'sliding']"
+  >
+    <div class="row">
+      <div class="col-3" *ngFor="let slide of slides; let i = index">
+        <div class="card" style="width: 16rem">
+          <img src="{{ slide.img }}" class="card-img-top" />
+          <div class="card-body">
+            <h5 class="card-title">{{ slide.title }}</h5>
+            <p class="card-text">
+              {{ slide.description }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </owl-carousel>
+</section>

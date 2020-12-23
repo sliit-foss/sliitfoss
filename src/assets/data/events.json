@@ -1,0 +1,34 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "title": "Git & GitHub Workshop",
+      "description": "Some quick example text to build on the card title and make up the bulk of the cards content",
+      "img": "../../../assets/img/IMG_9744.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Git & GitHub Workshop",
+      "description": "Some quick example text to build on the card title and make up the bulk of the cards content",
+      "img": "../../../assets/img/IMG_0635.JPG"
+    },
+    {
+      "id": 3,
+      "title": "Git & GitHub Workshop",
+      "description": "Some quick example text to build on the card title and make up the bulk of the cards content",
+      "img": "../../../assets/img/IMG_9881.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Git & GitHub Workshop",
+      "description": "Some quick example text to build on the card title and make up the bulk of the cards content",
+      "img": "../../../assets/img/IMG_9744.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Git & GitHub Workshop",
+      "description": "Some quick example text to build on the card title and make up the bulk of the cards content",
+      "img": "../../../assets/img/IMG_9744.jpg"
+    }
+  ]
+}
