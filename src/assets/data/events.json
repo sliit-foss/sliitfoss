@@ -2,33 +2,57 @@
   "events": [
     {
       "id": 1,
-      "title": "Git & GitHub Workshop",
-      "description": "Some quick example text to build on the card title and make up the bulk of the cards content",
-      "img": "../../../assets/img/IMG_9744.jpg"
+      "title": "Google DevFest 2019",
+      "description": "SLIIT FOSS community been the main volunteers for the Google DevFest Sri Lanka 2019.",
+      "date": "24/11/2019",
+      "location": "Stein Studios",
+      "img": "../../../assets/img/IMG_9744.jpg",
+      "link": "https://www.facebook.com/media/set/?vanity=GDGSriLanka&set=a.2904641049581323"
     },
     {
       "id": 2,
-      "title": "Git & GitHub Workshop",
-      "description": "Some quick example text to build on the card title and make up the bulk of the cards content",
-      "img": "../../../assets/img/IMG_0635.JPG"
+      "title": "GitHub Universe Viewing Party",
+      "description": "The view party of GitHub Universe has been Organized by GitHub Community Sri Lanka & SLIIT FOSS",
+      "date": "21/11/2019",
+      "location": "Microsoft",
+      "img": "../../../assets/img/IMG_0635.JPG",
+      "link": "https://www.facebook.com/media/set/?vanity=GitHubCommunityLK&set=a.117412043051475"
     },
     {
       "id": 3,
-      "title": "Git & GitHub Workshop",
-      "description": "Some quick example text to build on the card title and make up the bulk of the cards content",
-      "img": "../../../assets/img/IMG_9881.jpg"
+      "title": "Introduction to Git & GitHub",
+      "description": "A session on Git & GitHub has been conducted by GitHub Campus Expert Chamod Shenka.",
+      "date": "19/07/2019",
+      "location": "SLIIT",
+      "img": "../../../assets/img/git-event-19.jpg",
+      "link": "shorturl.at/stHMR"
     },
     {
       "id": 4,
-      "title": "Git & GitHub Workshop",
-      "description": "Some quick example text to build on the card title and make up the bulk of the cards content",
-      "img": "../../../assets/img/IMG_9744.jpg"
+      "title": "Software Freedom Day'19",
+      "description": "Software Freedom Day '18 Organized by FOSS Sri Lanka collaborative with SLIIT FOSS.",
+      "date": "22/09/2018",
+      "location": "SLIIT",
+      "img": "../../../assets/img/sfd-2018.jpg",
+      "link": "#"
     },
     {
       "id": 5,
       "title": "Git & GitHub Workshop",
-      "description": "Some quick example text to build on the card title and make up the bulk of the cards content",
-      "img": "../../../assets/img/IMG_9744.jpg"
+      "description": "A workshop on Git & GitHub was conducted by Sri Lanka's First GitHub Campus Expert Isuru.",
+      "date": "06/05/2018",
+      "location": "SLIIT",
+      "img": "../../../assets/img/git-event-18.jpg",
+      "link": "https://www.facebook.com/media/set/?vanity=sliit.fcmu&set=a.518231558578888"
+    },
+    {
+      "id": 6,
+      "title": "Virtualization and VMware",
+      "description": "A session on Virtualization and VMware was conducted by the VMware User Group (VMUG).",
+      "date": "14/09/2018",
+      "location": "SLIIT",
+      "img": "../../../assets/img/vmware-event.jpg",
+      "link": "https://www.facebook.com/media/set/?vanity=sliitfoss&set=a.913237992133408"
     }
   ]
 }
