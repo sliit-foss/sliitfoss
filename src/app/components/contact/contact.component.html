@@ -1,1 +1,53 @@
-<p>contact works!</p>
+<form
+  action=""
+  id="contact-form"
+  method="post"
+  class="contact-form col-lg-7 mx-lg-auto"
+>
+  <h3 class="heading">Get In Touch</h3>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="cname" class="sr-only">Name</label
+      ><input
+        aria-required="true"
+        id="cname"
+        minlength="2"
+        name="name"
+        placeholder="Name"
+        required=""
+        type="text"
+        class="form-control"
+      />
+    </div>
+    <div class="form-group col-md-6">
+      <label for="cemail" class="sr-only">Email</label
+      ><input
+        aria-required="true"
+        id="cemail"
+        name="email"
+        placeholder="Email"
+        required=""
+        type="email"
+        class="form-control"
+      />
+    </div>
+    <div class="form-group col-12"></div>
+    <div class="form-group col-12">
+      <label for="cmessage" class="sr-only">Your message</label
+      ><textarea
+        aria-required="true"
+        id="cmessage"
+        name="message"
+        placeholder="Enter your message"
+        required=""
+        rows="10"
+        class="form-control"
+      ></textarea>
+    </div>
+    <div class="form-group col-12">
+      <button type="submit" class="btn btn-block btn-primary py-1">
+        Send Now
+      </button>
+    </div>
+  </div>
+</form>
