@@ -29,7 +29,7 @@ button {
 }
 
 img {
-  position: absolute;
+  position: relative;
 }
 
 .description-text {
