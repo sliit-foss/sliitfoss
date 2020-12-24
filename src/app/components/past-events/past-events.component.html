@@ -8,7 +8,7 @@
         <div class="row">
           <div class="col-3">
             <div
-              class="card"
+              class="card h-100"
               style="width: 16.5rem; text-align: center; display: block"
             >
               <img
@@ -18,11 +18,20 @@
               />
               <div class="card-body">
                 <h5 class="card-title">{{ slide.title }}</h5>
+                <div style="margin-top: -10px">
+                  <small>
+                    <i class="fa fa-calendar">&nbsp;</i
+                    >{{ slide.date }}&nbsp;&nbsp;
+                    <i class="fa fa-map-marker">&nbsp;</i>{{ slide.location }}
+                  </small>
+                </div>
                 <p class="card-text">
                   {{ slide.description }}
                 </p>
               </div>
-              <button class="member-btn">View More</button>
+              <a href="{{ slide.link }}" target="_blank"
+                ><button class="member-btn">View More</button></a
+              >
             </div>
           </div>
         </div>
