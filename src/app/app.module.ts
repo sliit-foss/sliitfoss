@@ -15,17 +15,15 @@ import {
   FontAwesomeModule,
   FaIconLibrary,
 } from '@fortawesome/angular-fontawesome';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faFilm } from '@fortawesome/free-solid-svg-icons';
+
 import {
   faFacebook,
   faInstagram,
   faLinkedin,
   faTwitter,
   faYoutube,
-  faLinkedinIn,
 } from '@fortawesome/free-brands-svg-icons';
-import { PastEventsComponent } from './components//past-events/past-events.component';
+import { PastEventsComponent } from './components/past-events/past-events.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 
 @NgModule({
