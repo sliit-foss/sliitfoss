@@ -1,5 +1,5 @@
 #member {
-  padding-bottom: 120px;
+  padding-bottom: 100px;
 }
 
 .txt {
@@ -33,10 +33,12 @@ img {
 }
 
 .description-text {
-  font-size: 15pt;
+  font-size: 14pt;
   line-height: normal;
   font-family: 'Raleway', sans-serif;
-  color: #444444;
+  color: #525151;
+  text-align: justify;
+  line-height: 1.4em;
 }
 
 ul {
