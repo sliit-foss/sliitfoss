@@ -21,3 +21,7 @@ p {
   padding: 20px;
   font-family: 'Baloo Thambi 2', sans-serif;
 }
+
+button {
+  border-radius: 50px;
+}
