@@ -21,3 +21,8 @@ p {
 .card {
   border-radius: 25px;
 }
+
+.card:hover {
+  background-color: #d0d0fb;
+  transition-delay: 0.2s;
+}
