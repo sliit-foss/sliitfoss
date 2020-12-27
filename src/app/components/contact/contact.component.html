@@ -1,1 +1,73 @@
-<p>contact works!</p>
+<div>
+  <div class="intro col-lg-6 mx-lg-auto">
+    <h3 class="heading">Get In Touch</h3>
+    <p>
+      If there are any questions you'd want answers to please do not hesitate to
+      drop an email to
+      <a href="mailto: infosliitfoss@gmail.com">infosliitfoss@gmail.com</a>
+      &#10084;&#65039;
+    </p>
+  </div>
+
+  <form
+    action=""
+    id="contact-form"
+    method="post"
+    class="contact-form col-lg-7 mx-lg-auto"
+  >
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="cname" class="sr-only">Name</label
+        ><input
+          aria-required="true"
+          id="cname"
+          autocomplete="off"
+          minlength="2"
+          name="name"
+          placeholder="Name"
+          required=""
+          type="text"
+          class="form-control"
+        />
+      </div>
+      <div class="form-group col-md-6">
+        <label for="cemail" class="sr-only">Email</label
+        ><input
+          aria-required="true"
+          id="cemail"
+          name="email"
+          placeholder="Email"
+          required=""
+          type="email"
+          class="form-control"
+          autocomplete="off"
+        />
+      </div>
+      <div class="form-group col-12">
+        <label for="cmessage" class="sr-only">Your message</label
+        ><textarea
+          aria-required="true"
+          id="cmessage"
+          name="message"
+          placeholder="Enter your message"
+          required=""
+          rows="10"
+          class="form-control"
+        ></textarea>
+      </div>
+      <div class="form-group col-12">
+        <button
+          type="submit"
+          class="btn btn-block btn-primary py-1"
+          style="
+            color: #fff;
+            background-color: #5a5af3;
+            border-color: #ffffffd4;
+          "
+        >
+          Send
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
