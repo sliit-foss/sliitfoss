@@ -27,7 +27,6 @@
     "@fortawesome/free-regular-svg-icons": "^5.13.0",
     "@fortawesome/free-solid-svg-icons": "^5.13.0",
     "bootstrap": "^4.4.1",
-    "bootstrap-drawer": "^1.0.6",
     "jquery": "^3.5.1",
     "ngx-owl-carousel-o": "^5.0.0",
     "rxjs": "~6.5.4",
