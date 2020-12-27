@@ -65,3 +65,34 @@ ul {
   background: #7272f5;
   border-color: #7272f5;
 }
+
+@include media-breakpoint-up(sm) {
+  .img-member {
+    height: 420em;
+    width: 420em;
+  }
+}
+
+@media (min-width: 576px) {
+  .img-member {
+    height: 420px;
+    width: 420px;
+  }
+
+  .coding-vector {
+    height: 400px;
+    width: 400px;
+  }
+}
+
+@media (max-width: 576px) {
+  .img-member {
+    height: 315px;
+    width: 315px;
+  }
+
+  .coding-vector {
+    height: 300px;
+    width: 300px;
+  }
+}
