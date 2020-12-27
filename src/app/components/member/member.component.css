@@ -1,5 +1,5 @@
 #member {
-  padding-bottom: 120px;
+  padding-bottom: 100px;
 }
 
 .txt {
@@ -29,14 +29,16 @@ button {
 }
 
 img {
-  position: absolute;
+  position: relative;
 }
 
 .description-text {
-  font-size: 15pt;
+  font-size: 14pt;
   line-height: normal;
   font-family: 'Raleway', sans-serif;
-  color: #444444;
+  color: #525151;
+  text-align: justify;
+  line-height: 1.4em;
 }
 
 ul {
@@ -62,4 +64,35 @@ ul {
 .member-btn:hover {
   background: #7272f5;
   border-color: #7272f5;
+}
+
+@include media-breakpoint-up(sm) {
+  .img-member {
+    height: 420em;
+    width: 420em;
+  }
+}
+
+@media (min-width: 576px) {
+  .img-member {
+    height: 420px;
+    width: 420px;
+  }
+
+  .coding-vector {
+    height: 400px;
+    width: 400px;
+  }
+}
+
+@media (max-width: 576px) {
+  .img-member {
+    height: 315px;
+    width: 315px;
+  }
+
+  .coding-vector {
+    height: 300px;
+    width: 300px;
+  }
 }
