@@ -3,11 +3,17 @@
   "version": "0.0.1",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "yarn && ng serve",
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "preinstall": "if [[ $npm_execpath =~ 'npm' ]]; then echo 'Use YARN!' && exit 1; fi"
+  },
+  "engines": {
+    "npm": "please-use-yarn",
+    "yarn": ">= 1.17.3",
+    "node": ">= 8.17.0"
   },
   "private": true,
   "dependencies": {
