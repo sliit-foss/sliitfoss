@@ -26,6 +26,7 @@ import {
 import { PastEventsComponent } from './components/past-events/past-events.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { BlogComponent } from './components/blog/blog.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { BlogComponent } from './components/blog/blog.component';
     MatButtonModule,
     FontAwesomeModule,
     CarouselModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
