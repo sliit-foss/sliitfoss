@@ -31,22 +31,44 @@
     <div class="collapse navbar-collapse" id="navbarToggler">
       <ul class="navbar-nav ml-auto align-items-end">
         <li class="nav-item px-1">
-          <a class="nav-link" routerLink="/">Home</a>
+          <a
+            class="nav-link"
+            routerLink="/"
+            [routerLinkActive]="['active']"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >Home</a
+          >
         </li>
         <li class="nav-item px-1">
-          <a class="nav-link" routerLink="#">Events</a>
+          <a class="nav-link" routerLink="#" [routerLinkActive]="['active']"
+            >Events</a
+          >
         </li>
         <li class="nav-item px-1">
-          <a class="nav-link" routerLink="#">Board</a>
+          <a class="nav-link" routerLink="#" [routerLinkActive]="['active']"
+            >Board</a
+          >
         </li>
         <li class="nav-item px-1">
-          <a class="nav-link" routerLink="#">Blogs</a>
+          <a class="nav-link" routerLink="#" [routerLinkActive]="['active']"
+            >Blogs</a
+          >
         </li>
         <li class="nav-item px-1">
-          <a class="nav-link" routerLink="/about">About</a>
+          <a
+            class="nav-link"
+            routerLink="/about"
+            [routerLinkActive]="['active']"
+            >About</a
+          >
         </li>
         <li class="nav-item px-1">
-          <a class="nav-link" routerLink="/contact">Contact</a>
+          <a
+            class="nav-link"
+            routerLink="/contact"
+            [routerLinkActive]="['active']"
+            >Contact</a
+          >
         </li>
       </ul>
     </div>
