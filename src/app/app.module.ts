@@ -25,6 +25,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import { PastEventsComponent } from './components/past-events/past-events.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { BlogComponent } from './components/blog/blog.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     MemberComponent,
     CodeOfConductComponent,
     PastEventsComponent,
+    BlogComponent,
   ],
   imports: [
     BrowserModule,
