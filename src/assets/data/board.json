@@ -15,10 +15,20 @@
       "name": "Chamod Shehanka",
       "position": "Vice President",
       "img": "../../../assets/img/board/chamod.jpg",
-      "facebook": "https://www.facebook.com/ahamed.safnaj/",
-      "twitter": "https://twitter.com/iamSafnaj",
-      "instagram": "https://www.instagram.com/iam_safnaj/",
-      "linkedin": "https://www.linkedin.com/in/ahamed-safnaj"
+      "facebook": "http://facebook.com/chamodshehanka",
+      "twitter": "http://twitter.com/chamodshehanka",
+      "instagram": "http://instagram.com/chamodshehanka/",
+      "linkedin": "http://linkedin.com/in/chamodshehanka/"
+    },
+    {
+      "id": 3,
+      "name": "Sithum Sandeepa",
+      "position": "Project Coordinator",
+      "img": "../../../assets/img/board/sithum.jpeg",
+      "facebook": "https://www.facebook.com/sithumonline",
+      "twitter": "https://twitter.com/sithumonline",
+      "instagram": "https://www.instagram.com/sithumonline/",
+      "linkedin": "https://www.linkedin.com/in/bopitiya-s-perera/"
     }
   ]
 }
