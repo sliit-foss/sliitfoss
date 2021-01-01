@@ -27,6 +27,7 @@ import { PastEventsComponent } from './components/past-events/past-events.compon
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { BlogComponent } from './components/blog/blog.component';
 import { HttpClientModule } from '@angular/common/http';
+import { BoardComponent } from './components/board/board.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { HttpClientModule } from '@angular/common/http';
     CodeOfConductComponent,
     PastEventsComponent,
     BlogComponent,
+    BoardComponent,
   ],
   imports: [
     BrowserModule,
