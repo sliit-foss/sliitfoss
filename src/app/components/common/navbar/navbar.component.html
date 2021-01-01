@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <nav class="UnderlineNav UnderlineNav--right" aria-label="Foo bar">
   <div class="UnderlineNav-actions">
     <img
@@ -6,12 +7,75 @@
       class="avatar avatar-7 mr-2"
       style="width: 100px"
     />
+=======
+<nav
+  class="navbar navbar-expand-md navbar-light"
+  style="padding: 0; align-items: start"
+>
+  <div class="justify-content-start">
+    <img src="../../../../assets/img/FOSS-logo.png" alt="navbar image" />
+>>>>>>> a6b67e1915dc914a944d276b270840f7ef17d034
   </div>
-  <div class="UnderlineNav-body">
-    <a class="UnderlineNav-item active" href="#" aria-current="page">Home</a>
-    <a class="UnderlineNav-item" href="#">Events</a>
-    <a class="UnderlineNav-item" href="#">Blog</a>
-    <a class="UnderlineNav-item" href="#">About</a>
-    <a class="UnderlineNav-item" href="#">Contact</a>
+
+  <div
+    class="container justify-content-end"
+    style="padding: 0.25rem 0.75rem; align-items: end"
+  >
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarToggler"
+      aria-controls="navbarToggler"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarToggler">
+      <ul class="navbar-nav ml-auto align-items-end">
+        <li class="nav-item px-1">
+          <a
+            class="nav-link"
+            routerLink="/"
+            [routerLinkActive]="['active']"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >Home</a
+          >
+        </li>
+        <li class="nav-item px-1">
+          <a class="nav-link" routerLink="#" [routerLinkActive]="['active']"
+            >Events</a
+          >
+        </li>
+        <li class="nav-item px-1">
+          <a class="nav-link" routerLink="board" [routerLinkActive]="['active']"
+            >Board</a
+          >
+        </li>
+        <li class="nav-item px-1">
+          <a class="nav-link" routerLink="/blog" [routerLinkActive]="['active']"
+            >Blogs</a
+          >
+        </li>
+        <li class="nav-item px-1">
+          <a
+            class="nav-link"
+            routerLink="/about"
+            [routerLinkActive]="['active']"
+            >About</a
+          >
+        </li>
+        <li class="nav-item px-1">
+          <a
+            class="nav-link"
+            routerLink="/contact"
+            [routerLinkActive]="['active']"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </div>
   </div>
 </nav>

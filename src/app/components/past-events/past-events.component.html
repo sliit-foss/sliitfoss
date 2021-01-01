@@ -1,0 +1,38 @@
+<section class="past-events-section">
+  <div class="text-center">
+    <h1 class="head-title">PAST EVENTS</h1>
+  </div>
+  <div style="padding-top: 40px">
+    <owl-carousel-o [options]="customOptions">
+      <ng-template carouselSlide *ngFor="let slide of slides; let i = index">
+        <div class="row">
+          <div class="col-3">
+            <div class="card h-100">
+              <img
+                src="{{ slide.img }}"
+                class="card-img-top"
+                alt="Image not available"
+              />
+              <div class="card-body">
+                <h5 class="card-title">{{ slide.title }}</h5>
+                <div style="margin-top: -10px">
+                  <small>
+                    <i class="fa fa-calendar">&nbsp;</i
+                    >{{ slide.date }}&nbsp;&nbsp;
+                    <i class="fa fa-map-marker">&nbsp;</i>{{ slide.location }}
+                  </small>
+                </div>
+                <p class="card-text">
+                  {{ slide.description }}
+                </p>
+              </div>
+              <a href="{{ slide.link }}" target="_blank"
+                ><button class="member-btn btn">View More</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </owl-carousel-o>
+  </div>
+</section>
