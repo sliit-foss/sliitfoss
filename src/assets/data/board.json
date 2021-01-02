@@ -19,7 +19,7 @@
       "twitter": "https://twitter.com/iamSafnaj",
       "instagram": "https://www.instagram.com/iam_safnaj/",
       "linkedin": "https://www.linkedin.com/in/ahamed-safnaj"
-    },    
+    },
     {
       "id": 3,
       "name": "Sewvandi Wickramasinghe",
@@ -31,6 +31,16 @@
       "linkedin": "https://www.linkedin.com/in/sewvandi-promodya-wickramasinghe-314a40194/"
     },
     {
+      "id": 4,
+      "name": "Dureksha Wasala",
+      "position": "Assistant Secretary",
+      "img": "../../../assets/img/board/dureksha.jpg",
+      "facebook": "https://www.facebook.com/dureksha.wasala.1/",
+      "twitter": "https://twitter.com/dc_1129",
+      "instagram": "https://www.instagram.com/dureksha_29/",
+      "linkedin": "https://www.linkedin.com/in/dureksha-wasala-88a15015a/"
+    },
+    {
       "id": 5,
       "name": "Bawantha Rathnayaka",
       "position": "Editor",
@@ -39,6 +49,6 @@
       "twitter": "https://twitter.com/thilanbawanatha",
       "instagram": "https://www.instagram.com/bawwa_/",
       "linkedin": "https://www.linkedin.com/in/bawanthathilan/"
-    },
+    }
   ]
 }
