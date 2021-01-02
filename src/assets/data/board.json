@@ -21,12 +21,22 @@
       "linkedin": "https://www.linkedin.com/in/ahamed-safnaj"
     },
     {
-      "id": 5,
-      "name": "Bawantha Rathnayaka",
+      "id": 3,
+      "name": "Sewvandi Wickramasinghe",
+      "position": "Secretary",
+      "img": "../../../assets/img/board/sewvandi.jpg",
+      "facebook": "https://www.facebook.com/sewvandi.wickramasinghe.3",
+      "twitter": "https://twitter.com/Sewvandiii",
+      "instagram": "https://www.instagram.com/sewvandiii/",
+      "linkedin": "https://www.linkedin.com/in/sewvandi-promodya-wickramasinghe-314a40194/"
+    },
+    {
+      "id": 4,
+      "name": "Bawantha Thilan",
       "position": "Editor",
       "img": "../../../assets/img/board/bawantha.jpg",
-      "facebook": "https://www.facebook.com/bawanthathilan/",
-      "twitter": "https://twitter.com/thilanbawanatha",
+      "facebook": "https://www.facebook.com/bawanthathilan",
+      "twitter": "https://twitter.com/thilanbawantha",
       "instagram": "https://www.instagram.com/bawwa_/",
       "linkedin": "https://www.linkedin.com/in/bawanthathilan/"
     }
