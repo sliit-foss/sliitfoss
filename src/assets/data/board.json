@@ -19,6 +19,16 @@
       "twitter": "https://twitter.com/iamSafnaj",
       "instagram": "https://www.instagram.com/iam_safnaj/",
       "linkedin": "https://www.linkedin.com/in/ahamed-safnaj"
+    },
+    {
+      "id": 5,
+      "name": "Bawantha Rathnayaka",
+      "position": "Editor",
+      "img": "../../../assets/img/board/bawantha.jpg",
+      "facebook": "https://www.facebook.com/bawanthathilan/",
+      "twitter": "https://twitter.com/thilanbawanatha",
+      "instagram": "https://www.instagram.com/bawwa_/",
+      "linkedin": "https://www.linkedin.com/in/bawanthathilan/"
     }
   ]
 }
