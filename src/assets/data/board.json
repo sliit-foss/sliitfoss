@@ -21,16 +21,6 @@
       "linkedin": "http://linkedin.com/in/chamodshehanka/"
     },
     {
-      "id": 10,
-      "name": "Sithum Sandeepa",
-      "position": "Project Coordinator",
-      "img": "../../../assets/img/board/sithum.jpeg",
-      "facebook": "https://www.facebook.com/sithumonline",
-      "twitter": "https://twitter.com/sithumonline",
-      "instagram": "https://www.instagram.com/sithumonline/",
-      "linkedin": "https://www.linkedin.com/in/bopitiya-s-perera/"
-    },
-    {
       "id": 3,
       "name": "Sewvandi Wickramasinghe",
       "position": "Secretary",
@@ -59,6 +49,27 @@
       "twitter": "https://twitter.com/thilanbawantha",
       "instagram": "https://www.instagram.com/bawwa_/",
       "linkedin": "https://www.linkedin.com/in/bawanthathilan/"
+    }
+    ,
+    {
+      "id": 9,
+      "name": "Nisal Palliyaguru",
+      "position": "Event Coordinator",
+      "img": "../../../assets/img/board/nisal.png",
+      "facebook": "https://www.facebook.com/nisal.renuja.56/",
+      "twitter": "https://twitter.com/NisalRenuja",
+      "instagram": "https://www.instagram.com/nisal.97/",
+      "linkedin": "https://www.linkedin.com/in/nisal-palliyaguru-899a73163/"
+    },
+    {
+      "id": 10,
+      "name": "Sithum Sandeepa",
+      "position": "Project Coordinator",
+      "img": "../../../assets/img/board/sithum.jpeg",
+      "facebook": "https://www.facebook.com/sithumonline",
+      "twitter": "https://twitter.com/sithumonline",
+      "instagram": "https://www.instagram.com/sithumonline/",
+      "linkedin": "https://www.linkedin.com/in/bopitiya-s-perera/"
     }
   ]
 }
