@@ -42,6 +42,26 @@
     },
     {
       "id": 5,
+      "name": "Kaveesha Gimhana",
+      "position": "Treasurer",
+      "img": "../../../assets/img/board/kaveesha.jpg",
+      "facebook": "https://www.facebook.com/kaveesha.yaka.gimhana/",
+      "twitter": "https://twitter.com/Kaveeshag",
+      "instagram": "https://www.instagram.com/kaveesha__gimhana/",
+      "linkedin": "https://linkedin.kaveeshagimhana.com/"
+    },
+    {
+      "id": 6,
+      "name": "Malindu Attygala",
+      "position": "Assistant Treasurer",
+      "img": "../../../assets/img/board/malindu.jpeg",
+      "facebook": "https://www.facebook.com/malindu.attygala.9",
+      "twitter": "https://twitter.com/AttygalaMalindu",
+      "instagram": "https://www.instagram.com/malindu_attygala/",
+      "linkedin": "https://www.linkedin.com/in/malindu-attygala-b98b34182"
+    },
+    {
+      "id": 7,
       "name": "Bawantha Thilan",
       "position": "Editor",
       "img": "../../../assets/img/board/bawantha.jpg",
@@ -51,7 +71,7 @@
       "linkedin": "https://www.linkedin.com/in/bawanthathilan/"
     },
     {
-      "id": 9,
+      "id": 8,
       "name": "Nisal Palliyaguru",
       "position": "Event Coordinator",
       "img": "../../../assets/img/board/nisal.png",
@@ -61,10 +81,10 @@
       "linkedin": "https://www.linkedin.com/in/nisal-palliyaguru-899a73163/"
     },
     {
-      "id": 10,
+      "id": 9,
       "name": "Sithum Sandeepa",
       "position": "Project Coordinator",
-      "img": "../../../assets/img/board/sithum.jpeg",
+      "img": "../../../assets/img/board/sithum.jpg",
       "facebook": "https://www.facebook.com/sithumonline",
       "twitter": "https://twitter.com/sithumonline",
       "instagram": "https://www.instagram.com/sithumonline/",
