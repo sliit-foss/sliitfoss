@@ -355,6 +355,9 @@ a:hover {
 .text-description-mission {
   text-align: left;
   font-weight: bold;
+  font-size: 25px;
+  line-height: normal;
+  color: #343a40;
 }
 
 .text-vision {
@@ -366,4 +369,7 @@ a:hover {
 .text-description-vision {
   text-align: left;
   font-weight: bold;
+  font-size: 25px;
+  line-height: normal;
+  color: #343a40;
 }
