@@ -309,3 +309,61 @@ a:hover {
   text-align: center;
   font-weight: 200;
 }
+
+/*--------------------------------------------------------------
+# Features
+--------------------------------------------------------------*/
+.features {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.features .row + .row {
+  margin-top: 100px;
+}
+
+.features h3 {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.features ul {
+  list-style: none;
+  padding: 0;
+}
+
+.features ul li {
+  padding-bottom: 10px;
+}
+
+.features ul i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #68a4c4;
+}
+
+.features p:last-child {
+  margin-bottom: 0;
+}
+
+.text-mission {
+  text-align: left;
+  font-weight: bold;
+  font-size: 30px;
+  color: #5a5af3;
+}
+.text-description-mission {
+  text-align: left;
+  font-weight: bold;
+}
+
+.text-vision {
+  text-align: left;
+  font-weight: bold;
+  font-size: 30px;
+  color: #5a5af3;
+}
+.text-description-vision {
+  text-align: left;
+  font-weight: bold;
+}
