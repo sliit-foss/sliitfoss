@@ -15,6 +15,7 @@ import {
   FontAwesomeModule,
   FaIconLibrary,
 } from '@fortawesome/angular-fontawesome';
+import { faCoffee, faHandsHelping } from '@fortawesome/free-solid-svg-icons';
 
 import {
   faFacebook,
@@ -22,6 +23,7 @@ import {
   faLinkedin,
   faTwitter,
   faYoutube,
+  faCloudscale,
 } from '@fortawesome/free-brands-svg-icons';
 import { PastEventsComponent } from './components/past-events/past-events.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
@@ -56,7 +58,17 @@ import { BoardComponent } from './components/board/board.component';
   bootstrap: [AppComponent],
 })
 export class AppModule {
+  faCoffee = faCoffee;
   constructor(private library: FaIconLibrary) {
-    library.addIcons(faLinkedin, faFacebook, faInstagram, faTwitter, faYoutube);
+    library.addIcons(
+      faCoffee,
+      faHandsHelping,
+      faCloudscale,
+      faLinkedin,
+      faFacebook,
+      faInstagram,
+      faTwitter,
+      faYoutube
+    );
   }
 }
