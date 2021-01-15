@@ -93,8 +93,9 @@ a:hover {
 }
 
 .whyusdescription {
-  font-size: medium;
+  font-size: large;
   text-align: justify;
+  line-height: 1.6;
 }
 .why-us .video-box {
   position: relative;
@@ -296,4 +297,9 @@ a:hover {
 
 .services .icon-box-blue:hover {
   border-color: #2282ff;
+}
+
+.description {
+  text-align: center;
+  font-weight: 200;
 }
