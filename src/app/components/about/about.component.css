@@ -92,6 +92,12 @@ a:hover {
   font-size: 14px;
 }
 
+.icon {
+  font-size: 50px;
+  align-items: center;
+  color: #5a5af3;
+}
+
 .whyusdescription {
   font-size: large;
   text-align: justify;
