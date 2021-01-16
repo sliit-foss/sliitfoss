@@ -2,28 +2,25 @@
   <div class="container">
     <h2 class="section-title font-weight-bold mb-5">Latest Blog Posts</h2>
     <div class="row">
-      <div class="col-md-4 mb-5" *ngFor="let post of blogPosts | slice: 0:3">
-        <div class="card blog-post-card">
-          <img class="card-img-top" src="{{ post.thumbnail }}" alt="image" />
+      <div class="col-md-4 mb-5" *ngFor="let post of blogPosts | slice: 0:10">
+        <div class="card">
+          <img
+            class="card-img"
+            width="180px"
+            height="170px"
+            src="{{ post.thumbnail }}"
+            alt="image"
+          />
           <div class="card-body">
-            <h5 class="card-title">
-              <a class="theme-link" href="{{ post.link }}" target="_blank">{{
-                post.title
-              }}</a>
-            </h5>
-            <p class="card-text">
-              <!-- {{post.description}} -->
-            </p>
-            <p class="mb-0">
-              <a class="more-link" href="{{ post.link }}" target="_blank"
-                >Read more &rarr;</a
-              >
-            </p>
+            <h4 class="card-title">{{ post.title }}</h4>
+            <a href="{{ post.link }}" class="btn btn-primary">Read More</a>
           </div>
-          <div class="card-footer">
-            <small class="text-muted"
-              >Published on {{ getDaysCount(post.pubDate) }}</small
-            >
+          <div
+            class="card-footer text-muted d-flex justify-content-between bg-transparent border-top-0"
+          >
+            <div class="views">
+              Published on {{ getDaysCount(post.pubDate) }}
+            </div>
           </div>
         </div>
       </div>
