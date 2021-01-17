@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { config } from '../../../config/config';
 
 @Component({
   selector: 'app-blog',
@@ -19,9 +20,7 @@ export class BlogComponent implements OnInit {
   ngOnInit(): void {}
 
   getBlogPosts() {
-    return this.http.get(
-      'https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2Fsliit-foss'
-    );
+    return this.http.get(config.rssURL);
   }
 
   getDaysCount(date) {
