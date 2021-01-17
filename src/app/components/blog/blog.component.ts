@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import Config from '../../../config/config';
 
 @Component({
   selector: 'app-blog',
@@ -10,18 +11,20 @@ export class BlogComponent implements OnInit {
   blogPosts: [];
 
   constructor(private http: HttpClient) {
-    // TODO: Something wrong here!!!
-    this.getBlogPosts().forEach((e) => {
-      this.blogPosts = e['items'];
-    });
+    this.getBlogPosts()
+      .forEach((e) => {
+        this.blogPosts = e['items'];
+      })
+      .then((r) => {})
+      .catch((e) => {
+        //  TODO: if couldn't load Blog posts
+      });
   }
 
   ngOnInit(): void {}
 
   getBlogPosts() {
-    return this.http.get(
-      'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/sliit-foss'
-    );
+    return this.http.get(Config.BLOG_URL);
   }
 
   getDaysCount(date) {
