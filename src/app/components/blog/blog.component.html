@@ -2,18 +2,18 @@
   <div class="container">
     <h2 class="section-title font-weight-bold mb-5">Latest Blog Posts</h2>
     <div class="row">
-      <div class="col-md-4 mb-5" *ngFor="let post of blogPosts | slice: 0:10">
+      <div *ngFor="let post of blogPosts | slice: 0:10" class="col-md-4 mb-5">
         <div class="card">
           <img
+            alt="image"
             class="card-img"
-            width="180px"
             height="170px"
             src="{{ post.thumbnail }}"
-            alt="image"
+            width="180px"
           />
           <div class="card-body">
             <h4 class="card-title">{{ post.title }}</h4>
-            <a href="{{ post.link }}" class="btn btn-primary">Read More</a>
+            <a class="btn sliit-foss-btn" href="{{ post.link }}">Read More</a>
           </div>
           <div
             class="card-footer text-muted d-flex justify-content-between bg-transparent border-top-0"
@@ -25,5 +25,11 @@
         </div>
       </div>
     </div>
+    <mat-paginator
+      [length]="100"
+      [pageSizeOptions]="[5, 10, 25, 100]"
+      [pageSize]="10"
+    >
+    </mat-paginator>
   </div>
 </section>

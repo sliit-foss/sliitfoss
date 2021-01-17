@@ -1,7 +1,5 @@
 .card-img {
-  border-radius: 12px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
+  border-radius: 12px 12px 0px 0px;
 }
 .card {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
@@ -24,4 +22,20 @@
 
 .card-footer {
   font-size: 0.8rem;
+}
+
+.sliit-foss-btn {
+  background: #5a5af3;
+  color: #fff;
+  border: 2px solid #5a5af3;
+  border-radius: 50px;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.sliit-foss-btn:hover {
+  background: #7272f5;
+  border-color: #7272f5;
 }
