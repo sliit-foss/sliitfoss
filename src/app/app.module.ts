@@ -30,6 +30,7 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { BlogComponent } from './components/blog/blog.component';
 import { HttpClientModule } from '@angular/common/http';
 import { BoardComponent } from './components/board/board.component';
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 @NgModule({
   declarations: [
@@ -53,12 +54,12 @@ import { BoardComponent } from './components/board/board.component';
     FontAwesomeModule,
     CarouselModule,
     HttpClientModule,
+    MatPaginatorModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {
-  faCoffee = faCoffee;
   constructor(private library: FaIconLibrary) {
     library.addIcons(
       faCoffee,
