@@ -20,7 +20,7 @@ export class BlogComponent implements OnInit {
 
   getBlogPosts() {
     return this.http.get(
-      'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/sliit-foss'
+      'https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2Fsliit-foss'
     );
   }
 
