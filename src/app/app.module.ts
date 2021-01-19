@@ -15,6 +15,7 @@ import {
   FontAwesomeModule,
   FaIconLibrary,
 } from '@fortawesome/angular-fontawesome';
+import { faCoffee, faHandsHelping } from '@fortawesome/free-solid-svg-icons';
 
 import {
   faFacebook,
@@ -22,12 +23,14 @@ import {
   faLinkedin,
   faTwitter,
   faYoutube,
+  faCloudscale,
 } from '@fortawesome/free-brands-svg-icons';
 import { PastEventsComponent } from './components/past-events/past-events.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { BlogComponent } from './components/blog/blog.component';
 import { HttpClientModule } from '@angular/common/http';
 import { BoardComponent } from './components/board/board.component';
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 @NgModule({
   declarations: [
@@ -51,12 +54,22 @@ import { BoardComponent } from './components/board/board.component';
     FontAwesomeModule,
     CarouselModule,
     HttpClientModule,
+    MatPaginatorModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {
   constructor(private library: FaIconLibrary) {
-    library.addIcons(faLinkedin, faFacebook, faInstagram, faTwitter, faYoutube);
+    library.addIcons(
+      faCoffee,
+      faHandsHelping,
+      faCloudscale,
+      faLinkedin,
+      faFacebook,
+      faInstagram,
+      faTwitter,
+      faYoutube
+    );
   }
 }
