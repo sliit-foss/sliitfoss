@@ -12,6 +12,11 @@
   font-size: 1rem;
 }
 
+.features {
+  margin-bottom: 80px;
+  padding-bottom: 80px;
+}
+
 h2,
 h3,
 p {
@@ -211,7 +216,8 @@ a:hover {
 # Our Services
 --------------------------------------------------------------*/
 .services {
-  padding-bottom: 20px;
+  margin-bottom: 80px;
+  padding-top: 40px;
 }
 
 .services .icon-box {
@@ -352,10 +358,10 @@ a:hover {
   font-size: 30px;
   color: #5a5af3;
 }
-.text-description-mission {
-  text-align: left;
+.text-description {
+  text-align: justify;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 19px;
   line-height: normal;
   color: #343a40;
 }
@@ -365,11 +371,4 @@ a:hover {
   font-weight: bold;
   font-size: 30px;
   color: #5a5af3;
-}
-.text-description-vision {
-  text-align: left;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: normal;
-  color: #343a40;
 }
