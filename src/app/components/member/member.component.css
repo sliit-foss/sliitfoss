@@ -16,12 +16,12 @@
 }
 
 .h2 {
-  font-weight: 700;
-  font-size: 44px;
-  line-height: 50px;
-  margin-bottom: 20px;
+  font-weight: 1000;
+  font-size: 2.5rem;
+  /*line-height: 50px;*/
+  margin-bottom: 1rem;
   color: #5a5af3;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Fraunces', serif;
 }
 
 button {
@@ -33,12 +33,11 @@ img {
 }
 
 .description-text {
-  font-size: 17px;
+  font-size: 1.1rem;
   line-height: normal;
-  font-family: 'Raleway', sans-serif;
   color: #525151;
   text-align: justify;
-  line-height: 1.4em;
+  font-family: 'Baloo Thambi 2', cursive;
 }
 
 ul {
