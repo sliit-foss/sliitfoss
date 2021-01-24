@@ -33,6 +33,7 @@ import { BoardComponent } from './components/board/board.component';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { LatestBlogPostsComponent } from './components/latest-blog-posts/latest-blog-posts.component';
 import { EventsComponent } from './components/events/events.component';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -59,6 +60,7 @@ import { EventsComponent } from './components/events/events.component';
     CarouselModule,
     HttpClientModule,
     MatPaginatorModule,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
