@@ -23,6 +23,7 @@
 
 .head-title {
   font-size: 25px;
+  font-family: 'Fraunces', serif;
 }
 
 .past-events-section {
@@ -33,10 +34,12 @@
 .card-title {
   font-size: 12pt;
   font-weight: bold;
+  font-family: 'Fraunces', serif;
 }
 
 .card-text {
   padding-top: 8px;
+  font-family: 'Baloo Thambi 2', cursive;
 }
 
 .member-btn {
