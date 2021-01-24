@@ -32,6 +32,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { BoardComponent } from './components/board/board.component';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { LatestBlogPostsComponent } from './components/latest-blog-posts/latest-blog-posts.component';
+import { EventsComponent } from './components/events/events.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { LatestBlogPostsComponent } from './components/latest-blog-posts/latest-
     BlogComponent,
     BoardComponent,
     LatestBlogPostsComponent,
+    EventsComponent,
   ],
   imports: [
     BrowserModule,
