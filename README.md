@@ -1,5 +1,7 @@
 # SLIIT FOSS Website
 
+![Firebase CI/CD](https://github.com/sliit-foss/sliitfoss/workflows/Firebase%20CI/CD/badge.svg)
+
 ## Contribution Guide
 
 1. Fork the repository
