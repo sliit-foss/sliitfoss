@@ -1,15 +1,17 @@
 <section class="latest-blog-section p-3 p-lg-5">
+  <div class="text-center">
+    <h1 class="head-title">Latest Blog Posts</h1>
+  </div>
   <div class="container">
-    <h2 class="section-title font-weight-bold mb-5">Latest Blog Posts</h2>
     <div class="row">
-      <div *ngFor="let post of blogPosts | slice: 0:10" class="col-md-4 mb-5">
+      <div *ngFor="let post of blogPosts | slice: 0:4" class="col-md-3 mb-5">
         <div class="card">
           <img
             alt="image"
             class="card-img"
-            height="170px"
+            height="142"
             src="{{ post.thumbnail }}"
-            width="180px"
+            width="152"
           />
           <div class="card-body">
             <h4 class="card-title">{{ post.title }}</h4>
@@ -25,11 +27,5 @@
         </div>
       </div>
     </div>
-    <mat-paginator
-      [length]="100"
-      [pageSizeOptions]="[5, 10, 25, 100]"
-      [pageSize]="10"
-    >
-    </mat-paginator>
   </div>
 </section>

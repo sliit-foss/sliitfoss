@@ -3,11 +3,11 @@ import { HttpClient } from '@angular/common/http';
 import Config from '../../../config/config';
 
 @Component({
-  selector: 'app-blog',
-  templateUrl: './blog.component.html',
-  styleUrls: ['./blog.component.css'],
+  selector: 'app-latest-blog-posts',
+  templateUrl: './latest-blog-posts.component.html',
+  styleUrls: ['./latest-blog-posts.component.css'],
 })
-export class BlogComponent implements OnInit {
+export class LatestBlogPostsComponent implements OnInit {
   blogPosts: [];
 
   constructor(private http: HttpClient) {

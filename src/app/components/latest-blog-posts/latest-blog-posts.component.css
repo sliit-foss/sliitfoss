@@ -4,11 +4,12 @@
 .card {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   border-radius: 12px;
-  height: 330px;
+  height: 290px;
 }
 
 .card-title {
   margin-bottom: 0.3rem;
+  font-family: 'Baloo Thambi 2', cursive;
 }
 
 .cat {
@@ -38,4 +39,33 @@
 .sliit-foss-btn:hover {
   background: #7272f5;
   border-color: #7272f5;
+}
+
+.head-title::before {
+  content: '';
+  background: #5a5af3;
+  height: 5px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  transform: translateY(48px);
+}
+
+.head-title::after {
+  content: '';
+  background: #5a5af3;
+  height: 10px;
+  width: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  display: block;
+  transform: translateY(8px);
+}
+
+.head-title {
+  font-size: 25px;
+  font-family: 'Fraunces', serif;
+  text-transform: uppercase;
 }

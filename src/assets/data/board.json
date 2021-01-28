@@ -89,6 +89,16 @@
       "twitter": "https://twitter.com/sithumonline",
       "instagram": "https://www.instagram.com/sithumonline/",
       "linkedin": "https://www.linkedin.com/in/bopitiya-s-perera/"
+    },
+    {
+      "id": 10,
+      "name": "Asel Peiris",
+      "position": "Dev Relations",
+      "img": "../../../assets/img/board/asel.jpeg",
+      "facebook": "https://www.facebook.com/asel.peiris.1",
+      "twitter": "https://twitter.com/AselPeiris1",
+      "instagram": "https://www.instagram.com/shurima345/",
+      "linkedin": "https://www.linkedin.com/in/asel-peiris-76536158/"
     }
   ]
 }

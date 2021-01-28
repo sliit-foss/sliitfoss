@@ -6,6 +6,7 @@ import { HomeComponent } from './components/home/home.component';
 import { CodeOfConductComponent } from './components/code-of-conduct/code-of-conduct.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { BoardComponent } from './components/board/board.component';
+import { EventsComponent } from './components/events/events.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'code-conduct', component: CodeOfConductComponent },
   { path: 'blog', component: BlogComponent },
   { path: 'board', component: BoardComponent },
+  { path: 'event', component: EventsComponent },
 ];
 
 @NgModule({

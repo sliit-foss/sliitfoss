@@ -1,10 +1,28 @@
+.heading::before {
+  content: '';
+  background: #5a5af3;
+  height: 5px;
+  width: 180px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  transform: translateY(48px);
+}
+
+.heading::after {
+  content: '';
+  background: #5a5af3;
+  height: 10px;
+  width: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  display: block;
+  transform: translateY(8px);
+}
+
 .heading {
-  text-align: center;
-  font-family: 'Baloo Thambi 2', sans-serif;
-  font-weight: bold;
-  font-size: 2rem;
-  color: #5a5af3;
-  padding-bottom: 20px;
+  font-size: 24px;
 }
 
 h2,

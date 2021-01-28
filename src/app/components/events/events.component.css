@@ -1,0 +1,10 @@
+.upcoming-event-card {
+  max-width: 100%;
+}
+
+.upcoming-event-description {
+  font-family: 'Baloo Thambi 2', cursive;
+  font-size: 1rem;
+  text-align: justify;
+  padding-top: 5rem;
+}

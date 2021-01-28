@@ -8,3 +8,36 @@ body {
   margin: 0;
   font-family: Roboto, 'Helvetica Neue', sans-serif;
 }
+
+.text-color-primary {
+  color: #5a5af3;
+}
+
+.head-title::before {
+  content: '';
+  background: #5a5af3;
+  height: 5px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  transform: translateY(48px);
+}
+
+.head-title::after {
+  content: '';
+  background: #5a5af3;
+  height: 10px;
+  width: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  display: block;
+  transform: translateY(8px);
+}
+
+.head-title {
+  font-size: 25px;
+  font-family: 'Fraunces', serif;
+  text-transform: uppercase;
+}
