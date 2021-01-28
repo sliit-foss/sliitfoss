@@ -30,6 +30,15 @@ p {
   font-family: 'Baloo Thambi 2', sans-serif;
   text-align: center;
 }
+
+.contact-us-cover-img {
+  margin: 50px;
+}
+
+.contact-row {
+  margin-top: 20px;
+}
+
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
