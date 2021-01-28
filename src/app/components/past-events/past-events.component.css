@@ -71,3 +71,9 @@
   height: 30vh;
   object-fit: cover;
 }
+
+@media screen and (min-width: 375px) {
+  .card {
+    margin-left: 38px !important;
+  }
+}
