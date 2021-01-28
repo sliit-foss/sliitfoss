@@ -8,3 +8,9 @@
   text-align: justify;
   padding-top: 5rem;
 }
+
+.event-cover-img {
+  margin-left: auto;
+  height: 350px;
+  width: auto;
+}
