@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-podcastsection',
+  selector: 'app-podcast-section',
   templateUrl: './podcastsection.component.html',
   styleUrls: ['./podcastsection.component.css'],
 })
