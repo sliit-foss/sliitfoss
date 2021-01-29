@@ -1,17 +1,45 @@
-@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-
-html,
-body {
-  height: 100%;
+.card-img {
+  border-radius: 12px 12px 0px 0px;
 }
-body {
-  margin: 0;
+.card {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  border-radius: 12px;
+  height: 290px;
+}
+
+.card-title {
+  margin-bottom: 0.3rem;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
     'Lucida Sans', Arial, sans-serif;
 }
 
-.text-color-primary {
-  color: #5a5af3;
+.cat {
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.fa-users {
+  margin-left: 1rem;
+}
+
+.card-footer {
+  font-size: 0.8rem;
+}
+
+.sliit-foss-btn {
+  background: #5a5af3;
+  color: #fff;
+  border: 2px solid #5a5af3;
+  border-radius: 50px;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.sliit-foss-btn:hover {
+  background: #7272f5;
+  border-color: #7272f5;
 }
 
 .head-title::before {

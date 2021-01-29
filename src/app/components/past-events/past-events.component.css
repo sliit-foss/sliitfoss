@@ -21,6 +21,12 @@
   transform: translateY(8px);
 }
 
+.head-title {
+  font-size: 25px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
 .past-events-section {
   margin-top: 40px;
   margin-bottom: 60px;
@@ -29,10 +35,13 @@
 .card-title {
   font-size: 12pt;
   font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
 }
 
 .card-text {
   padding-top: 8px;
+  font-family: 'Baloo Thambi 2', cursive;
 }
 
 .member-btn {
@@ -56,10 +65,17 @@
   width: 16.5rem;
   text-align: center;
   display: block;
+  height: 420px !important;
 }
 
 .card-img-top {
   width: 100%;
   height: 30vh;
   object-fit: cover;
+}
+
+@media screen and (min-width: 375px) {
+  .card {
+    margin-left: 38px !important;
+  }
 }
