@@ -1,19 +1,21 @@
 .upcoming-event-card {
   max-width: 100%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
 
-.upcoming-event-description {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1rem;
-  text-align: justify;
-  padding-top: 5rem;
-}
+  .upcoming-event-description {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    text-align: justify;
+    padding-top: 5rem;
+    position: center;
+  }
 
-.event-cover-img {
-  margin-left: auto;
-  height: 350px;
-  width: auto;
+  .event-cover-img {
+    margin-left: auto;
+    height: 350px;
+    width: auto;
+    position: center;
+  }
 }
 .btn {
   background: #5a5af3;
