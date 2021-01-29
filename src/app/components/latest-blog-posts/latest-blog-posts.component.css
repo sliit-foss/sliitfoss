@@ -2,10 +2,15 @@
   border-radius: 12px 12px 0px 0px;
 }
 .card {
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   border-radius: 12px;
   height: 290px;
   width: 247px;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0px 0px 28px -16px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 28px -16px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 28px -16px rgba(0, 0, 0, 0.75);
 }
 
 .card-title {

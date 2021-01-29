@@ -9,6 +9,12 @@
   transform: translateY(48px);
 }
 
+.card:hover {
+  -webkit-box-shadow: 0px 0px 28px -16px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 28px -16px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 28px -16px rgba(0, 0, 0, 0.75);
+}
+
 .head-title::after {
   content: '';
   background: #5a5af3;
