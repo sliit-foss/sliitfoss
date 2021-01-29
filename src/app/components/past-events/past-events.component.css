@@ -23,7 +23,8 @@
 
 .head-title {
   font-size: 25px;
-  font-family: 'Fraunces', serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
 }
 
 .past-events-section {
@@ -34,7 +35,8 @@
 .card-title {
   font-size: 12pt;
   font-weight: bold;
-  font-family: 'Fraunces', serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
 }
 
 .card-text {
