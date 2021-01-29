@@ -1,0 +1,25 @@
+.btn {
+  background: #5a5af3;
+  color: #fff;
+  border: 2px solid #5a5af3;
+  border-radius: 50px;
+}
+
+section {
+  -webkit-box-shadow: 0px 0px 28px -16px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 28px -16px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 28px -16px rgba(0, 0, 0, 0.75);
+  border-radius: 50px;
+}
+
+.podcast-icons {
+  margin-right: 250px;
+}
+
+h1 {
+  font-weight: bold;
+}
+.podcast-logo {
+  height: 40px;
+  width: 40px;
+}
