@@ -9,9 +9,9 @@
         >
           <div class="mt-4">
             <img
-              src="https://i.postimg.cc/kMxCBtZW/FOSS-0.png"
-              height="70"
               alt="SLIIT FOSS Logo"
+              height="70"
+              src="https://i.postimg.cc/kMxCBtZW/FOSS-0.png"
             />
           </div>
         </div>
@@ -26,10 +26,16 @@
             <a routerLink="/code-conduct">Code of Conduct</a>
           </li>
           <li>
-            <a href="#">Contribution Guideline</a>
+            <a
+              href="https://github.com/sliit-foss/sliitfoss/blob/master/README.md"
+              target="_blank"
+              >Contribution Guideline</a
+            >
           </li>
           <li>
-            <a href="#">Brand Assets</a>
+            <a href="https://github.com/sliit-foss/brand-assets" target="_blank"
+              >Brand Assets</a
+            >
           </li>
         </ul>
       </div>
@@ -68,8 +74,9 @@
 
   <!-- Copyright -->
   <div class="footer-copyright text-center py-3">
-    © 2020 Copyright:
-    <a href="#">SLIIT FOSS Community</a>
+    © {{ getCurrentYear() }} :<a href="http://sliitfoss.org"
+      >SLIIT FOSS Community</a
+    >
   </div>
   <!-- Copyright -->
 </footer>

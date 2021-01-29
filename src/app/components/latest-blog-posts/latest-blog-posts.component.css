@@ -5,11 +5,13 @@
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   border-radius: 12px;
   height: 290px;
+  width: 247px;
 }
 
 .card-title {
   margin-bottom: 0.3rem;
-  font-family: 'Baloo Thambi 2', cursive;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
 }
 
 .cat {
@@ -66,6 +68,7 @@
 
 .head-title {
   font-size: 25px;
-  font-family: 'Fraunces', serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
   text-transform: uppercase;
 }
