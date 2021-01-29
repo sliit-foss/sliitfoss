@@ -37,18 +37,6 @@ a:hover {
   text-decoration: none;
 }
 
-.img-fluid-1 img {
-  height: 100%;
-  width: 80%;
-  transition: 1s ease;
-}
-.img-fluid-1 img:hover {
-  -webkit-transform: scale(0.8);
-  -ms-transform: scale(0.8);
-  transform: scale(0.8);
-  transition: 1s ease;
-}
-
 /*--------------------------------------------------------------
 # Why Us
 --------------------------------------------------------------*/
