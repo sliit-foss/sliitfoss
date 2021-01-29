@@ -15,6 +15,9 @@ export class PastEventsComponent implements OnInit {
     touchDrag: false,
     pullDrag: false,
     dots: false,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: true,
     navSpeed: 700,
     navText: ['', ''],
     responsive: {
