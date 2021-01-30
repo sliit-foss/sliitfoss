@@ -31,10 +31,6 @@ h2 {
   font-family: 'Baloo Thambi 2', sans-serif;
 }
 
-a {
-  color: white;
-}
-
 .content,
 .links {
   background-color: #222222;
@@ -47,6 +43,10 @@ a {
   color: white;
   font-family: 'Baloo Thambi 2', sans-serif;
 } */
+
+a {
+  text-decoration: none;
+}
 
 ul {
   margin: 0px;
@@ -171,6 +171,7 @@ ul {
   background: #2e2e2e;
   border: 1px solid #2e2e2e;
   color: #fff;
+  outline: none;
 }
 .subscribe-form button {
   position: absolute;
@@ -179,6 +180,8 @@ ul {
   padding: 13px 20px;
   border: 1px solid #5a5af3;
   top: 0;
+  height: 100%;
+  outline: none;
 }
 .subscribe-form button i {
   color: #fff;
