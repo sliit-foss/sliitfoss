@@ -2,6 +2,20 @@
   color: #5449cc !important;
 }
 
+body {
+  overflow-x: hidden;
+}
+
+.navbar-change {
+  position: fixed;
+  background-color: white;
+  height: 4.5rem;
+  width: 100%;
+  z-index: 999;
+  top: 0;
+  left: 0;
+}
+
 .vector-nav {
   position: absolute;
   margin-top: 12rem;
@@ -16,6 +30,7 @@
 }
 
 ul > li > a {
+  padding-top: 1.5rem;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -34,6 +49,13 @@ ul > li > a:hover {
     z-index: -1;
   }
 
+  .navbar-toggler {
+    margin-right: -13px;
+  }
+
+  img {
+    margin-left: -50px !important;
+  }
   .navbar-brand {
     position: absolute;
     margin-top: -6.5rem;

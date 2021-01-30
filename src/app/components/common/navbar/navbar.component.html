@@ -1,9 +1,12 @@
 <nav
+  [class.navbar-change]="navbarVariable"
   class="navbar navbar-expand-md navbar-light row"
-  style="padding: 0; align-items: start"
+  style="padding: 0; align-items: start; width: 100%"
 >
-  <div class="justify-content-start col" style="height: auto; width:10rem;">
-    <img src="../../../../assets/img/FOSS-logo.png" alt="navbar image" />
+  <div class="justify-content-start col" style="height: auto; width: 10rem">
+    <a routerLink="/">
+      <img src="../../../../assets/img/FOSS-logo.png" alt="navbar image" />
+    </a>
   </div>
 
   <div
@@ -34,7 +37,18 @@
           >
         </li>
         <li class="nav-item px-1">
-          <a class="nav-link" routerLink="#" [routerLinkActive]="['active']"
+          <a
+            class="nav-link"
+            routerLink="/about"
+            [routerLinkActive]="['active']"
+            >About</a
+          >
+        </li>
+        <li class="nav-item px-1">
+          <a
+            class="nav-link"
+            routerLink="/event"
+            [routerLinkActive]="['active']"
             >Events</a
           >
         </li>
@@ -46,14 +60,6 @@
         <li class="nav-item px-1">
           <a class="nav-link" routerLink="/blog" [routerLinkActive]="['active']"
             >Blogs</a
-          >
-        </li>
-        <li class="nav-item px-1">
-          <a
-            class="nav-link"
-            routerLink="/about"
-            [routerLinkActive]="['active']"
-            >About</a
           >
         </li>
         <li class="nav-item px-1">
