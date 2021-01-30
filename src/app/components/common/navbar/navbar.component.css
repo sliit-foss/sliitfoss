@@ -49,6 +49,9 @@ ul > li > a:hover {
     z-index: -1;
   }
 
+  img {
+    margin-left: -50px !important;
+  }
   .navbar-brand {
     position: absolute;
     margin-top: -6.5rem;
