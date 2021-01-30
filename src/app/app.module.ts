@@ -31,6 +31,10 @@ import { BlogComponent } from './components/blog/blog.component';
 import { HttpClientModule } from '@angular/common/http';
 import { BoardComponent } from './components/board/board.component';
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { LatestBlogPostsComponent } from './components/latest-blog-posts/latest-blog-posts.component';
+import { EventsComponent } from './components/events/events.component';
+import { MatCardModule } from '@angular/material/card';
+import { PodcastsectionComponent } from './components/home/podcastsection/podcastsection.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +49,9 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     PastEventsComponent,
     BlogComponent,
     BoardComponent,
+    LatestBlogPostsComponent,
+    EventsComponent,
+    PodcastsectionComponent,
   ],
   imports: [
     BrowserModule,
@@ -55,6 +62,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     CarouselModule,
     HttpClientModule,
     MatPaginatorModule,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

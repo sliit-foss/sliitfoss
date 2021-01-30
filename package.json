@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "scripts": {
     "ng": "ng",
-    "start": "yarn && ng serve",
+    "start": "yarn && ng serve -o",
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",

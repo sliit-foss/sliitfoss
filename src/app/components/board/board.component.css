@@ -1,3 +1,8 @@
+.title-text {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
 .team-boxed {
   color: #313437;
 }
@@ -52,6 +57,7 @@
   margin-top: 28px;
   margin-bottom: 0px;
   color: inherit;
+  font-family: 'Baloo Thambi 2', cursive;
 }
 
 .team-boxed .item .title {
