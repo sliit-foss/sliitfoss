@@ -23,3 +23,24 @@ h1 {
   height: 40px;
   width: 40px;
 }
+
+@media (max-width: 500px) {
+  h1 {
+    margin-left: 30px;
+  }
+  .available-text {
+    margin-left: 102px;
+  }
+  .h1 {
+    margin-left: 70px;
+  }
+  .lead {
+    text-align: justify;
+  }
+  .btn {
+    margin-left: 80.5px;
+  }
+  .fdb-block {
+    padding-bottom: 15px;
+  }
+}

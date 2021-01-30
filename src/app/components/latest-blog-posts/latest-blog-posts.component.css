@@ -77,3 +77,9 @@
     'Lucida Sans', Arial, sans-serif;
   text-transform: uppercase;
 }
+
+@media (max-width: 500px) {
+  .card {
+    margin-left: 12.5px;
+  }
+}

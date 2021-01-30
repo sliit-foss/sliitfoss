@@ -84,7 +84,11 @@ ul {
     width: 400px;
   }
 }
-
+@media (max-width: 500px) {
+  .img-member {
+    margin-top: 30px;
+  }
+}
 @media (max-width: 576px) {
   .img-member {
     height: 315px;
