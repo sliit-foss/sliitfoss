@@ -49,6 +49,10 @@ ul > li > a:hover {
     z-index: -1;
   }
 
+  .navbar-toggler {
+    margin-right: -13px;
+  }
+
   img {
     margin-left: -50px !important;
   }
