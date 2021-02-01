@@ -9,7 +9,7 @@
 2. Clone the repository
 
 ```
-git clone https://github.com/sliit-foss/sliitfoss.git
+git clone https://github.com/<USERNAME>/sliitfoss.git
 ```
 
 3. Create Feature branch and checkout
