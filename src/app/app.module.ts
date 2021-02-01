@@ -35,6 +35,7 @@ import { LatestBlogPostsComponent } from './components/latest-blog-posts/latest-
 import { EventsComponent } from './components/events/events.component';
 import { MatCardModule } from '@angular/material/card';
 import { PodcastsectionComponent } from './components/home/podcastsection/podcastsection.component';
+import { WebinarsComponent } from './components/webinars/webinars.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import { PodcastsectionComponent } from './components/home/podcastsection/podcas
     LatestBlogPostsComponent,
     EventsComponent,
     PodcastsectionComponent,
+    WebinarsComponent,
   ],
   imports: [
     BrowserModule,
