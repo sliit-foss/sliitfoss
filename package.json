@@ -3,12 +3,11 @@
   "version": "0.0.1",
   "scripts": {
     "ng": "ng",
-    "start": "yarn && ng serve",
+    "start": "yarn && ng serve -o",
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "preinstall": "if [[ $npm_execpath =~ 'npm' ]]; then echo 'Use YARN!' && exit 1; fi"
+    "e2e": "ng e2e"
   },
   "engines": {
     "npm": "please-use-yarn",
@@ -31,7 +30,7 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.28",
     "@fortawesome/free-brands-svg-icons": "^5.13.0",
     "@fortawesome/free-regular-svg-icons": "^5.13.0",
-    "@fortawesome/free-solid-svg-icons": "^5.13.0",
+    "@fortawesome/free-solid-svg-icons": "^5.15.2",
     "bootstrap": "^4.4.1",
     "jquery": "^3.5.1",
     "ngx-owl-carousel-o": "^5.0.0",

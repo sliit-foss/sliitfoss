@@ -15,10 +15,10 @@
       "name": "Chamod Shehanka",
       "position": "Vice President",
       "img": "../../../assets/img/board/chamod.jpg",
-      "facebook": "https://www.facebook.com/ahamed.safnaj/",
-      "twitter": "https://twitter.com/iamSafnaj",
-      "instagram": "https://www.instagram.com/iam_safnaj/",
-      "linkedin": "https://www.linkedin.com/in/ahamed-safnaj"
+      "facebook": "http://facebook.com/chamodshehanka",
+      "twitter": "http://twitter.com/chamodshehanka",
+      "instagram": "http://instagram.com/chamodshehanka/",
+      "linkedin": "http://linkedin.com/in/chamodshehanka/"
     },
     {
       "id": 3,
@@ -29,6 +29,76 @@
       "twitter": "https://twitter.com/Sewvandiii",
       "instagram": "https://www.instagram.com/sewvandiii/",
       "linkedin": "https://www.linkedin.com/in/sewvandi-promodya-wickramasinghe-314a40194/"
+    },
+    {
+      "id": 4,
+      "name": "Dureksha Wasala",
+      "position": "Assistant Secretary",
+      "img": "../../../assets/img/board/dureksha.jpg",
+      "facebook": "https://www.facebook.com/dureksha.wasala.1/",
+      "twitter": "https://twitter.com/dc_1129",
+      "instagram": "https://www.instagram.com/dureksha_29/",
+      "linkedin": "https://www.linkedin.com/in/dureksha-wasala-88a15015a/"
+    },
+    {
+      "id": 5,
+      "name": "Kaveesha Gimhana",
+      "position": "Treasurer",
+      "img": "../../../assets/img/board/kaveesha.jpg",
+      "facebook": "https://www.facebook.com/kaveesha.yaka.gimhana/",
+      "twitter": "https://twitter.com/Kaveeshag",
+      "instagram": "https://www.instagram.com/kaveesha__gimhana/",
+      "linkedin": "https://linkedin.kaveeshagimhana.com/"
+    },
+    {
+      "id": 6,
+      "name": "Malindu Attygala",
+      "position": "Assistant Treasurer",
+      "img": "../../../assets/img/board/malindu.jpeg",
+      "facebook": "https://www.facebook.com/malindu.attygala.9",
+      "twitter": "https://twitter.com/AttygalaMalindu",
+      "instagram": "https://www.instagram.com/malindu_attygala/",
+      "linkedin": "https://www.linkedin.com/in/malindu-attygala-b98b34182"
+    },
+    {
+      "id": 7,
+      "name": "Bawantha Thilan",
+      "position": "Editor",
+      "img": "../../../assets/img/board/bawantha.jpg",
+      "facebook": "https://www.facebook.com/bawanthathilan",
+      "twitter": "https://twitter.com/thilanbawantha",
+      "instagram": "https://www.instagram.com/bawwa_/",
+      "linkedin": "https://www.linkedin.com/in/bawanthathilan/"
+    },
+    {
+      "id": 8,
+      "name": "Nisal Palliyaguru",
+      "position": "Event Coordinator",
+      "img": "../../../assets/img/board/nisal.png",
+      "facebook": "https://www.facebook.com/nisal.renuja.56/",
+      "twitter": "https://twitter.com/NisalRenuja",
+      "instagram": "https://www.instagram.com/nisal.97/",
+      "linkedin": "https://www.linkedin.com/in/nisal-palliyaguru-899a73163/"
+    },
+    {
+      "id": 9,
+      "name": "Sithum Sandeepa",
+      "position": "Project Coordinator",
+      "img": "../../../assets/img/board/sithum.jpg",
+      "facebook": "https://www.facebook.com/sithumonline",
+      "twitter": "https://twitter.com/sithumonline",
+      "instagram": "https://www.instagram.com/sithumonline/",
+      "linkedin": "https://www.linkedin.com/in/bopitiya-s-perera/"
+    },
+    {
+      "id": 10,
+      "name": "Asel Peiris",
+      "position": "Dev Relations",
+      "img": "../../../assets/img/board/asel.jpeg",
+      "facebook": "https://www.facebook.com/asel.peiris.1",
+      "twitter": "https://twitter.com/AselPeiris1",
+      "instagram": "https://www.instagram.com/shurima345/",
+      "linkedin": "https://www.linkedin.com/in/asel-peiris-76536158/"
     }
   ]
 }

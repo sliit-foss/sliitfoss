@@ -1,13 +1,16 @@
 <nav
-  class="navbar navbar-expand-md navbar-light"
-  style="padding: 0; align-items: start"
+  [class.navbar-change]="navbarVariable"
+  class="navbar navbar-expand-md navbar-light row"
+  style="padding: 0; align-items: start; width: 100%"
 >
-  <div class="justify-content-start">
-    <img src="../../../../assets/img/FOSS-logo.png" alt="navbar image" />
+  <div class="justify-content-start col" style="height: auto; width: 10rem">
+    <a routerLink="/">
+      <img src="../../../../assets/img/FOSS-logo.png" alt="navbar image" />
+    </a>
   </div>
 
   <div
-    class="container justify-content-end"
+    class="container justify-content-end col"
     style="padding: 0.25rem 0.75rem; align-items: end"
   >
     <button
@@ -34,7 +37,18 @@
           >
         </li>
         <li class="nav-item px-1">
-          <a class="nav-link" routerLink="#" [routerLinkActive]="['active']"
+          <a
+            class="nav-link"
+            routerLink="/about"
+            [routerLinkActive]="['active']"
+            >About</a
+          >
+        </li>
+        <li class="nav-item px-1">
+          <a
+            class="nav-link"
+            routerLink="/event"
+            [routerLinkActive]="['active']"
             >Events</a
           >
         </li>
@@ -51,14 +65,6 @@
         <li class="nav-item px-1">
           <a
             class="nav-link"
-            routerLink="/about"
-            [routerLinkActive]="['active']"
-            >About</a
-          >
-        </li>
-        <li class="nav-item px-1">
-          <a
-            class="nav-link"
             routerLink="/contact"
             [routerLinkActive]="['active']"
             >Contact</a
@@ -68,3 +74,7 @@
     </div>
   </div>
 </nav>
+
+<div id="top" class="uparrow">
+  <img src="../../../../assets/img/up-arrow.png" alt="" />
+</div>

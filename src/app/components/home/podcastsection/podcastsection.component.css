@@ -1,0 +1,15 @@
+.container-fluid {
+  width: 100% !important;
+  background-color: #f4f4f4;
+}
+
+h1 {
+  color: #5a5af3;
+  font-weight: 800;
+}
+
+.btn {
+  background-color: #5a5af3 !important;
+  border-radius: 50px;
+  color: white;
+}
