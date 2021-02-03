@@ -36,6 +36,7 @@ import { EventsComponent } from './components/events/events.component';
 import { MatCardModule } from '@angular/material/card';
 import { PodcastsectionComponent } from './components/home/podcastsection/podcastsection.component';
 import { WebinarsComponent } from './components/webinars/webinars.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -65,6 +66,7 @@ import { WebinarsComponent } from './components/webinars/webinars.component';
     HttpClientModule,
     MatPaginatorModule,
     MatCardModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
