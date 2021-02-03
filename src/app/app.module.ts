@@ -37,6 +37,7 @@ import { MatCardModule } from '@angular/material/card';
 import { PodcastsectionComponent } from './components/home/podcastsection/podcastsection.component';
 import { WebinarsComponent } from './components/webinars/webinars.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { Page404Component } from './components/page404/page404.component';
 
 @NgModule({
   declarations: [
@@ -55,6 +56,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     EventsComponent,
     PodcastsectionComponent,
     WebinarsComponent,
+    Page404Component,
   ],
   imports: [
     BrowserModule,
