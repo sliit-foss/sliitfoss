@@ -33,8 +33,10 @@ export class NavbarComponent implements OnInit {
       document.documentElement.scrollTop > 50
     ) {
       this.navbarVariable = true;
+      document.getElementById('logo').style.display = 'none';
     } else {
       this.navbarVariable = false;
+      document.getElementById('logo').style.display = 'block';
     }
   }
 }
