@@ -108,3 +108,11 @@ ul > li > a:hover {
 .navbar-brand {
   margin-top: 0;
 }
+
+.navbar {
+  padding: 0;
+  align-items: start;
+  width: 100%;
+  margin-left: 0px;
+  margin-left: 0px;
+}
