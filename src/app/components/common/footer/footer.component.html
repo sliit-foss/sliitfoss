@@ -81,8 +81,8 @@
               </p>
             </div>
             <div class="subscribe-form">
-              <form action="#">
-                <input type="text" placeholder="Email Address" />
+              <form [formGroup]="subscribeForm" (ngSubmit)="subscribe()">
+                <input type="text" id="email" placeholder="Email Address" />
                 <button><i class="fab fa-telegram-plane"></i></button>
               </form>
             </div>
