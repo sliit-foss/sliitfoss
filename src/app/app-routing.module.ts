@@ -18,7 +18,7 @@ const routes: Routes = [
   { path: 'board', component: BoardComponent },
   { path: 'event', component: EventsComponent },
   { path: '404-page', component: Page404Component },
-  { path: '**', redirectTo: '404-page' },
+  { path: '**', component: Page404Component },
 ];
 
 @NgModule({
