@@ -17,7 +17,7 @@ const routes: Routes = [
   { path: 'blog', component: BlogComponent },
   { path: 'board', component: BoardComponent },
   { path: 'event', component: EventsComponent },
-  { path: '404-page', component: Page404Component },
+//   { path: '404-page', component: Page404Component },
 //   { path: '**', component: Page404Component },
 ];
 
