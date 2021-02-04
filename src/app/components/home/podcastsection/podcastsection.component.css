@@ -13,3 +13,7 @@ h1 {
   border-radius: 50px;
   color: white;
 }
+.lead {
+  font-family: 'Baloo Thambi 2', sans-serif;
+  font-size: medium;
+}
