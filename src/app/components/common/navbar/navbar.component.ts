@@ -14,8 +14,10 @@ export class NavbarComponent implements OnInit {
       $(window).scroll(function () {
         if ($(this).scrollTop() > 40) {
           $('#top').fadeIn();
+          $('.navbar').addClass('add-shadow');
         } else {
           $('#top').fadeOut();
+          $('.navbar').removeClass('add-shadow');
         }
       });
 

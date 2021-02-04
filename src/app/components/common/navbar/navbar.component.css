@@ -100,3 +100,11 @@ ul > li > a:hover {
     margin-left: 90%;
   }
 }
+
+.add-shadow {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 6px 20px 0px;
+}
+
+.navbar-brand {
+  margin-top: 0;
+}
