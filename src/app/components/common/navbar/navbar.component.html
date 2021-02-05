@@ -1,11 +1,24 @@
 <nav
   [class.navbar-change]="navbarVariable"
-  class="navbar navbar-expand-md navbar-light row"
-  style="padding: 0; align-items: start; width: 100%"
+  class="navbar navbar-expand-md navbar-light"
 >
-  <div class="justify-content-start col" style="height: auto; width: 10rem">
+  <a class="navbar-brand" href="#">
+    <img
+      class="navbar-brand"
+      src="../../../../assets/img/logo-dark.png"
+      width="100"
+    />
+  </a>
+  <div
+    class="justify-content-start col"
+    style="height: auto; width: 10rem; padding-left: 0px"
+  >
     <a routerLink="/">
-      <img src="../../../../assets/img/FOSS-logo.png" alt="navbar image" />
+      <img
+        src="../../../../assets/img/FOSS-logo.png"
+        id="logo"
+        alt="navbar image"
+      />
     </a>
   </div>
 

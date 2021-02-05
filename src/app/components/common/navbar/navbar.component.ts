@@ -14,8 +14,10 @@ export class NavbarComponent implements OnInit {
       $(window).scroll(function () {
         if ($(this).scrollTop() > 40) {
           $('#top').fadeIn();
+          $('.navbar').addClass('add-shadow');
         } else {
           $('#top').fadeOut();
+          $('.navbar').removeClass('add-shadow');
         }
       });
 
@@ -33,8 +35,10 @@ export class NavbarComponent implements OnInit {
       document.documentElement.scrollTop > 50
     ) {
       this.navbarVariable = true;
+      document.getElementById('logo').style.display = 'none';
     } else {
       this.navbarVariable = false;
+      document.getElementById('logo').style.display = 'block';
     }
   }
 }

@@ -77,7 +77,6 @@ p {
 }
 
 .contact .php-email-form .validate {
-  display: none;
   color: red;
   margin: 0 0 15px 0;
   font-weight: 400;
