@@ -80,28 +80,28 @@ ul {
 
 @media (min-width: 576px) {
   .img-member {
-    height: 420px;
-    width: 420px;
+    height: 26.25em;
+    width: 26.25em;
   }
 
   .coding-vector {
-    height: 420px;
-    width: 420px;
+    height: 26.25em;
+    width: 26.25em;
   }
 }
 @media (max-width: 500px) {
   .img-member {
-    margin-top: 30px;
+    margin-top: 50px;
   }
 }
 @media (max-width: 576px) {
   .img-member {
-    height: 315px;
-    width: 315px;
+    height: 20em;
+    width: 20em;
   }
 
   .coding-vector {
-    height: 315px;
-    width: 315px;
+    height: 20em;
+    width: 20em;
   }
 }
