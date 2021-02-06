@@ -71,6 +71,11 @@ ul {
     height: 420em;
     width: 420em;
   }
+
+  .coding-vector {
+    height: 420em;
+    width: 420em;
+  }
 }
 
 @media (min-width: 576px) {
@@ -80,8 +85,8 @@ ul {
   }
 
   .coding-vector {
-    height: 400px;
-    width: 400px;
+    height: 420px;
+    width: 420px;
   }
 }
 @media (max-width: 500px) {
@@ -96,7 +101,7 @@ ul {
   }
 
   .coding-vector {
-    height: 300px;
-    width: 300px;
+    height: 315px;
+    width: 315px;
   }
 }
