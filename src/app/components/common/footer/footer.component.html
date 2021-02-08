@@ -47,24 +47,59 @@
               <h3>Useful Links</h3>
             </div>
             <ul>
-              <li><a href="/">Home</a></li>
-              <li><a href="/about">about</a></li>
-              <li><a href="#">services</a></li>
-              <li><a href="https://github.com/sliit-foss">GitHub</a></li>
-              <li><a href="/contact">Contact</a></li>
-              <li><a href="/blog">Blog</a></li>
               <li>
-                <a href="https://github.com/sliit-foss/brand-assets"
-                  >Brand Asserts</a
+                <a
+                  routerLink="/"
+                  [routerLinkActive]="['active']"
+                  [routerLinkActiveOptions]="{ exact: true }"
+                  >Home</a
+                >
+              </li>
+              <li><a href="https://github.com/sliit-foss">GitHub</a></li>
+              <li>
+                <a
+                  routerLink="/contact"
+                  [routerLinkActive]="['active']"
+                  [routerLinkActiveOptions]="{ exact: true }"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a href="http://leaderboard.sliitfoss.org/" target="_blank"
+                  >Leaderboard</a
+                >
+              </li>
+              <li>
+                <a
+                  routerLink="/blog"
+                  [routerLinkActive]="['active']"
+                  [routerLinkActiveOptions]="{ exact: true }"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://github.com/sliit-foss/brand-assets"
+                >
+                  Brand Assets
+                </a>
+              </li>
+              <li>
+                <a
+                  outerLink="/event"
+                  [routerLinkActive]="['active']"
+                  [routerLinkActiveOptions]="{ exact: true }"
+                  >Events</a
                 >
               </li>
               <li>
                 <a
                   href="https://github.com/sliit-foss/sliitfoss/blob/master/README.md"
-                  >Contribution Guidlines</a
+                >
+                  Contribution Guidlines</a
                 >
               </li>
-              <li><a href="/event">Events</a></li>
               <li><a routerLink="/code-conduct">Code of contact</a></li>
             </ul>
           </div>
@@ -83,7 +118,7 @@
             <div class="subscribe-form">
               <form [formGroup]="subscribeForm" (ngSubmit)="subscribe()">
                 <input type="text" id="email" placeholder="Email Address" />
-                <button><i class="fab fa-telegram-plane"></i></button>
+                <button><i class="fa fa-envelope-o"></i></button>
               </form>
             </div>
           </div>
