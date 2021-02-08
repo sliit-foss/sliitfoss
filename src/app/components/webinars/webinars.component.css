@@ -78,6 +78,9 @@
   width: 100%;
   object-fit: cover;
 }
+.card-body {
+  min-height: 95px;
+}
 
 @media screen and (min-width: 375px) {
   .card {
