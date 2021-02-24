@@ -1,26 +1,5 @@
 <footer class="footer-section">
   <div class="container">
-    <div class="footer-cta pt-5 pb-5">
-      <div class="row">
-        <div class="col-xl-4 col-md-4 mb-30">
-          <div class="single-cta">
-            <i class="fas fa-map-marker-alt"></i>
-            <div class="cta-text">
-              <h4>Find us</h4>
-              <span>Sliit, malabe</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-4 col-md-4 mb-30">
-          <div class="single-cta">
-            <div class="cta-text">
-              <h4>Mail us</h4>
-              <span>info.sliit.lk</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     <div class="footer-content pt-5 pb-5">
       <div class="row">
         <div class="col-xl-4 col-lg-4 mb-50">
@@ -28,25 +7,37 @@
             <div class="footer-logo">
               <a href="index.html"
                 ><img
-                  src="../../../../assets/img/FOSS-logo.png"
+                  src="../../../../assets/img/logo-light.png"
                   class="img-fluid"
                   alt="logo"
+                  height="80"
+                  width="130"
               /></a>
             </div>
             <div class="footer-text">
               <p>
-                Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed
-                do eiusmod tempor incididuntut consec tetur adipisicing
-                elit,Lorem ipsum dolor sit amet.
+                Welcome to SLIIT FOSS community. We're a group of volunteers who
+                believe in the usage of Free/Open Source Software (FOSS)
               </p>
             </div>
             <div class="footer-social-icon">
-              <span>Follow us</span>
-              <a href="#"><fa-icon [icon]="['fab', 'facebook']"></fa-icon></a>
-              <a href="#"><fa-icon [icon]="['fab', 'instagram']"></fa-icon></a>
-              <a href="#"><fa-icon [icon]="['fab', 'twitter']"></fa-icon></a>
-              <a href="#"><fa-icon [icon]="['fab', 'linkedin']"></fa-icon></a>
-              <a href="#"><fa-icon [icon]="['fab', 'youtube']"></fa-icon></a>
+              <span>Connect with us</span>
+              <a href="https://www.facebook.com/sliitfoss"
+                ><fa-icon [icon]="['fab', 'facebook']"></fa-icon
+              ></a>
+              <a href="https://www.instagram.com/sliitfoss"
+                ><fa-icon [icon]="['fab', 'instagram']"></fa-icon
+              ></a>
+              <a href="https://twitter.com/fosssliit?lang=en"
+                ><fa-icon [icon]="['fab', 'twitter']"></fa-icon
+              ></a>
+              <a href="https://lk.linkedin.com/company/sliit-foss-community"
+                ><fa-icon [icon]="['fab', 'linkedin']"></fa-icon
+              ></a>
+              <a
+                href="https://www.youtube.com/channel/UCPPO-QR0Dv13ewjhPsc_I3w/featured"
+                ><fa-icon [icon]="['fab', 'youtube']"></fa-icon
+              ></a>
             </div>
           </div>
         </div>
@@ -56,24 +47,59 @@
               <h3>Useful Links</h3>
             </div>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">about</a></li>
-              <li><a href="#">services</a></li>
-              <li><a href="#">GitHub</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">Blog</a></li>
               <li>
-                <a href="https://github.com/sliit-foss/brand-assets"
-                  >Brand Asserts</a
+                <a
+                  routerLink="/"
+                  [routerLinkActive]="['active']"
+                  [routerLinkActiveOptions]="{ exact: true }"
+                  >Home</a
+                >
+              </li>
+              <li><a href="https://github.com/sliit-foss">GitHub</a></li>
+              <li>
+                <a
+                  routerLink="/contact"
+                  [routerLinkActive]="['active']"
+                  [routerLinkActiveOptions]="{ exact: true }"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a href="http://leaderboard.sliitfoss.org/" target="_blank"
+                  >Leaderboard</a
+                >
+              </li>
+              <li>
+                <a
+                  routerLink="/blog"
+                  [routerLinkActive]="['active']"
+                  [routerLinkActiveOptions]="{ exact: true }"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://github.com/sliit-foss/brand-assets"
+                >
+                  Brand Assets
+                </a>
+              </li>
+              <li>
+                <a
+                  outerLink="/event"
+                  [routerLinkActive]="['active']"
+                  [routerLinkActiveOptions]="{ exact: true }"
+                  >Events</a
                 >
               </li>
               <li>
                 <a
                   href="https://github.com/sliit-foss/sliitfoss/blob/master/README.md"
-                  >Contribution Guidlines</a
+                >
+                  Contribution Guidlines</a
                 >
               </li>
-              <li><a href="#">Events</a></li>
               <li><a routerLink="/code-conduct">Code of contact</a></li>
             </ul>
           </div>
@@ -85,14 +111,14 @@
             </div>
             <div class="footer-text mb-25">
               <p>
-                Don’t miss to subscribe to our new feeds, kindly fill the form
-                below.
+                Don’t forget to subscribe to our news feeds, enter your e-mail
+                here.
               </p>
             </div>
             <div class="subscribe-form">
-              <form action="#">
-                <input type="text" placeholder="Email Address" />
-                <button><i class="fab fa-telegram-plane"></i></button>
+              <form [formGroup]="subscribeForm" (ngSubmit)="subscribe()">
+                <input type="text" id="email" placeholder="Email Address" />
+                <button><i class="fa fa-envelope-o"></i></button>
               </form>
             </div>
           </div>
@@ -106,7 +132,7 @@
         <div class="col-xl-6 col-lg-6 text-center text-lg-left">
           <div class="copyright-text">
             <p>
-              Copyright &copy; 2021, All Right Reserved
+              Copyright &copy; 2021 | All Right Reserved
               <a href="https://sliitfoss.org">SLIIT FOSS</a>
             </p>
           </div>
@@ -114,11 +140,11 @@
         <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
           <div class="footer-menu">
             <ul>
-              <li><a href="#">Home</a></li>
+              <li><a href="/">Home</a></li>
               <li><a href="#">Terms</a></li>
               <li><a href="#">Privacy</a></li>
               <li><a href="#">Policy</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="/contact">Contact</a></li>
             </ul>
           </div>
         </div>

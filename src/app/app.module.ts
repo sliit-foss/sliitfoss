@@ -35,6 +35,9 @@ import { LatestBlogPostsComponent } from './components/latest-blog-posts/latest-
 import { EventsComponent } from './components/events/events.component';
 import { MatCardModule } from '@angular/material/card';
 import { PodcastsectionComponent } from './components/home/podcastsection/podcastsection.component';
+import { WebinarsComponent } from './components/webinars/webinars.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { Page404Component } from './components/page404/page404.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +55,8 @@ import { PodcastsectionComponent } from './components/home/podcastsection/podcas
     LatestBlogPostsComponent,
     EventsComponent,
     PodcastsectionComponent,
+    WebinarsComponent,
+    Page404Component,
   ],
   imports: [
     BrowserModule,
@@ -63,6 +68,7 @@ import { PodcastsectionComponent } from './components/home/podcastsection/podcas
     HttpClientModule,
     MatPaginatorModule,
     MatCardModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -71,28 +71,37 @@ ul {
     height: 420em;
     width: 420em;
   }
+
+  .coding-vector {
+    height: 420em;
+    width: 420em;
+  }
 }
 
 @media (min-width: 576px) {
   .img-member {
-    height: 420px;
-    width: 420px;
+    height: 26.25em;
+    width: 26.25em;
   }
 
   .coding-vector {
-    height: 400px;
-    width: 400px;
+    height: 26.25em;
+    width: 26.25em;
   }
 }
-
+@media (max-width: 500px) {
+  .img-member {
+    margin-top: 50px;
+  }
+}
 @media (max-width: 576px) {
   .img-member {
-    height: 315px;
-    width: 315px;
+    height: 20em;
+    width: 20em;
   }
 
   .coding-vector {
-    height: 300px;
-    width: 300px;
+    height: 20em;
+    width: 20em;
   }
 }

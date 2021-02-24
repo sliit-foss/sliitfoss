@@ -1,25 +1,19 @@
-.btn {
-  background: #5a5af3;
-  color: #fff;
-  border: 2px solid #5a5af3;
-  border-radius: 50px;
-}
-
-section {
-  -webkit-box-shadow: 0px 0px 28px -16px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 0px 28px -16px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 0px 28px -16px rgba(0, 0, 0, 0.75);
-  border-radius: 50px;
-}
-
-.podcast-icons {
-  margin-right: 250px;
+.container-fluid {
+  width: 100% !important;
+  background-color: #f4f4f4;
 }
 
 h1 {
-  font-weight: bold;
+  color: #5a5af3;
+  font-weight: 800;
 }
-.podcast-logo {
-  height: 40px;
-  width: 40px;
+
+.btn {
+  background-color: #5a5af3 !important;
+  border-radius: 50px;
+  color: white;
+}
+.lead {
+  font-family: 'Baloo Thambi 2', sans-serif;
+  font-size: medium;
 }
