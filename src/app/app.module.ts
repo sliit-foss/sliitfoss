@@ -34,6 +34,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { LatestBlogPostsComponent } from './components/latest-blog-posts/latest-blog-posts.component';
 import { EventsComponent } from './components/events/events.component';
 import { MatCardModule } from '@angular/material/card';
+import { PodcastsectionComponent } from './components/home/podcastsection/podcastsection.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import { MatCardModule } from '@angular/material/card';
     BoardComponent,
     LatestBlogPostsComponent,
     EventsComponent,
+    PodcastsectionComponent,
   ],
   imports: [
     BrowserModule,
