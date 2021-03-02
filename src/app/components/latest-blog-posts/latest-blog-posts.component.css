@@ -5,12 +5,15 @@
   border-radius: 12px;
   height: 290px;
   width: 247px;
+  transition: transform 0.5s ease;
+  overflow: hidden;
 }
 
 .card:hover {
   -webkit-box-shadow: 0px 0px 28px -16px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 28px -16px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 28px -16px rgba(0, 0, 0, 0.75);
+  transform: scale(1.05);
 }
 
 .card-title {
