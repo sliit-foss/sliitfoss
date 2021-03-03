@@ -72,6 +72,7 @@
   text-align: center;
   display: block;
   height: 400px !important;
+  margin-left: 35px;
 }
 
 .card-img-top {
@@ -82,14 +83,39 @@
   min-height: 95px;
 }
 
+/*
 @media only screen and (min-device-width: 414px) and (max-device-height: 736px) {
   .card {
     margin-left: 60px !important;
   }
 }
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) {
-  /* For mobile phones: */
+  !* For mobile phones: *!
   .card {
     margin-left: 40px !important;
+  }
+}
+*/
+@media only screen and (max-device-width: 768px) {
+  .card {
+    margin-left: 60px !important;
+  }
+}
+
+@media only screen and (max-device-width: 425px) {
+  .card {
+    margin-left: 72px !important;
+  }
+}
+
+@media only screen and (max-device-width: 375px) {
+  .card {
+    margin-left: 49px !important;
+  }
+}
+
+@media only screen and (max-device-width: 320px) {
+  .card {
+    margin-left: 13px !important;
   }
 }

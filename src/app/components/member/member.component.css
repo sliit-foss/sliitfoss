@@ -142,6 +142,10 @@ ul {
     height: 20em !important;
     width: 20em !important;
   }
+
+  #member {
+    padding-bottom: 35px !important;
+  }
 }
 
 @media only screen and (max-device-width: 425px) {
@@ -162,5 +166,8 @@ ul {
 
   #descDiv {
     padding-top: 2vh;
+  }
+  #member {
+    padding-bottom: 25px !important;
   }
 }

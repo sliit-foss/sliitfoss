@@ -111,6 +111,12 @@
   }
 }
 
+@media only screen and (max-device-width: 375px) {
+  #slidCardDiv {
+    margin-left: 28px !important;
+    padding-left: 0 !important;
+  }
+}
 @media only screen and (max-device-width: 320px) {
   #slidCardDiv {
     margin-left: 5px !important;
