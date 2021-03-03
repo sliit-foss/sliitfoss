@@ -16,7 +16,7 @@
 }
 
 .h2 {
-  font-weight: 1000;
+  font-weight: bold;
   font-size: 2.5rem;
   /*line-height: 50px;*/
   margin-bottom: 1rem;
@@ -64,18 +64,6 @@ ul {
 .member-btn:hover {
   background: #7272f5;
   border-color: #7272f5;
-}
-
-@include media-breakpoint-up(sm) {
-  .img-member {
-    height: 420em;
-    width: 420em;
-  }
-
-  .coding-vector {
-    height: 420em;
-    width: 420em;
-  }
 }
 
 #descDiv {
