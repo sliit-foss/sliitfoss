@@ -2,9 +2,12 @@
   <div class="text-center">
     <h1 class="head-title">Latest Blog Posts</h1>
   </div>
-  <div class="container">
+  <div class="container" id="cardContainer">
     <div class="row">
-      <div *ngFor="let post of blogPosts | slice: 0:4" class="col-md-3 mb-5">
+      <div
+        *ngFor="let post of blogPosts | slice: 0:4"
+        class="col-sm-12 col-md-3"
+      >
         <div class="card">
           <img
             alt="image"
@@ -19,6 +22,7 @@
               >Read More</a
             >
           </div>
+
           <div
             class="card-footer text-muted d-flex justify-content-between bg-transparent border-top-0"
           >
@@ -31,3 +35,31 @@
     </div>
   </div>
 </section>
+
+<!--
+
+<div *ngFor="let post of blogPosts | slice: 0:4" class="col-sm-12 col-md-3 col-lg-3 mb-5">
+<div class="card">
+  <img
+    alt="image"
+    class="card-img"
+    height="142"
+    src="{{ post.thumbnail }}"
+    width="152"
+  />
+  <div class="card-body">
+    <h4 class="card-title">{{ post.title }}</h4>
+    <a class="btn sliit-foss-btn" href="{{ post.link }}" target="_blank"
+    >Read More</a
+    >
+  </div>
+  <div
+    class="card-footer text-muted d-flex justify-content-between bg-transparent border-top-0"
+  >
+    <div class="views">
+      Published on {{ getDaysCount(post.pubDate) }}
+    </div>
+  </div>
+</div>
+</div>
+-->
