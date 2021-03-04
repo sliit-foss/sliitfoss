@@ -82,14 +82,6 @@
   text-transform: uppercase;
 }
 
-@media only screen and (max-device-width: 425px) {
-  .card {
-    margin-left: 42px !important;
-    height: 290px !important;
-    width: 247px !important;
-  }
-}
-
 @media only screen and (max-device-width: 1024px) {
   .card {
     border-radius: 12px;
@@ -130,9 +122,19 @@
   }
 }
 
+@media only screen and (max-device-width: 425px) {
+  .card {
+    margin-left: 42px !important;
+    height: 290px !important;
+    width: 247px !important;
+    margin-bottom: 15px !important;
+  }
+}
+
 @media only screen and (max-device-width: 375px) {
   .card {
     margin-left: 20px !important;
+    margin-bottom: 10px !important;
   }
 }
 
