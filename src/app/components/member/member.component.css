@@ -16,7 +16,7 @@
 }
 
 .h2 {
-  font-weight: 1000;
+  font-weight: bold;
   font-size: 2.5rem;
   /*line-height: 50px;*/
   margin-bottom: 1rem;
@@ -66,21 +66,57 @@ ul {
   border-color: #7272f5;
 }
 
-@include media-breakpoint-up(sm) {
+#descDiv {
+  padding-top: 18vh;
+}
+
+#coding-vector-div {
+  display: none;
+}
+
+@media only screen and (max-device-width: 1024px) {
+  #coding-vector-div {
+    display: none !important;
+  }
+
   .img-member {
-    height: 420em;
-    width: 420em;
+    margin-top: 50px !important;
+    height: 20em !important;
+    width: 20em !important;
   }
 
   .coding-vector {
-    height: 420em;
-    width: 420em;
+    height: 20em !important;
+    width: 20em !important;
+  }
+
+  #descDiv {
+    padding-top: 2vh;
+  }
+
+  #aboutDiv {
+    margin-top: 10vh;
   }
 }
 
 @media only screen and (max-device-width: 768px) {
+  #coding-vector-div {
+    display: none !important;
+  }
+
   .img-member {
     margin-top: 50px !important;
+    height: 20em !important;
+    width: 20em !important;
+  }
+
+  .coding-vector {
+    height: 20em !important;
+    width: 20em !important;
+  }
+
+  #descDiv {
+    padding-top: 2vh;
   }
 }
 
@@ -94,16 +130,33 @@ ul {
     height: 20em !important;
     width: 20em !important;
   }
+
+  #member {
+    padding-bottom: 35px !important;
+  }
 }
 
 @media only screen and (max-device-width: 425px) {
   .img-member {
     height: 26.25em !important;
-    width: 26.25em !important;
+    width: 20.25em !important;
   }
 
   .coding-vector {
     height: 26.25em !important;
-    width: 26.25em !important;
+    width: 20.25em !important;
+  }
+
+  #firstVectorDiv {
+    margin-top: -10vh;
+    display: none !important;
+  }
+
+  #descDiv {
+    padding-top: 2vh;
+  }
+
+  #member {
+    padding-bottom: 25px !important;
   }
 }
