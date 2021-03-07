@@ -17,12 +17,14 @@ export class BlogComponent implements OnInit {
   constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
-    this.getCards().subscribe((results) => {
-      this.blogPost = results['items'];
-      this.totalLength = results['items'].length;
-      console.log(this.blogPost);
-      console.log(this.totalLength);
-    });
+    try {
+      this.getCards().subscribe((results) => {
+        this.blogPost = results['items'];
+        this.totalLength = results['items'].length;
+        console.log(this.blogPost);
+        console.log(this.totalLength);
+      });
+    } catch (e) {}
   }
 
   getCards() {
