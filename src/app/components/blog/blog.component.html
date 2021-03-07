@@ -2,7 +2,14 @@
   <div class="container">
     <h2 class="section-title font-weight-bold mb-5">Latest Blog Posts</h2>
     <div class="row">
-      <div *ngFor="let post of blogPosts | slice: 0:10" class="col-md-4 mb-5">
+      <div
+        *ngFor="
+          let post of blogPost
+            | paginate
+              : { itemsPerPage: 10, currentPage: page, totalItems: totalLength }
+        "
+        class="col-md-4 mb-5"
+      >
         <div class="card">
           <img
             alt="image"
@@ -27,5 +34,6 @@
         </div>
       </div>
     </div>
+    <pagination-controls (pageChange)="page = $event"> </pagination-controls>
   </div>
 </section>

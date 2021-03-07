@@ -28,4 +28,8 @@ export class BlogComponent implements OnInit {
   getCards() {
     return this.http.get(Config.BLOG_URL);
   }
+
+  getDaysCount(date) {
+    return date.split(' ', 1);
+  }
 }
