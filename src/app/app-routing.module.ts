@@ -16,7 +16,7 @@ const routes: Routes = [
   { path: 'code-conduct', component: CodeOfConductComponent },
   { path: 'blog', component: BlogComponent },
   { path: 'board', component: BoardComponent },
-  { path: 'event', component: EventsComponent },
+  { path: 'events', component: EventsComponent },
   { path: '404-page', component: Page404Component },
   { path: '**', component: Page404Component },
 ];
