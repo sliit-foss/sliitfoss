@@ -6,6 +6,7 @@
   color: #5a5af3;
   padding-bottom: 20px;
 }
+
 .intro {
   text-align: center;
   font-family: 'Baloo Thambi 2', sans-serif;
@@ -108,6 +109,7 @@ a:hover {
   text-align: justify;
   line-height: 1.6;
 }
+
 .why-us .video-box {
   position: relative;
 }
@@ -352,12 +354,15 @@ a:hover {
   margin-bottom: 0;
 }
 
+/*Deprecated*/
 .text-mission {
   text-align: left;
   font-weight: bold;
   font-size: 30px;
   color: #5a5af3;
 }
+
+/*Deprecated*/
 .text-description {
   text-align: justify;
   font-weight: normal;
@@ -366,6 +371,7 @@ a:hover {
   color: #343a40;
 }
 
+/*Deprecated*/
 .text-vision {
   text-align: left;
   font-weight: bold;
