@@ -1,6 +1,5 @@
 .heading {
   text-align: center;
-  font-family: 'Baloo Thambi 2', sans-serif;
   font-weight: bold;
   font-size: 2rem;
   color: #5a5af3;
@@ -8,7 +7,6 @@
 }
 .intro {
   text-align: center;
-  font-family: 'Baloo Thambi 2', sans-serif;
   font-size: 1rem;
 }
 
@@ -20,8 +18,12 @@
 h2,
 h3,
 p {
-  font-family: 'Baloo Thambi 2', sans-serif;
   text-align: center;
+
+}
+
+.description{
+  font-weight:500 !important;
 }
 
 .card {
