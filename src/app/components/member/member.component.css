@@ -31,6 +31,8 @@ button {
 
 img {
   position: relative;
+  width: 90%;
+  height: auto;
 }
 
 .description-text {
