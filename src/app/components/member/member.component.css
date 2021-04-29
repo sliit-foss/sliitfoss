@@ -2,6 +2,10 @@
   padding-bottom: 100px;
 }
 
+.member-wrapper{
+  margin-left:50px;
+}
+
 .txt {
   position: absolute;
   text-align: justify;
@@ -31,6 +35,8 @@ button {
 
 img {
   position: relative;
+  width: 85%;
+  height: auto;
 }
 
 .description-text {
@@ -38,7 +44,6 @@ img {
   line-height: normal;
   color: #525151;
   text-align: justify;
-  font-family: 'Baloo Thambi 2', cursive;
 }
 
 ul {
