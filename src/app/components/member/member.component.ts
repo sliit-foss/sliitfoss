@@ -27,6 +27,7 @@ export class MemberComponent implements OnInit {
       });
 
       });
+
   }
 
 
