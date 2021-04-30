@@ -2,6 +2,11 @@
   background: black;
 }
 
+.headerText{
+  font-size: 5rem;
+  font-weight: bold;
+  line-height:normal;
+}
 .card-img {
   border-radius: 12px 12px 0px 0px;
 }
