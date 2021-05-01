@@ -20,11 +20,10 @@ h2,
 h3,
 p {
   text-align: center;
-
 }
 
-.description{
-  font-weight:500 !important;
+.description {
+  font-weight: 500 !important;
 }
 
 .card {

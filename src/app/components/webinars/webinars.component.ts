@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as EventsData from '../../../assets/data/webinars.json';
 
-
 @Component({
   selector: 'app-webinars',
   templateUrl: './webinars.component.html',
@@ -40,6 +39,5 @@ export class WebinarsComponent implements OnInit {
 
   ngOnInit() {
     this.slides = EventsData.webinars;
-    
   }
 }

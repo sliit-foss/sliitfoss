@@ -13,7 +13,6 @@ import {
   styleUrls: ['./contact.component.css'],
 })
 export class ContactComponent implements OnInit {
-  
   contactForm: FormGroup;
 
   constructor(private fb: FormBuilder) {}

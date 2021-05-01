@@ -7,7 +7,7 @@
 h1 {
   font-weight: bold;
   font-size: 5rem;
-  line-height:normal;
+  line-height: normal;
 }
 
 .btn {
@@ -17,8 +17,5 @@ h1 {
 }
 .lead {
   font-size: large;
-  font-weight:400;
-
+  font-weight: 400;
 }
-
-
