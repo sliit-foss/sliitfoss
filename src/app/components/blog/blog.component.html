@@ -1,8 +1,29 @@
+<section class="fdb-block">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-12 col-md-6 col-lg-6">
+        <h1 class="headerText">The Blog</h1>
+        <p class="lead">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+      </div>
+      <div class="col-12 col-md-6 ml-md-auto mt-4 mt-md-0">
+        <img alt="image" class="img-fluid" src="../../../assets/img/2.svg">
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="latest-blog-section p-3 p-lg-5">
   <div class="container">
     <h2 class="section-title font-weight-bold mb-5">Latest Blog Posts</h2>
     <div class="row">
-      <div *ngFor="let post of blogPosts | slice: 0:10" class="col-md-4 mb-5">
+      <div
+        *ngFor="
+          let post of blogPost
+            | paginate
+              : { itemsPerPage: 10, currentPage: page, totalItems: totalLength }
+        "
+        class="col-md-4 mb-5"
+      >
         <div class="card">
           <img
             alt="image"
@@ -27,11 +48,8 @@
         </div>
       </div>
     </div>
-    <mat-paginator
-      [length]="100"
-      [pageSizeOptions]="[5, 10, 25, 100]"
-      [pageSize]="10"
-    >
-    </mat-paginator>
+    <div class="row float-right my-pagination">
+      <pagination-controls (pageChange)="page = $event"></pagination-controls>
+    </div>
   </div>
 </section>

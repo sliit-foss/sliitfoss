@@ -1,5 +1,11 @@
 #member {
   padding-bottom: 100px;
+
+}
+
+
+.member-wrapper{
+  margin-left:50px;
 }
 
 .txt {
@@ -16,7 +22,7 @@
 }
 
 .h2 {
-  font-weight: 1000;
+  font-weight: bold;
   font-size: 2.5rem;
   /*line-height: 50px;*/
   margin-bottom: 1rem;
@@ -31,6 +37,8 @@ button {
 
 img {
   position: relative;
+  width: 85%;
+  height: auto;
 }
 
 .description-text {
@@ -38,7 +46,13 @@ img {
   line-height: normal;
   color: #525151;
   text-align: justify;
-  font-family: 'Baloo Thambi 2', cursive;
+}
+
+.description-text-wwd {
+  font-size: 1.1rem;
+  line-height: normal;
+  color: #525151;
+  text-align: center;
 }
 
 ul {
@@ -66,33 +80,144 @@ ul {
   border-color: #7272f5;
 }
 
-@include media-breakpoint-up(sm) {
-  .img-member {
-    height: 420em;
-    width: 420em;
-  }
+#descDiv {
+  padding-top: 18vh;
 }
 
-@media (min-width: 576px) {
+#coding-vector-div {
+  display: none;
+}
+
+
+@media only screen and (max-device-width: 1024px) {
+  #coding-vector-div {
+    display: none !important;
+  }
+
   .img-member {
-    height: 420px;
-    width: 420px;
+    margin-top: 50px !important;
+    height: 20em !important;
+    width: 20em !important;
   }
 
   .coding-vector {
-    height: 400px;
-    width: 400px;
+    height: 20em !important;
+    width: 20em !important;
+  }
+
+  #descDiv {
+    padding-top: 2vh;
+  }
+
+  #aboutDiv {
+    margin-top: 10vh;
+  }
+}
+
+@media only screen and (max-device-width: 768px) {
+  #coding-vector-div {
+    display: none !important;
+  }
+
+  .img-member {
+    margin-top: 50px !important;
+    height: 20em !important;
+    width: 20em !important;
+  }
+
+  .coding-vector {
+    height: 20em !important;
+    width: 20em !important;
+  }
+
+  #descDiv {
+    padding-top: 2vh;
   }
 }
 
 @media (max-width: 576px) {
   .img-member {
-    height: 315px;
-    width: 315px;
+    height: 20em !important;
+    width: 20em !important;
   }
 
   .coding-vector {
-    height: 300px;
-    width: 300px;
+    height: 20em !important;
+    width: 20em !important;
   }
+
+  #member {
+    padding-bottom: 35px !important;
+  }
+}
+
+@media only screen and (max-device-width: 425px) {
+  .img-member {
+    height: 26.25em !important;
+    width: 20.25em !important;
+  }
+
+  .coding-vector {
+    height: 26.25em !important;
+    width: 20.25em !important;
+  }
+
+  #firstVectorDiv {
+    margin-top: -10vh;
+    display: none !important;
+  }
+
+  #descDiv {
+    padding-top: 2vh;
+  }
+
+  #member {
+    padding-bottom: 25px !important;
+  }
+}
+
+
+.stats {
+  margin-top: 100px;
+}
+
+.counter-box {
+  display: block;
+  background: #f6f6f6;
+  padding: 40px 20px 37px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+.counter-box p {
+  margin: 5px 0 0;
+  padding: 0;
+  color: #909090;
+  font-size: 18px;
+  font-weight: 500
+}
+
+.counter-box i {
+  font-size: 60px;
+  margin: 0 0 15px;
+  color: #d2d2d2;
+
+}
+
+.counter {
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+  color: #666;
+  line-height: 28px
+}
+
+.counter-box.colored {
+  background: #5a5af3;
+}
+
+.counter-box.colored p,
+.counter-box.colored i,
+.counter-box.colored .counter {
+  color: #fff
 }

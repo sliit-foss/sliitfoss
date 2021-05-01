@@ -1,5 +1,18 @@
 <!-- ======= Contact Section ======= -->
-<h2 class="heading">CONTACT US</h2>
+<section class="fdb-block">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-12 col-md-6 col-lg-6">
+        <h1 class="headerText">Contact Us</h1>
+        <p class="lead">Fill up the form and our Team will get back to you within 24 hours.</p>
+      </div>
+      <div class="col-12 col-md-6 ml-md-auto mt-4 mt-md-0">
+        <img alt="image" class="img-fluid" src="../../../assets/img/2.svg">
+      </div>
+    </div>
+  </div>
+</section>
+<div class="contact-overlay">
 <section
   class="contact"
   data-aos="fade-up"
@@ -10,13 +23,7 @@
     <div class="row">
       <div class="col-lg-12">
         <div class="contact-us-cover-img d-sm-none d-md-block d-none">
-          <div class="d-flex justify-content-center">
-            <img
-              src="../../../assets/img/contactus.png"
-              alt="cover"
-              class="contact-us-cover-img"
-            />
-          </div>
+          <div class="d-flex justify-content-center"></div>
         </div>
       </div>
     </div>
@@ -48,55 +55,100 @@
       </div>
 
       <div class="col-lg-6">
-        <form action="#" method="post" role="form" class="php-email-form">
+        <form
+          [formGroup]="contactForm"
+          (ngSubmit)="contact()"
+          class="php-email-form"
+        >
           <div class="form-row">
             <div class="col-md-6 form-group">
               <input
                 type="text"
-                name="name"
+                formControlName="name"
                 class="form-control"
                 id="name"
                 placeholder="Your Name"
                 data-rule="minlen:4"
                 data-msg="Please enter at least 4 chars"
               />
-              <div class="validate"></div>
+              <div
+                *ngIf="
+                  this.contactForm.controls['name'].invalid &&
+                  (this.contactForm.controls['name'].dirty ||
+                    this.contactForm.controls['name'].touched)
+                "
+                class="validate"
+              >
+                Name is required
+              </div>
             </div>
             <div class="col-md-6 form-group">
               <input
                 type="email"
                 class="form-control"
-                name="email"
+                formControlName="email"
                 id="email"
                 placeholder="Your Email"
                 data-rule="email"
                 data-msg="Please enter a valid email"
               />
-              <div class="validate"></div>
+              <div
+                *ngIf="
+                  this.contactForm.controls['email'].invalid &&
+                  (this.contactForm.controls['email'].dirty ||
+                    this.contactForm.controls['email'].touched)
+                "
+                class="validate"
+              >
+                <div *ngIf="this.contactForm.controls['email'].errors.required">
+                  E-mail is required
+                </div>
+                <div *ngIf="this.contactForm.controls['email'].errors.email">
+                  E-mail not a valid format
+                </div>
+              </div>
             </div>
           </div>
           <div class="form-group">
             <input
               type="text"
               class="form-control"
-              name="subject"
+              formControlName="subject"
               id="subject"
               placeholder="Subject"
               data-rule="minlen:4"
               data-msg="Please enter at least 8 chars of subject"
             />
-            <div class="validate"></div>
+            <div
+              *ngIf="
+                this.contactForm.controls['subject'].invalid &&
+                (this.contactForm.controls['subject'].dirty ||
+                  this.contactForm.controls['subject'].touched)
+              "
+              class="validate"
+            >
+              Subject is required
+            </div>
           </div>
           <div class="form-group">
             <textarea
               class="form-control"
-              name="message"
+              formControlName="message"
               rows="5"
               data-rule="required"
               data-msg="Please write something for us"
               placeholder="Message"
             ></textarea>
-            <div class="validate"></div>
+            <div
+              *ngIf="
+                this.contactForm.controls['message'].invalid &&
+                (this.contactForm.controls['message'].dirty ||
+                  this.contactForm.controls['message'].touched)
+              "
+              class="validate"
+            >
+              Message is required
+            </div>
           </div>
           <div class="mb-3">
             <div class="loading">Loading</div>
@@ -106,11 +158,14 @@
             </div>
           </div>
           <div class="text-center">
-            <button type="submit">Send Message</button>
+            <button type="submit" [disabled]="!this.contactForm.valid">
+              Send Message
+            </button>
           </div>
         </form>
       </div>
     </div>
   </div>
 </section>
+</div>
 <!-- End Contact Section -->

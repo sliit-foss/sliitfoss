@@ -1,10 +1,24 @@
 <nav
-  class="navbar navbar-expand-md navbar-light row"
-  style="padding: 0; align-items: start"
+  [class.navbar-change]="navbarVariable"
+  class="navbar navbar-expand-md navbar-light"
 >
-  <div class="justify-content-start col" style="height: auto; width: 10rem">
+  <a class="navbar-brand" href="#">
+    <img
+      class="navbar-brand"
+      src="../../../../assets/img/logo-dark.png"
+      width="100"
+    />
+  </a>
+  <div
+    class="justify-content-start col"
+    style="height: auto; width: 10rem; padding-left: 0px"
+  >
     <a routerLink="/">
-      <img src="../../../../assets/img/FOSS-logo.png" alt="navbar image" />
+      <img
+        src="../../../../assets/img/FOSS-logo.png"
+        id="logo"
+        alt="navbar image"
+      />
     </a>
   </div>
 
@@ -38,7 +52,15 @@
         <li class="nav-item px-1">
           <a
             class="nav-link"
-            routerLink="/event"
+            routerLink="/about"
+            [routerLinkActive]="['active']"
+            >About</a
+          >
+        </li>
+        <li class="nav-item px-1">
+          <a
+            class="nav-link"
+            routerLink="/events"
             [routerLinkActive]="['active']"
             >Events</a
           >
@@ -56,14 +78,6 @@
         <li class="nav-item px-1">
           <a
             class="nav-link"
-            routerLink="/about"
-            [routerLinkActive]="['active']"
-            >About</a
-          >
-        </li>
-        <li class="nav-item px-1">
-          <a
-            class="nav-link"
             routerLink="/contact"
             [routerLinkActive]="['active']"
             >Contact</a
@@ -73,3 +87,7 @@
     </div>
   </div>
 </nav>
+
+<div id="top" class="uparrow">
+  <img src="../../../../assets/img/up-arrow.png" alt="" />
+</div>

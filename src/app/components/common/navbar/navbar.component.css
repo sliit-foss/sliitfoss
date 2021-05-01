@@ -2,6 +2,20 @@
   color: #5449cc !important;
 }
 
+body {
+  overflow-x: hidden;
+}
+
+.navbar-change {
+  position: fixed;
+  background-color: white;
+  height: 4.5rem;
+  width: 100%;
+  z-index: 999;
+  top: 0;
+  left: 0;
+}
+
 .vector-nav {
   position: absolute;
   margin-top: 12rem;
@@ -16,6 +30,7 @@
 }
 
 ul > li > a {
+  padding-top: 1.5rem;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -26,6 +41,14 @@ ul > li > a:hover {
   color: #5449cc;
 }
 
+.uparrow img {
+  width: 2%;
+  position: fixed;
+  margin-left: 93%;
+  margin-top: 40%;
+  z-index: 60;
+}
+
 @media (max-width: 500px) {
   .vector-nav {
     margin-top: 0rem;
@@ -34,15 +57,29 @@ ul > li > a:hover {
     z-index: -1;
   }
 
+  .navbar-toggler {
+    margin-right: -13px;
+  }
+
+  /* img {
+    margin-left: -50px !important;
+  } */
   .navbar-brand {
     position: absolute;
     margin-top: -6.5rem;
     margin-left: 1.2rem;
     z-index: 0;
   }
+
+  .uparrow img {
+    margin-top: 160%;
+    width: 8%;
+    z-index: 60;
+    margin-left: 90%;
+  }
 }
 
-@media (max-width: 766px) {
+@media (max-width: 768px) {
   .vector-nav {
     margin-top: 0rem;
     margin-left: -2rem;
@@ -55,4 +92,27 @@ ul > li > a:hover {
     margin-left: 1.2rem;
     z-index: 0;
   }
+
+  .uparrow img {
+    margin-top: 160%;
+    width: 7%;
+    z-index: 60;
+    margin-left: 90%;
+  }
+}
+
+.add-shadow {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 6px 20px 0px;
+}
+
+.navbar-brand {
+  margin-top: 0;
+}
+
+.navbar {
+  padding: 0;
+  align-items: start;
+  width: 100%;
+  margin-left: 0px;
+  margin-left: 0px;
 }

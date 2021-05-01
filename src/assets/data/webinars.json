@@ -1,0 +1,76 @@
+{
+  "webinars": [
+    {
+      "id": 1,
+      "title": "Angular Zero to Hero",
+      "speaker": "Sajeetharan Sinnathurai",
+      "date": "19/05/2020",
+      "img": "../../assets/img/events/ng-2020.jpg",
+      "link": "#"
+    },
+    {
+      "id": 2,
+      "title": "UX in Practice & What you can do",
+      "speaker": "Michela Thalagala",
+      "date": "20/06/2020",
+      "img": "../../assets/img/events/ux-1.jpg",
+      "link": "https://www.youtube.com/watch?v=rZUBLIZSwgk&t=139s"
+    },
+    {
+      "id": 3,
+      "title": "Introduction to Kubernetes",
+      "speaker": "Nilesh Jayanandana",
+      "date": "12/09/2020",
+      "img": "../../assets/img/events/k8s-intro.jpg",
+      "link": "https://www.youtube.com/watch?v=m3PCS0wrzwE"
+    },
+    {
+      "id": 4,
+      "title": "Building communities that last",
+      "speaker": "Juan Pablo Flores",
+      "date": "28/09/2020",
+      "img": "../../assets/img/events/github-community.jpg",
+      "link": "https://www.youtube.com/watch?v=489Do2NZoW0"
+    },
+    {
+      "id": 5,
+      "title": "Flutter: The next frontier in Mobile Development",
+      "speaker": "Kamal Shree",
+      "date": "19/12/2020",
+      "img": "../../assets/img/events/flutter-1.jpg",
+      "link": "https://www.youtube.com/watch?v=DfZFYswCotc&t=3852s"
+    },
+    {
+      "id": 6,
+      "title": "The Design Process",
+      "speaker": "Eugene Ebere",
+      "date": "29/01/2021",
+      "img": "../../assets/img/events/design-process.jpg",
+      "link": "https://www.youtube.com/watch?v=ZReSQJAMoGo&t=1969s"
+    },
+    {
+      "id": 7,
+      "title": "AWS Introduction for Developers",
+      "speaker": "Arshad Zackeriya",
+      "date": "09/02/2021",
+      "img": "../../assets/img/events/aws-intro.jpg",
+      "link": "https://www.youtube.com/watch?v=-rzL0Pu4Ma4"
+    },
+    {
+      "id": 8,
+      "title": "SpinUp with GCP",
+      "speaker": "Tharaka Devinda",
+      "date": "16/02/2021",
+      "img": "../../assets/img/events/gcp-intro-1.jpg",
+      "link": "https://youtu.be/K8wrCG2PF8Y"
+    },
+    {
+      "id": 9,
+      "title": "Intro to hacking games",
+      "speaker": "Osanda Malith Jayathissa",
+      "date": "25/04/2021",
+      "img": "../../assets/img/events/hacking-1.jpg",
+      "link": ""
+    }
+  ]
+}

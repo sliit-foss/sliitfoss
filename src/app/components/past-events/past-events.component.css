@@ -2,7 +2,7 @@
   content: '';
   background: #5a5af3;
   height: 5px;
-  width: 200px;
+  width: 180px;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -19,6 +19,12 @@
   margin-bottom: 40px;
   display: block;
   transform: translateY(8px);
+}
+
+.card:hover {
+  -webkit-box-shadow: 0px 0px 28px -16px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 28px -16px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 28px -16px rgba(0, 0, 0, 0.75);
 }
 
 .head-title {
@@ -41,7 +47,6 @@
 
 .card-text {
   padding-top: 8px;
-  font-family: 'Baloo Thambi 2', cursive;
 }
 
 .member-btn {
@@ -65,7 +70,7 @@
   width: 16.5rem;
   text-align: center;
   display: block;
-  height: 420px !important;
+  height: 30rem !important;
 }
 
 .card-img-top {
@@ -74,8 +79,46 @@
   object-fit: cover;
 }
 
-@media screen and (min-width: 375px) {
+/*@media only screen and (min-device-width: 414px) and (max-device-height: 736px) {
   .card {
-    margin-left: 38px !important;
+    margin-left: 60px !important;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) {
+  !* For mobile phones: *!
+  .card {
+    margin-left: 40px !important;
+  }
+}*/
+
+#slidCardDiv {
+  padding-left: 50px;
+}
+
+@media only screen and (max-device-width: 768px) {
+  #slidCardDiv {
+    margin-left: 65px !important;
+    padding-left: 0 !important;
+  }
+}
+
+@media only screen and (max-device-width: 425px) {
+  #slidCardDiv {
+    margin-left: 59px !important;
+    padding-left: 0 !important;
+  }
+}
+
+@media only screen and (max-device-width: 375px) {
+  #slidCardDiv {
+    margin-left: 28px !important;
+    padding-left: 0 !important;
+  }
+}
+@media only screen and (max-device-width: 320px) {
+  #slidCardDiv {
+    margin-left: 5px !important;
+    padding-left: 0 !important;
   }
 }

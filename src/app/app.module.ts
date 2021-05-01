@@ -12,18 +12,18 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { CodeOfConductComponent } from './components/code-of-conduct/code-of-conduct.component';
 import {
-  FontAwesomeModule,
   FaIconLibrary,
+  FontAwesomeModule,
 } from '@fortawesome/angular-fontawesome';
 import { faCoffee, faHandsHelping } from '@fortawesome/free-solid-svg-icons';
 
 import {
+  faCloudscale,
   faFacebook,
   faInstagram,
   faLinkedin,
   faTwitter,
   faYoutube,
-  faCloudscale,
 } from '@fortawesome/free-brands-svg-icons';
 import { PastEventsComponent } from './components/past-events/past-events.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
@@ -34,6 +34,11 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { LatestBlogPostsComponent } from './components/latest-blog-posts/latest-blog-posts.component';
 import { EventsComponent } from './components/events/events.component';
 import { MatCardModule } from '@angular/material/card';
+import { PodcastsectionComponent } from './components/home/podcastsection/podcastsection.component';
+import { WebinarsComponent } from './components/webinars/webinars.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { Page404Component } from './components/page404/page404.component';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 @NgModule({
   declarations: [
@@ -50,6 +55,9 @@ import { MatCardModule } from '@angular/material/card';
     BoardComponent,
     LatestBlogPostsComponent,
     EventsComponent,
+    PodcastsectionComponent,
+    WebinarsComponent,
+    Page404Component,
   ],
   imports: [
     BrowserModule,
@@ -61,6 +69,8 @@ import { MatCardModule } from '@angular/material/card';
     HttpClientModule,
     MatPaginatorModule,
     MatCardModule,
+    ReactiveFormsModule,
+    NgxPaginationModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

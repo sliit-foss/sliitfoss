@@ -1,14 +1,13 @@
 .heading {
   text-align: center;
-  font-family: 'Baloo Thambi 2', sans-serif;
   font-weight: bold;
   font-size: 2rem;
   color: #5a5af3;
   padding-bottom: 20px;
 }
+
 .intro {
   text-align: center;
-  font-family: 'Baloo Thambi 2', sans-serif;
   font-size: 1rem;
 }
 
@@ -20,8 +19,12 @@
 h2,
 h3,
 p {
-  font-family: 'Baloo Thambi 2', sans-serif;
   text-align: center;
+
+}
+
+.description{
+  font-weight:500 !important;
 }
 
 .card {
@@ -35,18 +38,6 @@ p {
 
 a:hover {
   text-decoration: none;
-}
-
-.img-fluid-1 img {
-  height: 100%;
-  width: 80%;
-  transition: 1s ease;
-}
-.img-fluid-1 img:hover {
-  -webkit-transform: scale(0.8);
-  -ms-transform: scale(0.8);
-  transform: scale(0.8);
-  transition: 1s ease;
 }
 
 /*--------------------------------------------------------------
@@ -120,6 +111,7 @@ a:hover {
   text-align: justify;
   line-height: 1.6;
 }
+
 .why-us .video-box {
   position: relative;
 }
@@ -364,12 +356,15 @@ a:hover {
   margin-bottom: 0;
 }
 
+/*Deprecated*/
 .text-mission {
   text-align: left;
   font-weight: bold;
   font-size: 30px;
   color: #5a5af3;
 }
+
+/*Deprecated*/
 .text-description {
   text-align: justify;
   font-weight: normal;
@@ -378,6 +373,7 @@ a:hover {
   color: #343a40;
 }
 
+/*Deprecated*/
 .text-vision {
   text-align: left;
   font-weight: bold;

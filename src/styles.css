@@ -8,6 +8,9 @@ body {
   margin: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
     'Lucida Sans', Arial, sans-serif;
+
+  background-color: #ffffff;
+
 }
 
 .text-color-primary {
@@ -42,4 +45,13 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
     'Lucida Sans', Arial, sans-serif;
   text-transform: uppercase;
+}
+
+.page-title {
+  color: #5a5af3;
+  text-align: center;
+  font-size: 2rem;
+  padding-bottom: 4rem;
+  text-transform: uppercase;
+  font-weight: bold;
 }

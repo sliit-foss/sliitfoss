@@ -1,3 +1,5 @@
+
+
 .heading::before {
   content: '';
   background: #5a5af3;
@@ -27,19 +29,7 @@
 
 h2,
 p {
-  font-family: 'Baloo Thambi 2', sans-serif;
   text-align: center;
-}
-
-.contact-us-cover-img {
-  margin-bottom: 50px;
-  height: 400px;
-  width: auto;
-  position: relative;
-}
-
-.contact-row {
-  margin-top: 20px;
 }
 
 /*--------------------------------------------------------------
@@ -49,6 +39,20 @@ p {
   padding-bottom: 30px;
 }
 
+.contact-overlay{
+  background-image: url('../../../assets/img/WorldMap.svg');
+  background-position:top;
+}
+
+.headerText{
+  font-size: 5rem;
+  font-weight: bold;
+  line-height:normal;
+}
+
+.lead{
+  text-align: left;
+}
 .contact .info-box {
   color: #444;
   text-align: center;
@@ -88,7 +92,6 @@ p {
 }
 
 .contact .php-email-form .validate {
-  display: none;
   color: red;
   margin: 0 0 15px 0;
   font-weight: 400;
@@ -192,4 +195,12 @@ p {
 
 fa-icon {
   font-size: 20px;
+}
+
+.info-box {
+  background-color: #fff;
+}
+
+form {
+  background-color: #fff;
 }

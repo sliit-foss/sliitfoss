@@ -1,0 +1,24 @@
+.container-fluid {
+  width: 100% !important;
+  background-color: #f4f4f4;
+  background-image: url('../../../../assets/img/WorldMap.svg');
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 5rem;
+  line-height:normal;
+}
+
+.btn {
+  background-color: #5a5af3 !important;
+  border-radius: 50px;
+  color: white;
+}
+.lead {
+  font-size: large;
+  font-weight:400;
+
+}
+
+
