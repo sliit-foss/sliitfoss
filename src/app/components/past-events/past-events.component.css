@@ -47,7 +47,6 @@
 
 .card-text {
   padding-top: 8px;
-  font-family: 'Baloo Thambi 2', cursive;
 }
 
 .member-btn {
@@ -71,7 +70,7 @@
   width: 16.5rem;
   text-align: center;
   display: block;
-  height: 390px !important;
+  height: 30rem !important;
 }
 
 .card-img-top {

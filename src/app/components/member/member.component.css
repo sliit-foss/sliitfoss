@@ -2,6 +2,10 @@
   padding-bottom: 100px;
 }
 
+.member-wrapper {
+  margin-left: 50px;
+}
+
 .txt {
   position: absolute;
   text-align: justify;
@@ -31,6 +35,8 @@ button {
 
 img {
   position: relative;
+  width: 85%;
+  height: auto;
 }
 
 .description-text {
@@ -38,7 +44,13 @@ img {
   line-height: normal;
   color: #525151;
   text-align: justify;
-  font-family: 'Baloo Thambi 2', cursive;
+}
+
+.description-text-wwd {
+  font-size: 1.1rem;
+  line-height: normal;
+  color: #525151;
+  text-align: center;
 }
 
 ul {
@@ -159,4 +171,48 @@ ul {
   #member {
     padding-bottom: 25px !important;
   }
+}
+
+.stats {
+  margin-top: 100px;
+}
+
+.counter-box {
+  display: block;
+  background: #f6f6f6;
+  padding: 40px 20px 37px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+.counter-box p {
+  margin: 5px 0 0;
+  padding: 0;
+  color: #909090;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.counter-box i {
+  font-size: 60px;
+  margin: 0 0 15px;
+  color: #d2d2d2;
+}
+
+.counter {
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+  color: #666;
+  line-height: 28px;
+}
+
+.counter-box.colored {
+  background: #5a5af3;
+}
+
+.counter-box.colored p,
+.counter-box.colored i,
+.counter-box.colored .counter {
+  color: #fff;
 }

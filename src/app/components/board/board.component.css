@@ -7,10 +7,6 @@
   color: #313437;
 }
 
-.team-boxed p {
-  color: #7d8285;
-}
-
 .team-boxed h2 {
   font-weight: bold;
   margin-bottom: 40px;
@@ -57,7 +53,6 @@
   margin-top: 28px;
   margin-bottom: 0px;
   color: inherit;
-  font-family: 'Baloo Thambi 2', cursive;
 }
 
 .team-boxed .item .title {

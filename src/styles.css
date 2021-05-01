@@ -45,3 +45,12 @@ body {
     'Lucida Sans', Arial, sans-serif;
   text-transform: uppercase;
 }
+
+.page-title {
+  color: #5a5af3;
+  text-align: center;
+  font-size: 2rem;
+  padding-bottom: 4rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
