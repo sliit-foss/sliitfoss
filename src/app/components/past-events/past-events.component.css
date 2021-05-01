@@ -34,8 +34,8 @@
 }
 
 .past-events-section {
-  margin-top: 40px;
-  margin-bottom: 60px;
+  margin-top: 100px;
+  margin-bottom: 80px;
 }
 
 .card-title {
@@ -70,7 +70,7 @@
   width: 16.5rem;
   text-align: center;
   display: block;
-  height: 30rem !important;
+  height: 25rem !important;
 }
 
 .card-img-top {
