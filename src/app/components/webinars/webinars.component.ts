@@ -34,7 +34,7 @@ export class WebinarsComponent implements OnInit {
         items: 4,
       },
     },
-    nav: true,
+    nav: false,
   };
 
   ngOnInit() {
