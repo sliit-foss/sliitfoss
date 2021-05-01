@@ -10,6 +10,7 @@ body {
     'Lucida Sans', Arial, sans-serif;
 
   background-color: #ffffff;
+  min-width: 600px;
 }
 
 .text-color-primary {
