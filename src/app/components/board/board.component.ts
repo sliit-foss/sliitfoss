@@ -12,7 +12,7 @@ export class BoardComponent implements OnInit {
 
   ngOnInit() {
     this.board = BoardData[2020];
-    console.log(this.board);
+    //console.log(this.board);
     AOS.init();
   }
 }
