@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import Config from '../../../config/config';
+declare let AOS: any;
 
 @Component({
   selector: 'app-blog',
@@ -17,6 +18,7 @@ export class BlogComponent implements OnInit {
   constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
+    AOS.init();
     try {
       this.getCards().subscribe((results) => {
         this.blogPost = results['items'];

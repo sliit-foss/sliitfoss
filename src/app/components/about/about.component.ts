@@ -6,6 +6,7 @@ import {
   faUsers,
 } from '@fortawesome/free-solid-svg-icons';
 
+
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
@@ -18,6 +19,5 @@ export class AboutComponent implements OnInit {
   faUsers = faUsers;
   faMagic = faMagic;
   ngOnInit(): void {
-    
   }
 }
