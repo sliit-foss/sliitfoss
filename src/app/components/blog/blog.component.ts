@@ -8,22 +8,26 @@ import Config from '../../../config/config';
   styleUrls: ['./blog.component.css'],
 })
 export class BlogComponent implements OnInit {
-  blogPosts: [];
+  totalLength: any;
 
-  constructor(private http: HttpClient) {
-    this.getBlogPosts()
-      .forEach((e) => {
-        this.blogPosts = e['items'];
-      })
-      .then((r) => {})
-      .catch((e) => {
-        //  TODO: if couldn't load Blog posts
+  page = 1;
+
+  blogPost: any = [];
+
+  constructor(private http: HttpClient) {}
+
+  ngOnInit(): void {
+    try {
+      this.getCards().subscribe((results) => {
+        this.blogPost = results['items'];
+        this.totalLength = results['items'].length;
+        console.log(this.blogPost);
+        console.log(this.totalLength);
       });
+    } catch (e) {}
   }
 
-  ngOnInit(): void {}
-
-  getBlogPosts() {
+  getCards() {
     return this.http.get(Config.BLOG_URL);
   }
 

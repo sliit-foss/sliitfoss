@@ -34,8 +34,8 @@
 }
 
 .past-events-section {
-  margin-top: 40px;
-  margin-bottom: 60px;
+  margin-top: 100px;
+  margin-bottom: 80px;
 }
 
 .card-title {
@@ -47,7 +47,6 @@
 
 .card-text {
   padding-top: 8px;
-  font-family: 'Baloo Thambi 2', cursive;
 }
 
 .member-btn {
@@ -71,7 +70,7 @@
   width: 16.5rem;
   text-align: center;
   display: block;
-  height: 390px !important;
+  height: 25rem !important;
 }
 
 .card-img-top {
@@ -80,14 +79,46 @@
   object-fit: cover;
 }
 
-@media only screen and (min-device-width: 414px) and (max-device-height: 736px) {
+/*@media only screen and (min-device-width: 414px) and (max-device-height: 736px) {
   .card {
     margin-left: 60px !important;
   }
 }
+
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) {
-  /* For mobile phones: */
+  !* For mobile phones: *!
   .card {
     margin-left: 40px !important;
+  }
+}*/
+
+#slidCardDiv {
+  padding-left: 50px;
+}
+
+@media only screen and (max-device-width: 768px) {
+  #slidCardDiv {
+    margin-left: 65px !important;
+    padding-left: 0 !important;
+  }
+}
+
+@media only screen and (max-device-width: 425px) {
+  #slidCardDiv {
+    margin-left: 59px !important;
+    padding-left: 0 !important;
+  }
+}
+
+@media only screen and (max-device-width: 375px) {
+  #slidCardDiv {
+    margin-left: 28px !important;
+    padding-left: 0 !important;
+  }
+}
+@media only screen and (max-device-width: 320px) {
+  #slidCardDiv {
+    margin-left: 5px !important;
+    padding-left: 0 !important;
   }
 }

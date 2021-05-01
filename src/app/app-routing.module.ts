@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { HomeComponent } from './components/home/home.component';
@@ -16,7 +16,7 @@ const routes: Routes = [
   { path: 'code-conduct', component: CodeOfConductComponent },
   { path: 'blog', component: BlogComponent },
   { path: 'board', component: BoardComponent },
-  { path: 'event', component: EventsComponent },
+  { path: 'events', component: EventsComponent },
   { path: '404-page', component: Page404Component },
   { path: '**', component: Page404Component },
 ];

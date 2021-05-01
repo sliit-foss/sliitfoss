@@ -1,6 +1,16 @@
+.my-pagination /deep/ .ngx-pagination .current {
+  background: black;
+}
+
+.headerText {
+  font-size: 5rem;
+  font-weight: bold;
+  line-height: normal;
+}
 .card-img {
   border-radius: 12px 12px 0px 0px;
 }
+
 .card {
   border-radius: 12px;
   display: block;
@@ -39,3 +49,27 @@
   background: #7272f5;
   border-color: #7272f5;
 }
+
+/*@media only screen and (max-device-width: 768px) {
+  .card {
+    margin-left: 60px !important;
+  }
+}
+
+@media only screen and (max-device-width: 425px) {
+  .card {
+    margin-left: 72px !important;
+  }
+}
+
+@media only screen and (max-device-width: 375px) {
+  .card {
+    margin-left: 49px !important;
+  }
+}
+
+@media only screen and (max-device-width: 320px) {
+  .card {
+    margin-left: 13px !important;
+  }
+}*/
