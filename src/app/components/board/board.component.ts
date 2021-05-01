@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as BoardData from '../../../assets/data/board.json';
-declare let AOS: any;
+
 
 @Component({
   selector: 'app-board',
@@ -13,6 +13,5 @@ export class BoardComponent implements OnInit {
   ngOnInit() {
     this.board = BoardData[2020];
     console.log(this.board);
-    AOS.init();
   }
 }

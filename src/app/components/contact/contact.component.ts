@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-declare let AOS: any;
 import {
   faAddressBook,
   faEnvelope,
@@ -23,7 +22,6 @@ export class ContactComponent implements OnInit {
   faPhoneAlt = faPhoneAlt;
 
   ngOnInit() {
-    AOS.init();
     this.contactForm = this.fb.group({
       name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],

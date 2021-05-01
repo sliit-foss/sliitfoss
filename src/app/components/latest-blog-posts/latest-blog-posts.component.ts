@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import Config from '../../../config/config';
-declare let AOS: any;
 
 @Component({
   selector: 'app-latest-blog-posts',
@@ -22,9 +21,7 @@ export class LatestBlogPostsComponent implements OnInit {
       });
   }
 
-  ngOnInit(): void {
-    AOS.init();
-  }
+  ngOnInit(): void {}
 
   getBlogPosts() {
     return this.http.get(Config.BLOG_URL);
