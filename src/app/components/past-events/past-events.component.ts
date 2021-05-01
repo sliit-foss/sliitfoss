@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as EventsData from '../../../assets/data/events.json';
+declare let AOS: any;
 
 @Component({
   selector: 'app-past-events',
@@ -39,5 +40,6 @@ export class PastEventsComponent implements OnInit {
 
   ngOnInit() {
     this.slides = EventsData.events;
+    AOS.init();
   }
 }
