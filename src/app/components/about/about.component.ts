@@ -5,7 +5,7 @@ import {
   faMagic,
   faUsers,
 } from '@fortawesome/free-solid-svg-icons';
-declare let AOS: any;
+
 
 @Component({
   selector: 'app-about',
@@ -19,6 +19,5 @@ export class AboutComponent implements OnInit {
   faUsers = faUsers;
   faMagic = faMagic;
   ngOnInit(): void {
-    AOS.init();
   }
 }

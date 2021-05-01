@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import * as BoardData from '../../../assets/data/board.json';
 declare let AOS: any;
 
+
 @Component({
   selector: 'app-board',
   templateUrl: './board.component.html',
