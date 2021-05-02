@@ -16,8 +16,20 @@ export class MemberComponent implements OnInit {
   ngOnInit(): void {
     this.loadCounters();
 
-    const count = this.getGitHubRepositoryCount();
-    console.log('Count : ', count);
+    let count = 0;
+    this.getGitHubRepositoryCount()
+      .forEach(() => {
+        count++;
+      })
+      .then((r) => {})
+      .catch((e) => {
+        console.error(e.message);
+      });
+
+    // If GET request failed
+    if (count === 0) {
+      count = 10;
+    }
   }
 
   getGitHubRepositoryCount() {
