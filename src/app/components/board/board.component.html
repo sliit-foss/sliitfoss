@@ -4,15 +4,15 @@
       <p class="page-title" data-aos="fade-up">Board of Officials - 2020/21</p>
     </div>
 
-    <select>
-      <option  *ngFor="let year of board | keyvalue" [value] = 'year'>{{year.key}}</option>
+    <select (change) ="selectChangeHandler($event)">
+      <option  *ngFor="let year of board | keyvalue" [value] = 'year.key'>{{year.key}}</option>
     </select>
 
     <div class="row people">
       <!-- {{ board | json }} -->
       <div
         class="col-md-4 col-lg-3 item"
-        *ngFor="let member of board[2020]; let i = index"
+        *ngFor="let member of board[selectYear]; let i = index"
       >
         <div class="box">
           <img

@@ -9,11 +9,17 @@ import * as BoardData from '../../../assets/data/board.json';
 })
 export class BoardComponent implements OnInit {
   board: any = [];
+  selectYear;
 
+  selectChangeHandler (event: any){
+    this.selectYear = event.target.value;
+  }
 
   ngOnInit() {
     this.board = BoardData.year;
-    console.log(this.board);
-    console.log(BoardData.year[2020]);
+    //console.log(this.board);
+
+    console.log(this.selectYear);
+
   }
 }
