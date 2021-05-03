@@ -18,8 +18,5 @@ export class BoardComponent implements OnInit {
   ngOnInit() {
     this.board = BoardData.year;
     //console.log(this.board);
-
-    console.log(this.selectYear);
-
   }
 }

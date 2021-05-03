@@ -1,10 +1,10 @@
 <div class="team-boxed">
   <div class="container">
     <div class="intro">
-      <p class="page-title" data-aos="fade-up">Board of Officials - 2020/21</p>
+      <p class="page-title" data-aos="fade-up">Board of Officials - {{selectYear}}</p>
     </div>
 
-    <select (change) ="selectChangeHandler($event)">
+    <select (change) ="selectChangeHandler($event)" >
       <option  *ngFor="let year of board | keyvalue" [value] = 'year.key'>{{year.key}}</option>
     </select>
 
