@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as BoardData from '../../../assets/data/board.json';
 
-
 @Component({
   selector: 'app-board',
   templateUrl: './board.component.html',
@@ -9,9 +8,9 @@ import * as BoardData from '../../../assets/data/board.json';
 })
 export class BoardComponent implements OnInit {
   board: any = [];
-  selectYear;
+  selectYear = 2020;
 
-  selectChangeHandler (event: any){
+  selectChangeHandler(event: any) {
     this.selectYear = event.target.value;
   }
 

@@ -1,19 +1,23 @@
 <div class="team-boxed">
   <div class="container">
     <div class="intro">
-      <p class="page-title" data-aos="fade-up">
+      <p class="page-title pb-5" data-aos="fade-up">
         Board of Officials - {{ selectYear }}
       </p>
     </div>
 
     <div class="d-flex justify-content-center">
       <div class="col-xs-2">
-    <select class="form-control form-control-sm" (change)="selectChangeHandler($event)">
-      <option *ngFor="let year of board | keyvalue" [value]="year.key">
-        {{ year.key }}
-      </option>
-    </select>
-  </div>
+        <select
+          class="form-control form-control-sm"
+          (change)="selectChangeHandler($event)"
+        >
+          <option value="0" selected>Select Year</option>
+          <option *ngFor="let year of board | keyvalue" [value]="year.key">
+            {{ year.key }}
+          </option>
+        </select>
+      </div>
     </div>
     <div class="row people">
       <!-- {{ board | json }} -->
