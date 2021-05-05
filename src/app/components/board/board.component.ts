@@ -8,7 +8,7 @@ import * as BoardData from '../../../assets/data/board.json';
 })
 export class BoardComponent implements OnInit {
   board: any = [];
-  selectYear;
+  selectYear = 2020;
 
   selectChangeHandler(event: any) {
     this.selectYear = event.target.value;
