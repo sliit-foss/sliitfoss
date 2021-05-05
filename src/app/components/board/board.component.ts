@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import * as BoardData from '../../../assets/data/board.json';
-declare let AOS: any;
 
 @Component({
   selector: 'app-board',
@@ -9,10 +8,14 @@ declare let AOS: any;
 })
 export class BoardComponent implements OnInit {
   board: any = [];
+  selectYear;
+
+  selectChangeHandler(event: any) {
+    this.selectYear = event.target.value;
+  }
 
   ngOnInit() {
-    this.board = BoardData[2020];
+    this.board = BoardData.year;
     //console.log(this.board);
-    AOS.init();
   }
 }

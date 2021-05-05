@@ -15,8 +15,8 @@ export class LatestBlogPostsComponent implements OnInit {
       .forEach((e) => {
         this.blogPosts = e['items'];
       })
-      .then((r) => {})
-      .catch((e) => {
+      .then()
+      .catch(() => {
         //  TODO: if couldn't load Blog posts
       });
   }

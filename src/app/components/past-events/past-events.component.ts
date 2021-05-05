@@ -24,17 +24,17 @@ export class PastEventsComponent implements OnInit {
       0: {
         items: 1,
       },
-      400: {
+      550: {
         items: 2,
       },
-      740: {
+      825: {
         items: 3,
       },
-      940: {
+      1100: {
         items: 4,
       },
     },
-    nav: true,
+    nav: false,
   };
 
   ngOnInit() {
