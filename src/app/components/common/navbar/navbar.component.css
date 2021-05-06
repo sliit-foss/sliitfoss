@@ -6,7 +6,7 @@ body {
   overflow-x: hidden;
 }
 
-.navbar-change {
+.navbar-fixed {
   position: fixed;
   background-color: white;
   height: 4.5rem;
@@ -41,12 +41,20 @@ ul > li > a:hover {
   color: #5449cc;
 }
 
-.uparrow img {
-  width: 2%;
+.uparrow {
   position: fixed;
-  margin-left: 93%;
-  margin-top: 40%;
-  z-index: 60;
+  right: 100px;
+  bottom: 100px;
+  z-index: 100000;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.uparrow img {
+  width: 2rem;
 }
 
 @media (max-width: 500px) {
@@ -101,7 +109,7 @@ ul > li > a:hover {
   }
 }
 
-.add-shadow {
+.shadow {
   box-shadow: rgba(60, 64, 67, 0.3) 0px 6px 20px 0px;
 }
 
