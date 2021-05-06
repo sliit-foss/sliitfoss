@@ -79,11 +79,9 @@ ul > li > a:hover {
     z-index: 0;
   }
 
-  .uparrow img {
-    margin-top: 160%;
-    width: 8%;
-    z-index: 60;
-    margin-left: 90%;
+  .uparrow {
+    bottom: 50px;
+    right: 50px;
   }
 }
 
@@ -99,13 +97,6 @@ ul > li > a:hover {
     margin-top: -6.5rem;
     margin-left: 1.2rem;
     z-index: 0;
-  }
-
-  .uparrow img {
-    margin-top: 160%;
-    width: 7%;
-    z-index: 60;
-    margin-left: 90%;
   }
 }
 
