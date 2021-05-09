@@ -1,7 +1,88 @@
 {
   "year": {
     "2018": [],
-    "2019": [],
+    "2019": [
+      {
+        "id": 1,
+        "name": "Nimesh Nishara",
+        "position": "President",
+        "img": "../../../assets/img/board/Nimesh.webp",
+        "facebook": "https://www.facebook.com//",
+        "twitter": "https://twitter.com/",
+        "instagram": "https://www.instagram.com//",
+        "linkedin": "https://www.linkedin.com/in/"
+      },
+      {
+        "id": 2,
+        "name": "Thavisha De Silva",
+        "position": "Vice President",
+        "img": "../../../assets/img/board/Thavisha.webp",
+        "facebook": "http://facebook.com/",
+        "twitter": "http://twitter.com/",
+        "instagram": "http://instagram.com//",
+        "linkedin": "http://linkedin.com/in//"
+      },
+      {
+        "id": 3,
+        "name": "Sandamith Wanigasuriya",
+        "position": "Secretary",
+        "img": "",
+        "facebook": "https://www.facebook.com/",
+        "twitter": "https://twitter.com/",
+        "instagram": "https://www.instagram.com//",
+        "linkedin": "https://www.linkedin.com/in//"
+      },
+      {
+        "id": 4,
+        "name": "Kaveesha Gimhana",
+        "position": "Assistant Secretary",
+        "img": "../../../assets/img/board/kaveesha.webp",
+        "facebook": "https://www.facebook.com/kaveesha.yaka.gimhana/",
+        "twitter": "https://twitter.com/Kaveeshag",
+        "instagram": "https://www.instagram.com/kaveesha__gimhana/",
+        "linkedin": "https://linkedin.kaveeshagimhana.com/"
+      },
+      {
+        "id": 5,
+        "name": "Kushantha Charuka",
+        "position": "Treasurer",
+        "img": "../../../assets/img/board/kushantha.webp",
+        "facebook": "https://www.facebook.com//",
+        "twitter": "https://twitter.com/",
+        "instagram": "https://www.instagram.com//",
+        "linkedin": "https://linkedin.kaveeshagimhana.com/"
+      },
+      {
+        "id": 6,
+        "name": "Hirusha Kumarasinghe",
+        "position": "Assistant Treasurer",
+        "img": "",
+        "facebook": "https://www.facebook.com/",
+        "twitter": "https://twitter.com/",
+        "instagram": "https://www.instagram.com//",
+        "linkedin": "https://www.linkedin.com/in/"
+      },
+      {
+        "id": 7,
+        "name": "Chamod Sheshanka",
+        "position": "Dev Relations",
+        "img": "../../../assets/img/board/chamod.webp",
+        "facebook": "http://facebook.com/chamodshehanka",
+        "twitter": "http://twitter.com/chamodshehanka",
+        "instagram": "http://instagram.com/chamodshehanka/",
+        "linkedin": "http://linkedin.com/in/chamodshehanka/"
+      },
+      {
+        "id": 8,
+        "name": "Malith Bandara",
+        "position": "Editor",
+        "img": "../../../assets/img/board/malith.webp",
+        "facebook": "https://www.facebook.com/",
+        "twitter": "https://twitter.com/",
+        "instagram": "https://www.instagram.com//",
+        "linkedin": "https://www.linkedin.com/in//"
+      }
+    ],
     "2020": [
       {
         "id": 1,
