@@ -4,16 +4,12 @@
   font-size: 2rem;
   color: #5a5af3;
   padding-bottom: 20px;
+  line-height: 2rem;
 }
 
 .intro {
   text-align: center;
   font-size: 1rem;
-}
-
-.features {
-  margin-bottom: 80px;
-  padding-bottom: 80px;
 }
 
 h2,
@@ -218,10 +214,6 @@ a:hover {
 /*--------------------------------------------------------------
 # Our Services
 --------------------------------------------------------------*/
-.services {
-  margin-bottom: 80px;
-  padding-top: 40px;
-}
 
 .services .icon-box {
   padding: 30px;

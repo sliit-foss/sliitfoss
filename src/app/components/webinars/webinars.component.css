@@ -33,11 +33,6 @@
     'Lucida Sans', Arial, sans-serif;
 }
 
-.past-events-section {
-  margin-top: 40px;
-  margin-bottom: 60px;
-}
-
 .card-title {
   font-size: 12pt;
   font-weight: bold;
@@ -71,6 +66,8 @@
   text-align: center;
   display: block;
   height: 400px !important;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .card-img-top {
@@ -79,34 +76,4 @@
 }
 .card-body {
   min-height: 95px;
-}
-
-@media only screen and (max-width: 600px) {
-  .carousel-box {
-    margin-left: 11em;
-  }
-}
-
-@media only screen and (min-width: 600px) {
-  .carousel-box {
-    margin-left: 11em;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .carousel-box {
-    margin-left: 5.25em;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  .carousel-box {
-    margin-left: 3em;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .carousel-box {
-    margin-left: 4em;
-  }
 }
