@@ -1,6 +1,77 @@
 {
   "year": {
-    "2018": [],
+    "2018": [
+      {
+        "id": 1,
+        "name": "Nandun Bandara",
+        "position": "President",
+        "img": "https://avatars.githubusercontent.com/u/14901805?v=4",
+        "facebook": "https://www.facebook.com//",
+        "twitter": "https://twitter.com/",
+        "instagram": "https://www.instagram.com//",
+        "linkedin": "https://www.linkedin.com/in/"
+      },
+      {
+        "id": 2,
+        "name": "Ishan Yapa",
+        "position": "Vice President",
+        "img": "../../../assets/img/board/2018/ishan.jpg",
+        "facebook": "http://facebook.com/",
+        "twitter": "http://twitter.com/",
+        "instagram": "http://instagram.com//",
+        "linkedin": "http://linkedin.com/in//"
+      },
+      {
+        "id": 3,
+        "name": "Valuka Rukmali",
+        "position": "Secretary",
+        "img": "../../../assets/img/board/2018/valuka.jpg",
+        "facebook": "https://www.facebook.com/",
+        "twitter": "https://twitter.com/",
+        "instagram": "https://www.instagram.com//",
+        "linkedin": "https://www.linkedin.com/in//"
+      },
+      {
+        "id": 4,
+        "name": "Thavisha De Silva",
+        "position": "Treasurer",
+        "img": "../../../assets/img/board/Thavisha.webp",
+        "facebook": "http://facebook.com/",
+        "twitter": "http://twitter.com/",
+        "instagram": "http://instagram.com//",
+        "linkedin": "http://linkedin.com/in//"
+      },
+      {
+        "id": 5,
+        "name": "Nimesh Nishara",
+        "position": "Assistant Treasurer",
+        "img": "../../../assets/img/board/Nimesh.webp",
+        "facebook": "https://www.facebook.com//",
+        "twitter": "https://twitter.com/",
+        "instagram": "https://www.instagram.com//",
+        "linkedin": "https://www.linkedin.com/in/"
+      },
+      {
+        "id": 6,
+        "name": "Kushantha Charuka",
+        "position": "Editor",
+        "img": "../../../assets/img/board/kushantha.webp",
+        "facebook": "https://www.facebook.com//",
+        "twitter": "https://twitter.com/",
+        "instagram": "https://www.instagram.com//",
+        "linkedin": "https://linkedin.kaveeshagimhana.com/"
+      },
+      {
+        "id": 7,
+        "name": "Theekshana",
+        "position": "Assistant Secretary",
+        "img": "",
+        "facebook": "https://www.facebook.com//",
+        "twitter": "https://twitter.com/",
+        "instagram": "https://www.instagram.com//",
+        "linkedin": "https://linkedin.kaveeshagimhana.com/"
+      }
+    ],
     "2019": [
       {
         "id": 1,
