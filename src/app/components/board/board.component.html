@@ -1,31 +1,30 @@
 <section class="team-boxed auto-space auto-space-vertical">
   <div class="intro">
     <p class="page-title pb-5" data-aos="fade-up">
-      Board of Officials - {{ selectYear }}
+      Board of Officials - {{ selectedYear }}
     </p>
   </div>
 
   <div class="d-flex justify-content-center">
     <div class="col-xs-2">
-      <select
-        class="form-control form-control-sm"
-        (change)="selectChangeHandler($event)"
-      >
-        <option value="0" selected>Select Year</option>
-        <option *ngFor="let year of board | keyvalue" [value]="year.key">
-          {{ year.key }}
-        </option>
-      </select>
+      <mat-form-field appearance="fill">
+        <mat-label>Select Year</mat-label>
+        <mat-select (selectionChange)="selectChangeHandler($event)">
+          <mat-option *ngFor="let year of board | keyvalue" [value]="year.key">
+            {{ year.key }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
     </div>
   </div>
 </section>
 
 <section class="team-boxed auto-space auto-space-vertical pt-0">
-  <div class="row people" *ngIf="board[selectYear].length > 0">
+  <div class="row people" *ngIf="board[selectedYear].length > 0">
     <!-- {{ board | json }} -->
     <div
       class="col-12 col-sm-6 col-md-4 col-lg-3 item"
-      *ngFor="let member of board[selectYear]; let i = index"
+      *ngFor="let member of board[selectedYear]; let i = index"
     >
       <div class="box">
         <img
@@ -52,7 +51,7 @@
       </div>
     </div>
   </div>
-  <div *ngIf="board[selectYear].length === 0" class="error-block">
+  <div *ngIf="board[selectedYear].length === 0" class="error-block">
     <div class="pb-4">
       <i class="fa fa-frown-o text-muted"></i>
     </div>
