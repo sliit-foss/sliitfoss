@@ -1,5 +1,5 @@
 # label first stage as 'builder'
-FROM node:8-alpine as builder
+FROM node:12-alpine as builder
 
 COPY package.json package-lock.json ./
 
