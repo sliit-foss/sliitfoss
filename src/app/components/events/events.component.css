@@ -9,14 +9,6 @@
   text-align: inherit;
 }
 
-.event-cover-img {
-  margin-left: auto;
-  margin-right: 20px;
-  height: 350px;
-  width: 100%;
-  object-fit: contain;
-}
-
 .btn {
   background: #5a5af3;
   color: #fff;

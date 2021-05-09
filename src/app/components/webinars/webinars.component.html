@@ -1,33 +1,31 @@
-<section class="past-events-section">
+<section class="container-fluid auto-space auto-space-vertical">
   <div class="text-center">
     <h1 class="head-title">WEBINARS</h1>
   </div>
-  <div class="carousel-box" style="padding-top: 40px">
+  <br />
+  <div class="carousel-box">
     <owl-carousel-o [options]="customOptions">
       <ng-template carouselSlide *ngFor="let slide of slides; let i = index">
-        <div class="row">
-          <div class="col-3">
-            <div class="card h-100">
-              <img
-                src="{{ slide.img }}"
-                class="card-img-top"
-                alt="Image not available"
-              />
-              <div class="card-body">
-                <h5 class="card-title">{{ slide.title }}</h5>
-                <div style="margin-top: -10px">
-                  <!-- <small>
-                    <i class="fa fa-user">&nbsp;</i>{{ slide.speaker }}
-                  </small> -->
-                </div>
-                <p class="card-text">
-                  {{ slide.description }}
-                </p>
-              </div>
-              <a href="{{ slide.link }}" target="_blank"
-                ><button class="member-btn btn-sm">View</button></a
-              >
+        <div class="card">
+          <img
+            src="{{ slide.img }}"
+            class="card-img-top"
+            alt="Image not available"
+          />
+          <div class="card-body">
+            <h5 class="card-title">{{ slide.title }}</h5>
+            <div style="margin-top: -10px">
+              <!-- <small>
+                  <i class="fa fa-user">&nbsp;</i>{{ slide.speaker }}
+                </small> -->
             </div>
+            <p class="card-text">
+              {{ slide.description }}
+            </p>
+
+            <a href="{{ slide.link }}" target="_blank">
+              <button class="member-btn btn-sm">View</button>
+            </a>
           </div>
         </div>
       </ng-template>
