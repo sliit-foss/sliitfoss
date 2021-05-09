@@ -2,7 +2,7 @@ name: Platformer Generated production Build
 'on':
   push:
     tags:
-      - v.*
+      - '*'
 jobs:
   build:
     runs-on:
