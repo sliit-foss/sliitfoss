@@ -3,6 +3,7 @@
 html,
 body {
   height: 100%;
+
 }
 
 body {
@@ -16,6 +17,7 @@ body {
 h2 {
   line-height: 2.5rem !important;
 }
+
 
 .text-color-primary {
   color: #5a5af3;
