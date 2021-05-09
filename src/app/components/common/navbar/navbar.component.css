@@ -7,6 +7,7 @@
 
 .nav-link.active {
   color: #5449cc !important;
+  border-bottom: 3px solid #5449cc;
 }
 
 .exclusive-banner {
