@@ -14,10 +14,8 @@ export class NavbarComponent implements OnInit {
       $(window).scroll(function () {
         if ($(this).scrollTop() > 40) {
           $('#top').fadeIn();
-          $('.navbar').addClass('add-shadow');
         } else {
           $('#top').fadeOut();
-          $('.navbar').removeClass('add-shadow');
         }
       });
 
@@ -27,18 +25,14 @@ export class NavbarComponent implements OnInit {
     });
   }
 
-  navbarVariable = false;
   @HostListener('document:scroll')
   scrollFunction() {
-    if (
-      document.body.scrollTop > 100 ||
-      document.documentElement.scrollTop > 50
-    ) {
-      this.navbarVariable = true;
-      document.getElementById('logo').style.display = 'none';
+    if ($(window).scrollTop() > 60) {
+      $('#logo').fadeOut();
+      $('.navbar').addClass(['navbar-fixed', 'shadow']);
     } else {
-      this.navbarVariable = false;
-      document.getElementById('logo').style.display = 'block';
+      $('#logo').fadeIn();
+      $('.navbar').removeClass(['navbar-fixed', 'shadow']);
     }
   }
 }

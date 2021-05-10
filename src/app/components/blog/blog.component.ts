@@ -9,9 +9,7 @@ import Config from '../../../config/config';
 })
 export class BlogComponent implements OnInit {
   totalLength: any;
-
   page = 1;
-
   blogPost: any = [];
 
   constructor(private http: HttpClient) {}
@@ -21,8 +19,6 @@ export class BlogComponent implements OnInit {
       this.getCards().subscribe((results) => {
         this.blogPost = results['items'];
         this.totalLength = results['items'].length;
-        console.log(this.blogPost);
-        console.log(this.totalLength);
       });
     } catch (e) {}
   }

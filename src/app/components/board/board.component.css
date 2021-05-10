@@ -32,10 +32,6 @@
   margin-bottom: 0;
 }
 
-.team-boxed .people {
-  padding: 30px 0;
-}
-
 .team-boxed .item {
   text-align: center;
 }
@@ -113,4 +109,12 @@
   color: #000;
   text-transform: uppercase;
   font-size: 22pt;
+}
+
+.error-block {
+  text-align: center;
+}
+
+.error-block .fa {
+  font-size: 4em;
 }

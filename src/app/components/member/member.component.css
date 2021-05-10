@@ -3,11 +3,15 @@
 
 }
 
-
-.member-wrapper{
-  margin-left:50px;
+.hero-text{
+  font-weight: bold;
+  font-size: 3rem;
+  line-height:normal !important;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-
 .txt {
   position: absolute;
   text-align: justify;
@@ -42,17 +46,10 @@ img {
 }
 
 .description-text {
-  font-size: 1.1rem;
-  line-height: normal;
+  font-size: 1.2rem;
+  line-height: 2rem;
   color: #525151;
   text-align: justify;
-}
-
-.description-text-wwd {
-  font-size: 1.1rem;
-  line-height: normal;
-  color: #525151;
-  text-align: center;
 }
 
 ul {
@@ -87,7 +84,6 @@ ul {
 #coding-vector-div {
   display: none;
 }
-
 
 @media only screen and (max-device-width: 1024px) {
   #coding-vector-div {
@@ -170,15 +166,6 @@ ul {
   #descDiv {
     padding-top: 2vh;
   }
-
-  #member {
-    padding-bottom: 25px !important;
-  }
-}
-
-
-.stats {
-  margin-top: 100px;
 }
 
 .counter-box {
@@ -194,14 +181,13 @@ ul {
   padding: 0;
   color: #909090;
   font-size: 18px;
-  font-weight: 500
+  font-weight: 500;
 }
 
 .counter-box i {
   font-size: 60px;
   margin: 0 0 15px;
   color: #d2d2d2;
-
 }
 
 .counter {
@@ -209,7 +195,7 @@ ul {
   font-size: 32px;
   font-weight: 700;
   color: #666;
-  line-height: 28px
+  line-height: 28px;
 }
 
 .counter-box.colored {
@@ -219,5 +205,5 @@ ul {
 .counter-box.colored p,
 .counter-box.colored i,
 .counter-box.colored .counter {
-  color: #fff
+  color: #fff;
 }
