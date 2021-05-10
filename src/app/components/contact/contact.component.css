@@ -43,14 +43,18 @@ p {
 }
 
 .headerText {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: bold;
-  line-height: normal;
+  line-height: 4rem;
 }
 
 .lead {
-  text-align: left;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: #525151;
+  text-align: justify;
 }
+
 .contact .info-box {
   color: #444;
   text-align: center;

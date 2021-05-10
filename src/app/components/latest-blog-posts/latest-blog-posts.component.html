@@ -1,13 +1,11 @@
-<section class="latest-blog-section p-3 p-lg-5">
+<section class="auto-space auto-space-vertical">
   <div class="text-center">
     <h1 class="head-title">Latest Blog Posts</h1>
   </div>
-  <div class="container" id="cardContainer">
-    <div class="row">
-      <div
-        *ngFor="let post of blogPosts | slice: 0:4"
-        class="col-sm-12 col-md-3 mb-5"
-      >
+  <br />
+  <div>
+    <owl-carousel-o [options]="customOptions">
+      <ng-template *ngFor="let post of blogPosts; let i = index" carouselSlide>
         <div class="card">
           <img
             alt="image"
@@ -18,21 +16,19 @@
           />
           <div class="card-body">
             <h4 class="card-title">{{ post.title }}</h4>
+          </div>
+
+          <div class="card-footer text-muted bg-transparent border-top-0">
+            <div class="views pb-2">
+              Published on {{ getDaysCount(post.pubDate) }}
+            </div>
             <a class="btn sliit-foss-btn" href="{{ post.link }}" target="_blank"
               >Read More</a
             >
           </div>
-
-          <div
-            class="card-footer text-muted d-flex justify-content-between bg-transparent border-top-0"
-          >
-            <div class="views">
-              Published on {{ getDaysCount(post.pubDate) }}
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
+      </ng-template>
+    </owl-carousel-o>
   </div>
 </section>
 

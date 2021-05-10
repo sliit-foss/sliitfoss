@@ -6,8 +6,12 @@
 
 h1 {
   font-weight: bold;
-  font-size: 5rem;
-  line-height: normal;
+  font-size: 4rem;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 2rem;
 }
 
 .btn {
@@ -16,6 +20,7 @@ h1 {
   color: white;
 }
 .lead {
-  font-size: large;
+  font-size: 1.2rem;
+  line-height: 2rem;
   font-weight: 400;
 }

@@ -4,16 +4,22 @@
   font-size: 2rem;
   color: #5a5af3;
   padding-bottom: 20px;
+  line-height: 2rem;
+}
+
+.hero-text {
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: normal !important;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .intro {
   text-align: center;
   font-size: 1rem;
-}
-
-.features {
-  margin-bottom: 80px;
-  padding-bottom: 80px;
 }
 
 h2,
@@ -218,10 +224,6 @@ a:hover {
 /*--------------------------------------------------------------
 # Our Services
 --------------------------------------------------------------*/
-.services {
-  margin-bottom: 80px;
-  padding-top: 40px;
-}
 
 .services .icon-box {
   padding: 30px;
