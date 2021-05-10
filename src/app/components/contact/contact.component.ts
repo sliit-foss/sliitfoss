@@ -41,12 +41,11 @@ export class ContactComponent implements OnInit {
       )
       .then(
         (result: EmailJSResponseStatus) => {
-          console.log(result.text);
+          console.log('EmailJs Resp : ' + result.text);
         },
         (error) => {
           console.log(error.text);
         }
       );
-    console.log(this.contactForm.value);
   }
 }
