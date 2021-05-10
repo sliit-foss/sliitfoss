@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
-
 import {
   faAddressBook,
   faEnvelope,
   faPhoneAlt,
 } from '@fortawesome/free-solid-svg-icons';
+import { environment } from '../../../environments/environment.prod';
 
 @Component({
   selector: 'app-contact',
@@ -34,10 +34,10 @@ export class ContactComponent implements OnInit {
   contact(e: Event) {
     emailjs
       .sendForm(
-        'service_664o6wc',
-        'template_sqhcmau',
+        environment.emailServiceId,
+        environment.emailTemplateId,
         e.target as HTMLFormElement,
-        'user_WyMiG19mwb6vTGJwqJq5C'
+        environment.emailUserId
       )
       .then(
         (result: EmailJSResponseStatus) => {
