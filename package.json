@@ -33,6 +33,7 @@
     "@fortawesome/free-regular-svg-icons": "^5.13.0",
     "@fortawesome/free-solid-svg-icons": "^5.15.2",
     "bootstrap": "^4.4.1",
+    "emailjs-com": "^2.6.4",
     "jquery": "^3.5.1",
     "ngx-owl-carousel-o": "^5.0.0",
     "ngx-pagination": "^5.0.0",

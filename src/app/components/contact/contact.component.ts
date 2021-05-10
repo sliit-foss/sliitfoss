@@ -1,10 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
 import {
   faAddressBook,
   faEnvelope,
   faPhoneAlt,
 } from '@fortawesome/free-solid-svg-icons';
+import { environment } from '../../../environments/environment.prod';
 
 @Component({
   selector: 'app-contact',
@@ -29,7 +31,21 @@ export class ContactComponent implements OnInit {
     });
   }
 
-  contact() {
-    console.log(this.contactForm.value);
+  contact(e: Event) {
+    emailjs
+      .sendForm(
+        environment.emailServiceId,
+        environment.emailTemplateId,
+        e.target as HTMLFormElement,
+        environment.emailUserId
+      )
+      .then(
+        (result: EmailJSResponseStatus) => {
+          console.log('EmailJs Resp : ' + result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   }
 }
