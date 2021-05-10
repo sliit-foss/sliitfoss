@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
+
 import {
   faAddressBook,
   faEnvelope,
@@ -29,7 +31,22 @@ export class ContactComponent implements OnInit {
     });
   }
 
-  contact() {
+  contact(e: Event) {
+    emailjs
+      .sendForm(
+        'service_664o6wc',
+        'template_sqhcmau',
+        e.target as HTMLFormElement,
+        'user_WyMiG19mwb6vTGJwqJq5C'
+      )
+      .then(
+        (result: EmailJSResponseStatus) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
     console.log(this.contactForm.value);
   }
 }
