@@ -145,8 +145,8 @@ p {
   font-size: 14px;
 }
 
-.contact .email-form input::focus,
-.contact .email-form textarea::focus {
+.contact .email-form input:focus,
+.contact .email-form textarea:focus {
   background-color: #68a4c4;
 }
 
