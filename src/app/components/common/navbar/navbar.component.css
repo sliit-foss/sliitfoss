@@ -1,4 +1,36 @@
-.nav-link {
+.active {
+  color: #5449cc !important;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.navbar-fixed {
+  position: fixed;
+  background-color: white;
+  height: 4.5rem;
+  width: 100%;
+  z-index: 999;
+  top: 0;
+  left: 0;
+}
+
+.vector-nav {
+  position: absolute;
+  margin-top: 12rem;
+  margin-left: -2rem;
+  z-index: -1;
+}
+
+.navbar-brand {
+  position: absolute;
+  margin-top: 4.5rem;
+  margin-left: 1.2rem;
+}
+
+ul > li > a {
+  padding-top: 1.5rem;
   text-transform: uppercase;
   font-weight: bold;
   margin: 0 1em;
@@ -10,12 +42,20 @@
   border-bottom: 3px solid #5449cc;
 }
 
-.exclusive-banner {
+.uparrow {
   position: fixed;
-  left: 0;
-  top: 0;
-  width: 250px;
+  right: 100px;
+  bottom: 100px;
   z-index: 100000;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.uparrow img {
+  width: 2rem;
 }
 
 .exclusive-banner img {
@@ -26,4 +66,27 @@
   .exclusive-banner {
     width: 200px;
   }
+
+  .uparrow img {
+    margin-top: 160%;
+    width: 7%;
+    z-index: 60;
+    margin-left: 90%;
+  }
+}
+
+.shadow {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 6px 20px 0px;
+}
+
+.navbar-brand {
+  margin-top: 0;
+}
+
+.navbar {
+  padding: 0;
+  align-items: start;
+  width: 100%;
+  margin-left: 0px;
+  margin-left: 0px;
 }
