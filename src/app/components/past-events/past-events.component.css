@@ -33,11 +33,6 @@
     'Lucida Sans', Arial, sans-serif;
 }
 
-.past-events-section {
-  margin-top: 40px;
-  margin-bottom: 60px;
-}
-
 .card-title {
   font-size: 12pt;
   font-weight: bold;
@@ -70,7 +65,9 @@
   width: 16.5rem;
   text-align: center;
   display: block;
-  height: 30rem !important;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .card-img-top {
@@ -91,34 +88,3 @@
     margin-left: 40px !important;
   }
 }*/
-
-#slidCardDiv {
-  padding-left: 50px;
-}
-
-@media only screen and (max-device-width: 768px) {
-  #slidCardDiv {
-    margin-left: 65px !important;
-    padding-left: 0 !important;
-  }
-}
-
-@media only screen and (max-device-width: 425px) {
-  #slidCardDiv {
-    margin-left: 59px !important;
-    padding-left: 0 !important;
-  }
-}
-
-@media only screen and (max-device-width: 375px) {
-  #slidCardDiv {
-    margin-left: 28px !important;
-    padding-left: 0 !important;
-  }
-}
-@media only screen and (max-device-width: 320px) {
-  #slidCardDiv {
-    margin-left: 5px !important;
-    padding-left: 0 !important;
-  }
-}

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
-declare let AOS: any;
+import { HttpClient } from '@angular/common/http';
+import Config from '../../../config/config';
 
 @Component({
   selector: 'app-member',
@@ -8,29 +9,51 @@ declare let AOS: any;
   styleUrls: ['./member.component.css'],
 })
 export class MemberComponent implements OnInit {
+  reposCount: number;
 
-  constructor() {
-
-  }
+  constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
-    $(document).ready(function() {
-      $('.counter').each(function () {
-      $(this).prop('Counter',0).animate({
-      Counter: $(this).text()
-      }, {
-      duration: 4000,
-      easing: 'swing',
-      step: function (now) {
-      $(this).text(Math.ceil(now));
-      }
-      });
+    this.loadCounters();
+
+    let count = 0;
+    this.getGitHubRepositoryCount()
+      .forEach(() => {
+        count++;
+      })
+      .then((r) => {})
+      .catch((e) => {
+        console.error(e.message);
       });
 
-      });
-
-      AOS.init();
+    // If GET request failed
+    if (count === 0) {
+      count = 10;
+    }
   }
 
+  getGitHubRepositoryCount() {
+    return this.http.get(Config.GITHUB_API_ORG_REPO_URL);
+  }
 
+  loadCounters() {
+    $(document).ready(function () {
+      $('.counter').each(function () {
+        $(this)
+          .prop('Counter', 0)
+          .animate(
+            {
+              Counter: $(this).text(),
+            },
+            {
+              duration: 4000,
+              easing: 'swing',
+              step: function (now) {
+                $(this).text(Math.ceil(now));
+              },
+            }
+          );
+      });
+    });
+  }
 }

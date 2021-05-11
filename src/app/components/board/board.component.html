@@ -1,38 +1,60 @@
-<div class="team-boxed">
-  <div class="container">
-    <div class="intro">
-      <p class="page-title">Board of Officials - 2020/21</p>
+<section class="team-boxed auto-space auto-space-vertical">
+  <div class="intro">
+    <p class="page-title pb-5" data-aos="fade-up">
+      Board of Officials - {{ selectedYear }}
+    </p>
+  </div>
+
+  <div class="d-flex justify-content-center">
+    <div class="col-xs-2">
+      <mat-form-field appearance="fill">
+        <mat-label>Select Year</mat-label>
+        <mat-select (selectionChange)="selectChangeHandler($event)">
+          <mat-option *ngFor="let year of board | keyvalue" [value]="year.key">
+            {{ year.key }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
     </div>
-    <div class="row people">
-      <!-- {{ board | json }} -->
-      <div
-        class="col-md-4 col-lg-3 item"
-        *ngFor="let member of board; let i = index"
-      >
-        <div class="box">
-          <img
-            class="rounded-circle"
-            data-bs-hover-animate="pulse"
-            src="{{ member.img }}"
-          />
-          <h3 class="name">{{ member.name }}</h3>
-          <p class="title">{{ member.position }}</p>
-          <div class="social">
-            <a href="{{ member.facebook }}" target="_blank"
-              ><i class="fa fa-facebook-official"></i
-            ></a>
-            <a href="{{ member.twitter }}" target="_blank"
-              ><i class="fa fa-twitter"></i
-            ></a>
-            <a href="{{ member.instagram }}" target="_blank"
-              ><i class="fa fa-instagram"></i
-            ></a>
-            <a href="{{ member.linkedin }}" target="_blank"
-              ><i class="fa fa-linkedin"></i
-            ></a>
-          </div>
+  </div>
+</section>
+
+<section class="team-boxed auto-space auto-space-vertical pt-0">
+  <div class="row people" *ngIf="board[selectedYear].length > 0">
+    <!-- {{ board | json }} -->
+    <div
+      class="col-12 col-sm-6 col-md-4 col-lg-3 item"
+      *ngFor="let member of board[selectedYear]; let i = index"
+    >
+      <div class="box">
+        <img
+          class="rounded-circle"
+          data-bs-hover-animate="pulse"
+          src="{{ member.img }}"
+        />
+        <h3 class="name">{{ member.name }}</h3>
+        <p class="title">{{ member.position }}</p>
+        <div class="social">
+          <a href="{{ member.facebook }}" target="_blank"
+            ><i class="fa fa-facebook-official"></i
+          ></a>
+          <a href="{{ member.twitter }}" target="_blank"
+            ><i class="fa fa-twitter"></i
+          ></a>
+          <a href="{{ member.instagram }}" target="_blank"
+            ><i class="fa fa-instagram"></i
+          ></a>
+          <a href="{{ member.linkedin }}" target="_blank"
+            ><i class="fa fa-linkedin"></i
+          ></a>
         </div>
       </div>
     </div>
   </div>
-</div>
+  <div *ngIf="board[selectedYear].length === 0" class="error-block">
+    <div class="pb-4">
+      <i class="fa fa-frown-o text-muted"></i>
+    </div>
+    <h1 class="text-muted">Sorry, We did not find any records!</h1>
+  </div>
+</section>

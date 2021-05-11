@@ -33,11 +33,6 @@
     'Lucida Sans', Arial, sans-serif;
 }
 
-.past-events-section {
-  margin-top: 40px;
-  margin-bottom: 60px;
-}
-
 .card-title {
   font-size: 12pt;
   font-weight: bold;
@@ -71,7 +66,8 @@
   text-align: center;
   display: block;
   height: 400px !important;
-  margin-left: 35px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .card-img-top {
@@ -80,28 +76,4 @@
 }
 .card-body {
   min-height: 95px;
-}
-
-@media only screen and (max-device-width: 768px) {
-  .card {
-    margin-left: 60px !important;
-  }
-}
-
-@media only screen and (max-device-width: 425px) {
-  .card {
-    margin-left: 72px !important;
-  }
-}
-
-@media only screen and (max-device-width: 375px) {
-  .card {
-    margin-left: 49px !important;
-  }
-}
-
-@media only screen and (max-device-width: 320px) {
-  .card {
-    margin-left: 13px !important;
-  }
 }
