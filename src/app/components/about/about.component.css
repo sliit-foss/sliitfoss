@@ -7,10 +7,10 @@
   line-height: 2rem;
 }
 
-.hero-text{
+.hero-text {
   font-weight: bold;
   font-size: 3rem;
-  line-height:normal !important;
+  line-height: normal !important;
   margin-bottom: 1rem;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   -webkit-background-clip: text;
