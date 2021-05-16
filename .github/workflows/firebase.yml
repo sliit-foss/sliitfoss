@@ -1,4 +1,4 @@
-name: Firebase CI/CD
+name: Firebase CD
 
 on:
   push:

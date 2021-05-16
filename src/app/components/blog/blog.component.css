@@ -3,9 +3,9 @@
 }
 
 .headerText {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: bold;
-  line-height: normal;
+  line-height: 4rem;
 }
 .card-img {
   border-radius: 12px 12px 0px 0px;
@@ -48,6 +48,13 @@
 .sliit-foss-btn:hover {
   background: #7272f5;
   border-color: #7272f5;
+}
+
+.lead {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: #525151;
+  text-align: justify;
 }
 
 /*@media only screen and (max-device-width: 768px) {

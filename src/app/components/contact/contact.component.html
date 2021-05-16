@@ -2,25 +2,26 @@
 <section class="fdb-block">
   <div class="container">
     <div class="row align-items-center">
-      <div
-        class="col-12 col-md-6 col-lg-6"
-        data-aos="fade-up"
-        data-aos-duration="1000"
-      >
+      <div class="col-12 col-md-6 col-lg-6">
         <h1 class="headerText">Contact Us</h1>
         <p class="lead">
           Fill up the form and our Team will get back to you within 24 hours.
         </p>
       </div>
-      <div class="col-12 col-md-6 ml-md-auto mt-4 mt-md-0" data-aos="fade-left">
+      <div class="col-12 col-md-6 ml-md-auto mt-4 mt-md-0">
         <img alt="image" class="img-fluid" src="../../../assets/img/2.svg" />
       </div>
     </div>
   </div>
 </section>
 <div class="contact-overlay">
-  <section class="contact">
-    <div class="container" data-aos="fade-up" data-aos-duration="2000">
+  <!-- rm data-aos='fade-up' form below section as it isn't visible -->
+  <section
+    class="contact"
+    data-aos-easing="ease-in-out"
+    data-aos-duration="500"
+  >
+    <div class="container">
       <div class="row">
         <div class="col-lg-12">
           <div class="contact-us-cover-img d-sm-none d-md-block d-none">
@@ -49,7 +50,7 @@
               <div class="info-box">
                 <fa-icon [icon]="faPhoneAlt"></fa-icon>
                 <h3>Call Us</h3>
-                <p>121212121212</p>
+                <p>+94775633985</p>
               </div>
             </div>
           </div>
@@ -58,8 +59,8 @@
         <div class="col-lg-6">
           <form
             [formGroup]="contactForm"
-            (ngSubmit)="contact()"
-            class="php-email-form"
+            (submit)="contact($event)"
+            class="email-form"
           >
             <div class="form-row">
               <div class="col-md-6 form-group">
@@ -92,6 +93,7 @@
                   placeholder="Your Email"
                   data-rule="email"
                   data-msg="Please enter a valid email"
+                  name="user_email"
                 />
                 <div
                   *ngIf="
@@ -121,6 +123,7 @@
                 placeholder="Subject"
                 data-rule="minlen:4"
                 data-msg="Please enter at least 8 chars of subject"
+                name="subject"
               />
               <div
                 *ngIf="
@@ -141,6 +144,7 @@
                 data-rule="required"
                 data-msg="Please write something for us"
                 placeholder="Message"
+                name="message"
               ></textarea>
               <div
                 *ngIf="

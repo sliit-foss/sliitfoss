@@ -39,6 +39,10 @@ import { WebinarsComponent } from './components/webinars/webinars.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { Page404Component } from './components/page404/page404.component';
 import { NgxPaginationModule } from 'ngx-pagination';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatSelectModule } from '@angular/material/select';
 
 @NgModule({
   declarations: [
@@ -71,6 +75,14 @@ import { NgxPaginationModule } from 'ngx-pagination';
     MatCardModule,
     ReactiveFormsModule,
     NgxPaginationModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+      // Register the ServiceWorker as soon as the app is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000',
+    }),
+    MatFormFieldModule,
+    MatSelectModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

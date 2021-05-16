@@ -4,12 +4,17 @@ html,
 body {
   height: 100%;
 }
+
 body {
   margin: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
     'Lucida Sans', Arial, sans-serif;
-
   background-color: #ffffff;
+  padding-top: 100px;
+}
+
+h2 {
+  line-height: 2.5rem !important;
 }
 
 .text-color-primary {
@@ -53,4 +58,73 @@ body {
   padding-bottom: 4rem;
   text-transform: uppercase;
   font-weight: bold;
+  line-height: 2rem;
+}
+
+.row {
+  margin: 0 !important;
+}
+
+.auto-space {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.auto-space-vertical {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+@media (max-width: 575.98px) {
+  .auto-space {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .auto-space-vertical {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  body {
+    padding-top: 150px;
+  }
+}
+
+@media (min-width: 576px) {
+  .auto-space {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .auto-space-vertical {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .auto-space {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .auto-space-vertical {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .auto-space {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .auto-space-vertical {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
 }

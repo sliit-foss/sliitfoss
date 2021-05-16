@@ -1,47 +1,28 @@
-<nav
-  [class.navbar-change]="navbarVariable"
-  class="navbar navbar-expand-md navbar-light"
->
-  <a class="navbar-brand" href="#">
-    <img
-      class="navbar-brand"
-      src="../../../../assets/img/logo-dark.png"
-      width="100"
-    />
-  </a>
-  <div
-    class="justify-content-start col"
-    style="height: auto; width: 10rem; padding-left: 0px"
-  >
-    <a routerLink="/">
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/">
       <img
-        src="../../../../assets/img/FOSS-logo.png"
-        id="logo"
-        alt="navbar image"
+        class="navbar-brand"
+        src="../../../../assets/img/logo-dark.webp"
+        width="100"
       />
     </a>
-  </div>
-
-  <div
-    class="container justify-content-end col"
-    style="padding: 0.25rem 0.75rem; align-items: end"
-  >
     <button
       class="navbar-toggler"
       type="button"
       data-bs-toggle="collapse"
-      data-bs-target="#navbarToggler"
-      aria-controls="navbarToggler"
+      data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown"
       aria-expanded="false"
       aria-label="Toggle navigation"
     >
       <span class="navbar-toggler-icon"></span>
     </button>
-
-    <div class="collapse navbar-collapse" id="navbarToggler">
-      <ul class="navbar-nav ml-auto align-items-end">
-        <li class="nav-item px-1">
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
           <a
+            data-bs-target="#navbarNavDropdown"
             class="nav-link"
             routerLink="/"
             [routerLinkActive]="['active']"
@@ -49,34 +30,45 @@
             >Home</a
           >
         </li>
-        <li class="nav-item px-1">
+        <li class="nav-item">
           <a
+            data-bs-target="#navbarNavDropdown"
             class="nav-link"
             routerLink="/about"
             [routerLinkActive]="['active']"
             >About</a
           >
         </li>
-        <li class="nav-item px-1">
+        <li class="nav-item">
           <a
+            data-bs-target="#navbarNavDropdown"
             class="nav-link"
             routerLink="/events"
             [routerLinkActive]="['active']"
             >Events</a
           >
         </li>
-        <li class="nav-item px-1">
-          <a class="nav-link" routerLink="board" [routerLinkActive]="['active']"
+        <li class="nav-item">
+          <a
+            data-bs-target="#navbarNavDropdown"
+            class="nav-link"
+            routerLink="board"
+            [routerLinkActive]="['active']"
             >Board</a
           >
         </li>
-        <li class="nav-item px-1">
-          <a class="nav-link" routerLink="/blog" [routerLinkActive]="['active']"
+        <li class="nav-item">
+          <a
+            data-bs-target="#navbarNavDropdown"
+            class="nav-link"
+            routerLink="/blog"
+            [routerLinkActive]="['active']"
             >Blogs</a
           >
         </li>
-        <li class="nav-item px-1">
+        <li class="nav-item">
           <a
+            data-bs-target="#navbarNavDropdown"
             class="nav-link"
             routerLink="/contact"
             [routerLinkActive]="['active']"
@@ -88,6 +80,10 @@
   </div>
 </nav>
 
-<div id="top" class="uparrow">
-  <img src="../../../../assets/img/up-arrow.png" alt="" />
+<div class="exclusive-banner">
+  <img
+    src="../../../../assets/img/FOSS-logo.webp"
+    id="logo"
+    alt="navbar image"
+  />
 </div>
