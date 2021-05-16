@@ -42,6 +42,7 @@ export class ContactComponent implements OnInit {
       .then(
         (result: EmailJSResponseStatus) => {
           console.log('EmailJs Resp : ' + result.text);
+          this.contactForm.reset();
         },
         (error) => {
           console.log(error.text);
