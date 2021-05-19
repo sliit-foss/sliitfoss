@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "sliitfoss-ac5d9"
+  },
+  "targets": {
+    "sliitfoss-ac5d9": {
+      "hosting": {
+        "sliitfoss": [
+          "sliitfoss-ac5d9"
+        ]
+      }
+    }
   }
 }
