@@ -20,11 +20,10 @@
 </section>
 
 <section class="team-boxed auto-space auto-space-vertical pt-0">
-  <div class="row people" *ngIf="board[selectedYear].length > 0">
-    <!-- {{ board | json }} -->
+  <div class="row people">
     <div
       class="col-12 col-sm-6 col-md-4 col-lg-3 item"
-      *ngFor="let member of board[selectedYear]; let i = index"
+      *ngFor="let member of boardMembers | async; let i = index"
     >
       <div class="box">
         <img
@@ -35,6 +34,9 @@
         <h3 class="name">{{ member.name }}</h3>
         <p class="title">{{ member.position }}</p>
         <div class="social">
+          <a href="{{ member.github }}" target="_blank"
+            ><i class="fa fa-github"></i
+          ></a>
           <a href="{{ member.facebook }}" target="_blank"
             ><i class="fa fa-facebook-official"></i
           ></a>
@@ -51,10 +53,11 @@
       </div>
     </div>
   </div>
-  <div *ngIf="board[selectedYear].length === 0" class="error-block">
-    <div class="pb-4">
-      <i class="fa fa-frown-o text-muted"></i>
-    </div>
-    <h1 class="text-muted">Sorry, We did not find any records!</h1>
-  </div>
+  <!--  <div *ngIf="board[selectedYear].length === 0" class="error-block">-->
+  <!--    <div class="pb-4">-->
+  <!--      <i class="fa fa-frown-o text-muted"></i>-->
+  <!--    </div>-->
+  <!--    <h1 class="text-muted">Sorry, We did not find any records!</h1>-->
+  <!--  </div>-->
+  <!--  Test-->
 </section>

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as BoardData from '../../../assets/data/board.json';
+import { AngularFirestore } from '@angular/fire/firestore';
 
 @Component({
   selector: 'app-board',
@@ -8,7 +9,13 @@ import * as BoardData from '../../../assets/data/board.json';
 })
 export class BoardComponent implements OnInit {
   board: any = [];
-  selectedYear = 2020;
+  selectedYear = 2021;
+
+  boardMembers = this.firestore
+    .collection('boards')
+    .doc(this.selectedYear.toString() || '2021')
+    .collection('members')
+    .valueChanges({ idField: 'id' });
 
   selectChangeHandler(event: any) {
     this.selectedYear = event.value;
@@ -17,4 +24,6 @@ export class BoardComponent implements OnInit {
   ngOnInit() {
     this.board = BoardData.year;
   }
+
+  constructor(private firestore: AngularFirestore) {}
 }
