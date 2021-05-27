@@ -45,6 +45,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { NoRecordAlertComponent } from './components/board/no-record-alert/no-record-alert.component';
 
 @NgModule({
   declarations: [
@@ -64,6 +65,7 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
     PodcastsectionComponent,
     WebinarsComponent,
     Page404Component,
+    NoRecordAlertComponent,
   ],
   imports: [
     BrowserModule,
