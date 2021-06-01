@@ -3,7 +3,7 @@
 ![Firebase CI/CD](https://github.com/sliit-foss/sliitfoss/workflows/Firebase%20CI/CD/badge.svg)
 
 
-## Technologies Stack
+## Technology Stack
 
 <img width="1436" alt="sliit-foss-tech" src="https://user-images.githubusercontent.com/37530024/120324529-5ea3a300-c304-11eb-9aac-3d258c67277b.png">
 
