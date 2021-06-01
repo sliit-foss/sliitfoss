@@ -49,7 +49,8 @@ git push --set-upstream origin feature/<BRANCH_NAME>
 7. Make a Pull Request.
    _See the guide for more details [Link](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request)_
 
-<br/>
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.1
 
 
