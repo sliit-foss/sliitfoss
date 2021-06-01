@@ -1,4 +1,4 @@
-# SLIIT FOSS Website 
+# SLIIT FOSS Community Website 
   
 ![Firebase CI/CD](https://github.com/sliit-foss/sliitfoss/workflows/Firebase%20CI/CD/badge.svg)
 
