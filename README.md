@@ -1,7 +1,8 @@
-# SLIIT FOSS Website
-
+<div align="center">
+# SLIIT FOSS Website 
+  
 ![Firebase CI/CD](https://github.com/sliit-foss/sliitfoss/workflows/Firebase%20CI/CD/badge.svg)
-
+</div>
 
 ## Technologies Stack
 
