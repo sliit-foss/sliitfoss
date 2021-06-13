@@ -2,6 +2,7 @@
   
 ![Firebase CI/CD](https://github.com/sliit-foss/sliitfoss/workflows/Firebase%20CI/CD/badge.svg)
 
+![sliitfoss](https://socialify.git.ci/sliit-foss/sliitfoss/image?description=1&forks=1&language=1&owner=1&pattern=Circuit%20Board&stargazers=1&theme=Dark)
 
 ## Technology Stack
 
