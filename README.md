@@ -1,13 +1,10 @@
-# SLIIT FOSS Community Website 
-  
-![Firebase CI/CD](https://github.com/sliit-foss/sliitfoss/workflows/Firebase%20CI/CD/badge.svg)
+# SLIIT FOSS Community Website
 
-![sliitfoss](https://socialify.git.ci/sliit-foss/sliitfoss/image?description=1&forks=1&language=1&owner=1&pattern=Circuit%20Board&stargazers=1&theme=Dark)
+![Firebase CI/CD](https://github.com/sliit-foss/sliitfoss/workflows/Firebase%20CI/CD/badge.svg)
 
 ## Technology Stack
 
 <img width="1436" alt="sliit-foss-tech" src="https://user-images.githubusercontent.com/37530024/120324529-5ea3a300-c304-11eb-9aac-3d258c67277b.png">
-
 
 ## Contributors
 
@@ -53,5 +50,3 @@ git push --set-upstream origin feature/<BRANCH_NAME>
 <br>
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.1
-
-
