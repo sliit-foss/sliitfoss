@@ -8,6 +8,7 @@ import * as EventsData from '../../../assets/data/events.json';
 })
 export class PastEventsComponent implements OnInit {
   slides: any = [];
+  slidesIndex = 0;
 
   customOptions: any = {
     loop: true,
@@ -40,4 +41,6 @@ export class PastEventsComponent implements OnInit {
   ngOnInit() {
     this.slides = EventsData.events;
   }
+
+  previousEvents() {}
 }
