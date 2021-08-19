@@ -15,6 +15,13 @@ jobs:
       - name: Set Version
         id: event-version
         run: echo ::set-output name=SOURCE_TAG::${GITHUB_REF#refs/tags/}
+      - name: Cache Docker layers
+        uses: actions/cache@v2
+        with:
+          path: /tmp/.buildx-cache
+          key: ${{ runner.os }}-buildx-${{ github.sha }}
+          restore-keys: |
+            ${{ runner.os }}-buildx-
       - name: Login to GitHub Container Registry
         uses: docker/login-action@v1
         with:

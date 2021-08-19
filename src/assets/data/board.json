@@ -292,10 +292,10 @@
         "name": "Sahas Gunasekara",
         "position": "Assistant Secretary",
         "img": "../../../assets/img/board/sahas.webp",
-        "facebook": "",
+        "facebook": "https://www.facebook.com/sahasrenuja",
         "twitter": "",
         "instagram": "",
-        "linkedin": ""
+        "linkedin": "https://www.linkedin.com/in/5ahas/"
       },
       {
         "id": 5,
@@ -339,23 +339,23 @@
       },
       {
         "id": 9,
-        "name": "Madusha Prashad",
+        "name": "Madhusha Prasad",
         "position": "Event Coordinator",
         "img": "../../../assets/img/board/madusha.webp",
-        "facebook": "",
-        "twitter": "",
-        "instagram": "",
-        "linkedin": ""
+        "facebook": "https://www.facebook.com/madusha.prasad.397",
+        "twitter": "MadhushaPrasad",
+        "instagram": "Iam_mprasad",
+        "linkedin": "https://www.linkedin.com/in/madhusha-prasad-045a82187"
       },
       {
         "id": 10,
         "name": "Chenuka Sumanasekara",
         "position": "Project Coordinator",
         "img": "../../../assets/img/board/chenuka.webp",
-        "facebook": "",
+        "facebook": "https://www.facebook.com/chenukas",
         "twitter": "",
         "instagram": "",
-        "linkedin": ""
+        "linkedin": "https://www.linkedin.com/in/chenukas/"
       }
     ]
   }
