@@ -71,6 +71,14 @@
       "date": "25/04/2021",
       "img": "../../assets/img/events/hacking-1.webp",
       "link": ""
+    },
+    {
+      "id": 10,
+      "title": "Defence Againse Dark Arts - Azure Security Center",
+      "speaker": "Kasun Raditha Rajapaksha",
+      "date": "22/06/2021",
+      "img": "../../assets/img/events/azure-security.jpg",
+      "link": "https://www.youtube.com/watch?v=h2fZ_yD19SY"
     }
   ]
 }
