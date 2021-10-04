@@ -9,6 +9,10 @@
 }
 .card-img {
   border-radius: 12px 12px 0px 0px;
+  padding-bottom: 50%;
+  background-color: azure;
+  background-position: center;
+  background-size: cover;
 }
 
 .card {
@@ -32,6 +36,9 @@
 
 .card-footer {
   font-size: 0.8rem;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 }
 
 .sliit-foss-btn {
@@ -55,6 +62,11 @@
   line-height: 2rem;
   color: #525151;
   text-align: justify;
+}
+
+.view-on-medium {
+  border-radius: 50px;
+  text-decoration: none !important;
 }
 
 /*@media only screen and (max-device-width: 768px) {

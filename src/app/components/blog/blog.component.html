@@ -24,31 +24,63 @@
       *ngFor="
         let post of blogPost
           | paginate
-            : { itemsPerPage: 10, currentPage: page, totalItems: totalLength }
+            : { itemsPerPage: 8, currentPage: page, totalItems: totalLength }
       "
       class="col-sm-6 col-md-4 col-lg-3 my-3"
     >
       <div class="card">
-        <img alt="image" class="card-img w-100" src="{{ post.thumbnail }}" />
+        <div
+          class="card-img"
+          [style]="{ backgroundImage: 'url(' + post.thumbnail + ')' }"
+        ></div>
         <div class="card-body">
-          <h4 class="card-title">{{ post.title }}</h4>
-          <div
-            class="card-footer text-muted d-flex justify-content-between bg-transparent border-top-0"
-          >
-            <div class="views">
-              Published on {{ getDaysCount(post.pubDate) }}
-            </div>
+          <div class="views text-muted mb-2">
+            Published on {{ getDaysCount(post.pubDate) }}
           </div>
-          <a class="btn sliit-foss-btn" href="{{ post.link }}" target="_blank"
+          <h4 class="card-title font-weight-bold">{{ post.title }}</h4>
+          <div>
+            <span
+              class="badge badge-info mx-1"
+              *ngFor="let category of post.categories"
+              >{{ category }}</span
+            >
+          </div>
+        </div>
+        <div class="card-footer text-right bg-transparent border-top-0">
+          <a
+            class="btn sliit-foss-btn w-100"
+            href="{{ post.link }}"
+            target="_blank"
             >Read More</a
           >
         </div>
       </div>
     </div>
   </div>
-  <div class="row float-right my-pagination">
-    <pagination-controls (pageChange)="page = $event"></pagination-controls>
-  </div>
 </section>
+
+<section class="auto-space auto-space-vertical py-0 text-center">
+  <a
+    href="https://medium.com/sliit-foss"
+    target="_blank"
+    class="bg-dark text-white p-4 view-on-medium"
+    >Read More on <strong>Medium</strong> &nbsp;
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      style="width: 25px; height: 25px"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="#ffffff"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
+      />
+    </svg>
+  </a>
+</section>
+
 <!-- Just for float spacing-->
 <section class="auto-space-vertical"></section>
