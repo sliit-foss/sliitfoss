@@ -1,51 +1,49 @@
-<section class="auto-space auto-space-vertical">
-  <p class="page-title pb-0" data-aos="fade-up">Upcoming Event</p>
-  <h2 class="text-center">Coming Soon..!</h2>
+<section class="auto-space auto-space-vertical pb-0">
+  <p class="page-title pb-0" data-aos="fade-up">Upcoming Events</p>
+
+  <div class="text-center text-muted" *ngIf="upcomingEvents.length === 0">
+    <h2>No events at this moment. Follow us to get updates.</h2>
+  </div>
 </section>
 
-<section class="auto-space auto-space-vertical pt-0">
-  <div>
-    <div data-aos="fade-up" data-aos-duration="1000">
-      <!-- Remove d-none class when adding new events -->
-      <mat-card class="upcoming-event-card d-none">
-        <div class="row">
-          <div class="col-md-4 col-sm-12 py-3 my-auto">
-            <img
-              alt="Photo of a Shiba Inu"
-              mat-card-image
-              src="../../../assets/img/events/postman-workshop.jpeg"
-              class="w-100 m-0"
-            />
-          </div>
-
-          <div class="col-md-8 col-sm-12">
-            <mat-card-content
-              ><br /><br /><br />
-              <mat-card-title>API 101 Workshop with Postman</mat-card-title>
-              <mat-card-subtitle>Kaveesha Gimhana</mat-card-subtitle>
-              <p class="upcoming-event-description mt-lg-5 mt-5">
-                Postman API 101 workshop on how to make it easy for developers
-                to create, test, and document APIs vis Postman brought by the
-                SLIIT FOSS Community collobration with FCSC will be converging
-                soon.
-                <br /><br />
-                <span class="text-color-primary">
-                  ##sliit #sliitfoss #techtalk #azure #fosssrilanka #sliitlife
-                  #quarantinetecktalks
-                </span>
-              </p>
-            </mat-card-content>
-            <!--            <mat-card-actions>-->
-            <!--              <a href="#" target="_blank">-->
-            <!--                <button color="primary" class="btn" disabled>-->
-            <!--                  <span>REGISTER</span>-->
-            <!--                </button>-->
-            <!--              </a>-->
-            <!--            </mat-card-actions>-->
-          </div>
+<section
+  class="auto-space auto-space-vertical"
+  *ngIf="upcomingEvents.length > 0"
+>
+  <div
+    data-aos="fade-up"
+    data-aos-duration="1000"
+    *ngFor="let event of upcomingEvents"
+  >
+    <mat-card class="upcoming-event-card">
+      <div class="row">
+        <div class="col-md-4 col-sm-12 py-3 my-auto">
+          <img
+            alt="event image"
+            mat-card-image
+            src="{{ event.image }}"
+            class="w-100 m-0"
+          />
         </div>
-      </mat-card>
-    </div>
+
+        <div class="col-md-8 col-sm-12">
+          <mat-card-content
+            ><br /><br /><br />
+            <mat-card-title>{{ event.title }}</mat-card-title>
+            <mat-card-subtitle>{{ event.speaker }}</mat-card-subtitle>
+            <p class="upcoming-event-description mt-4">
+              {{ event.description }}
+            </p>
+            <p class="text-color-primary">{{ event.tags }}</p>
+          </mat-card-content>
+          <mat-card-actions>
+            <a href="{{ event.registrationLink }}" target="_blank" class="btn"
+              >REGISTER</a
+            >
+          </mat-card-actions>
+        </div>
+      </div>
+    </mat-card>
   </div>
 </section>
 
