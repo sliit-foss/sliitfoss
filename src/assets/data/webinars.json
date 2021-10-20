@@ -79,6 +79,14 @@
       "date": "22/06/2021",
       "img": "../../assets/img/events/azure-security.jpg",
       "link": "https://www.youtube.com/watch?v=h2fZ_yD19SY"
+    },
+    {
+      "id": 11,
+      "title": "API 101 Workshop with Postman",
+      "speaker": "Kaveesha Gimhana",
+      "date": "27/08/2021",
+      "img": "../../../assets/img/events/postman-workshop.jpeg",
+      "link": "https://www.youtube.com/watch?v=1FCXzMbmJqw"
     }
   ]
 }
