@@ -7,22 +7,28 @@
     <owl-carousel-o [options]="customOptions">
       <ng-template *ngFor="let post of blogPosts; let i = index" carouselSlide>
         <div class="card">
-          <img
-            alt="image"
+          <div
             class="card-img"
-            height="142"
-            src="{{ post.thumbnail }}"
-            width="152"
-          />
+            [style]="{ backgroundImage: 'url(' + post.thumbnail + ')' }"
+          ></div>
           <div class="card-body">
-            <h4 class="card-title">{{ post.title }}</h4>
-          </div>
-
-          <div class="card-footer text-muted bg-transparent border-top-0">
-            <div class="views pb-2">
+            <div class="views text-muted mb-2">
               Published on {{ getDaysCount(post.pubDate) }}
             </div>
-            <a class="btn sliit-foss-btn" href="{{ post.link }}" target="_blank"
+            <h4 class="card-title font-weight-bold">{{ post.title }}</h4>
+            <div>
+              <span
+                class="badge badge-info mx-1"
+                *ngFor="let category of post.categories"
+                >{{ category }}</span
+              >
+            </div>
+          </div>
+          <div class="card-footer text-right bg-transparent border-top-0">
+            <a
+              class="btn sliit-foss-btn w-100"
+              href="{{ post.link }}"
+              target="_blank"
               >Read More</a
             >
           </div>
