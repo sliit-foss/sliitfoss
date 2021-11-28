@@ -11,6 +11,12 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.mascot {
+  width: 60px;
+  margin-left: 30px;
+}
+
 .txt {
   position: absolute;
   text-align: justify;
