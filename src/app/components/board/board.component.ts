@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import * as BoardData from '../../../assets/data/board.json';
+import { getBoardData } from 'src/app/services/board.service';
 
 @Component({
   selector: 'app-board',
@@ -14,7 +14,7 @@ export class BoardComponent implements OnInit {
     this.selectedYear = event.value;
   }
 
-  ngOnInit() {
-    this.board = BoardData.year;
+  async ngOnInit() {
+    this.board = (await getBoardData()).year;
   }
 }

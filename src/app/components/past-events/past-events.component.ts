@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as EventsData from '../../../assets/data/events.json';
+import { getPastEvents } from 'src/app/services/event.service';
+import Event from '../../models/event.model';
 
 @Component({
   selector: 'app-past-events',
@@ -7,7 +8,7 @@ import * as EventsData from '../../../assets/data/events.json';
   styleUrls: ['./past-events.component.css'],
 })
 export class PastEventsComponent implements OnInit {
-  slides: any = [];
+  slides: Event[] = [];
   slidesIndex = 0;
 
   customOptions: any = {
@@ -38,8 +39,8 @@ export class PastEventsComponent implements OnInit {
     nav: false,
   };
 
-  ngOnInit() {
-    this.slides = EventsData.events;
+  async ngOnInit() {
+    this.slides = await getPastEvents();
   }
 
   previousEvents() {}
