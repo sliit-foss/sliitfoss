@@ -9,6 +9,7 @@ import Webinar from '../../models/webinar.model';
 })
 export class WebinarsComponent implements OnInit {
   slides: Webinar[] = [];
+  loading: Boolean = false;
 
   customOptions: any = {
     loop: true,
@@ -39,6 +40,8 @@ export class WebinarsComponent implements OnInit {
   };
 
   async ngOnInit() {
+    this.loading = true;
     this.slides = await getWebinars();
+    this.loading = false;
   }
 }

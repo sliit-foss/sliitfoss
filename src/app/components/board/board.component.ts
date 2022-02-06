@@ -7,14 +7,18 @@ import { getBoardData } from 'src/app/services/board.service';
   styleUrls: ['./board.component.css'],
 })
 export class BoardComponent implements OnInit {
-  board: any = [];
+  board: any = { 2021: [] };
   selectedYear = 2021;
+  loading: Boolean = false;
 
   selectChangeHandler(event: any) {
     this.selectedYear = event.value;
   }
 
   async ngOnInit() {
-    this.board = (await getBoardData()).year;
+    this.loading = true;
+    const boardData = await getBoardData();
+    this.loading = false;
+    this.board = boardData.year;
   }
 }

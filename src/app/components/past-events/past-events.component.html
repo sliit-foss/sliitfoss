@@ -16,8 +16,11 @@
             <h5 class="card-title">{{ slide.title }}</h5>
             <div>
               <small>
-                <i class="fa fa-calendar">&nbsp;</i>{{ slide.date }}&nbsp;&nbsp;
-                <i class="fa fa-map-marker">&nbsp;</i>{{ slide.location }}
+                <i class="fa fa-calendar">&nbsp;</i
+                >{{
+                  slide.date.toDate().toLocaleString('en-GB').substring(0, 10)
+                }}&nbsp;&nbsp; <i class="fa fa-map-marker">&nbsp;</i
+                >{{ slide.location }}
               </small>
             </div>
             <p class="card-text">
@@ -31,6 +34,9 @@
         </div>
       </ng-template>
     </owl-carousel-o>
+  </div>
+  <div *ngIf="loading" class="spinner">
+    <mat-spinner [diameter]="50"></mat-spinner>
   </div>
 </section>
 

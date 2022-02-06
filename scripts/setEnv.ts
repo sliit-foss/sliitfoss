@@ -6,7 +6,7 @@ const targetPath = `./src/environments/environment.prod.ts`;
 const environmentFileContent = `
 export const environment = {
     production: true,
-    firebaseConfig: "${process.env.firebaseConfig}",
+    firebaseConfig: "${process.env.FIREBASE_WEB_CONFIG}",
     emailUserId: "${process.env.emailUserId}",
     emailTemplateId: "${process.env.emailTemplateId}",
     emailServiceId: "${process.env.emailServiceId}",

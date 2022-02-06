@@ -18,15 +18,15 @@ export const read = async (
 
   let q = query(collectionRef);
 
-  sorts.forEach((sort) => {
-    q = query(collectionRef, orderBy(sort.key, sort.direction));
-  });
-
   filters.forEach((filter) => {
-    q = query(collectionRef, where(filter.key, filter.operator, filter.value));
+    q = query(q, where(filter.key, filter.operator, filter.value));
   });
 
-  if (recordLimit) q = query(collectionRef, limit(recordLimit));
+  sorts.forEach((sort) => {
+    q = query(q, orderBy(sort.key, sort.direction));
+  });
+
+  if (recordLimit) q = query(q, limit(recordLimit));
 
   return (await getDocs(q)).docs.map((doc) => doc.data());
 };

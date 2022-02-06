@@ -31,4 +31,7 @@
       </ng-template>
     </owl-carousel-o>
   </div>
+  <div *ngIf="loading" class="spinner">
+    <mat-spinner [diameter]="50"></mat-spinner>
+  </div>
 </section>

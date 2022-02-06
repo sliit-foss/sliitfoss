@@ -10,6 +10,7 @@ import Event from '../../models/event.model';
 export class PastEventsComponent implements OnInit {
   slides: Event[] = [];
   slidesIndex = 0;
+  loading: Boolean = false;
 
   customOptions: any = {
     loop: true,
@@ -40,7 +41,9 @@ export class PastEventsComponent implements OnInit {
   };
 
   async ngOnInit() {
+    this.loading = true;
     this.slides = await getPastEvents();
+    this.loading = false;
   }
 
   previousEvents() {}
