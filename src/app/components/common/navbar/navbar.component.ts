@@ -55,4 +55,8 @@ export class NavbarComponent implements OnInit {
       }
     });
   }
+
+  onRouteChange() {
+    sessionStorage.setItem('routeChanged', 'true');
+  }
 }
