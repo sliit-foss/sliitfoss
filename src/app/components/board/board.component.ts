@@ -15,7 +15,6 @@ export class BoardComponent implements OnInit {
   }
 
   ngOnInit() {
-    sessionStorage.setItem('routeChanged', 'true');
     this.board = BoardData.year;
   }
 }

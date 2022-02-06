@@ -10,6 +10,10 @@ export class NavbarComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
+    window.setTimeout(() => {
+      sessionStorage.setItem('renderRouteAnimation', 'true');
+    }, 100);
+
     $(document).ready(function () {
       $(window).scroll(function () {
         if ($(this).scrollTop() > 40) {
@@ -54,9 +58,5 @@ export class NavbarComponent implements OnInit {
         element.removeAttribute('data-bs-target');
       }
     });
-  }
-
-  onRouteChange() {
-    sessionStorage.setItem('routeChanged', 'true');
   }
 }

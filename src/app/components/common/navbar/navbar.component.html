@@ -26,7 +26,6 @@
             routerLink="/"
             [routerLinkActive]="['active']"
             [routerLinkActiveOptions]="{ exact: true }"
-            (click)="onRouteChange()"
             >Home</a
           >
         </li>
@@ -35,7 +34,6 @@
             class="nav-link"
             routerLink="/about"
             [routerLinkActive]="['active']"
-            (click)="onRouteChange()"
             >About</a
           >
         </li>
@@ -44,7 +42,6 @@
             class="nav-link"
             routerLink="/events"
             [routerLinkActive]="['active']"
-            (click)="onRouteChange()"
             >Events</a
           >
         </li>
@@ -53,16 +50,11 @@
             class="nav-link"
             routerLink="/board"
             [routerLinkActive]="['active']"
-            (click)="onRouteChange()"
             >Board</a
           >
         </li>
         <li class="nav-item">
-          <a
-            class="nav-link"
-            routerLink="/blog"
-            [routerLinkActive]="['active']"
-            (click)="onRouteChange()"
+          <a class="nav-link" routerLink="/blog" [routerLinkActive]="['active']"
             >Blogs</a
           >
         </li>
@@ -71,7 +63,6 @@
             class="nav-link"
             routerLink="/contact"
             [routerLinkActive]="['active']"
-            (click)="onRouteChange()"
             >Contact</a
           >
         </li>
