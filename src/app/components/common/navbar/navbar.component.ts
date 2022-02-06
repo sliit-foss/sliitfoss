@@ -23,6 +23,11 @@ export class NavbarComponent implements OnInit {
         $('html, body').animate({ scrollTop: 0 }, 800);
       });
     });
+
+    this.refreshNavLinks();
+    $(window).on('resize', () => {
+      this.refreshNavLinks();
+    });
   }
 
   @HostListener('document:scroll')
@@ -34,5 +39,20 @@ export class NavbarComponent implements OnInit {
       $('#logo').fadeIn();
       $('.navbar').removeClass(['navbar-fixed', 'shadow']);
     }
+  }
+
+  refreshNavLinks() {
+    const mediaQuery = window.matchMedia('(max-width: 992px)');
+    const navElements = document.querySelectorAll('.nav-link');
+
+    navElements.forEach((element) => {
+      if (mediaQuery.matches) {
+        element.setAttribute('data-bs-toggle', 'collapse');
+        element.setAttribute('data-bs-target', '#navbarNavDropdown');
+      } else {
+        element.removeAttribute('data-bs-toggle');
+        element.removeAttribute('data-bs-target');
+      }
+    });
   }
 }
