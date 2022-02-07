@@ -14,6 +14,14 @@ jobs:
       - uses: actions/setup-node@master
         with:
           node-version: '10.x'
+      - name: Create env file
+        run: |
+          touch .env
+          echo emailServiceId=${{ secrets.emailServiceId }} >> .env
+          echo emailTemplateId=${{ secrets.emailTemplateId }} >> .env
+          echo emailUserId=${{ secrets.emailUserId }} >> .env
+          echo firebaseConfig=${{ secrets.FIREBASE_WEB_CONFIG }} >> .env
+          cat .env
       - run: npm install
       - run: npm run build
       - uses: w9jds/firebase-action@master

@@ -51,7 +51,10 @@
       </div>
     </div>
   </div>
-  <div *ngIf="board[selectedYear].length === 0" class="error-block">
+  <div *ngIf="loading" class="spinner">
+    <mat-spinner [diameter]="50"></mat-spinner>
+  </div>
+  <div *ngIf="!loading && board[selectedYear].length === 0" class="error-block">
     <div class="pb-4">
       <i class="fa fa-frown-o text-muted"></i>
     </div>

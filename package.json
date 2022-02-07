@@ -3,8 +3,9 @@
   "version": "0.0.1",
   "scripts": {
     "ng": "ng",
-    "start": "yarn && ng serve -o",
-    "build": "ng build --prod",
+    "config": "node --loader ts-node/esm ./scripts/setEnv.ts",
+    "start": "yarn run config && ng serve -o",
+    "build": "yarn run config && ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -33,7 +34,9 @@
     "@fortawesome/free-regular-svg-icons": "^5.13.0",
     "@fortawesome/free-solid-svg-icons": "^5.15.2",
     "bootstrap": "^4.4.1",
+    "dotenv": "^16.0.0",
     "emailjs-com": "^2.6.4",
+    "firebase": "^9.6.6",
     "jquery": "^3.5.1",
     "ngx-owl-carousel-o": "^5.0.0",
     "ngx-pagination": "^5.0.0",
@@ -62,15 +65,16 @@
     "prettier": "2.1.2",
     "pretty-quick": "3.0.2",
     "protractor": "~7.0.0",
-    "ts-node": "~8.3.0",
+    "ts-node": "^10.4.0",
     "tslint": "~6.1.0",
     "tslint-config-prettier": "^1.18.0",
-    "typescript": "~4.0.2"
+    "typescript": "4.1.6"
   },
   "husky": {
     "hooks": {
       "pre-commit": "pretty-quick --staged",
       "pre-push": "ng build --aot true"
     }
-  }
+  },
+  "type":"module"
 }
