@@ -8,7 +8,7 @@ import { getBoardData } from 'src/app/services/board.service';
 })
 export class BoardComponent implements OnInit {
   board: any = { 2021: [] };
-  selectedYear = 2021;
+  selectedYear = 2022;
   loading: Boolean = false;
 
   selectChangeHandler(event: any) {
