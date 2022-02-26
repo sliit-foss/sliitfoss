@@ -25,7 +25,7 @@ jobs:
         run: |
           cd src
           cd environments
-          echo export const environment = {production:true,emailServiceId:\"${{ secrets.emailServiceId }}\",emailTemplateId:\"${{ secrets.emailTemplateId }}\",emailUserId:\"${{ secrets.emailUserId }}\",firebaseConfig:\"${{ secrets.FIREBASE_WEB_CONFIG }}\"} > environment.production.ts
+          echo export const environment = \{production:true,emailServiceId:\"${{ secrets.emailServiceId }}\",emailTemplateId:\"${{ secrets.emailTemplateId }}\",emailUserId:\"${{ secrets.emailUserId }}\",firebaseConfig:\"'${{ secrets.FIREBASE_WEB_CONFIG }}'\"\} > environment.production.ts
           cat environment.production.ts
       - run: npm install
       - run: npm run build
