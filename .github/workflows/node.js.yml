@@ -27,7 +27,7 @@ jobs:
           echo emailServiceId=${{ secrets.emailServiceId }} >> .env
           echo emailTemplateId=${{ secrets.emailTemplateId }} >> .env
           echo emailUserId=${{ secrets.emailUserId }} >> .env
-          echo firebaseConfig=${{ secrets.FIREBASE_WEB_CONFIG }} >> .env
+          echo FIREBASE_WEB_CONFIG=${{ secrets.FIREBASE_WEB_CONFIG }} >> .env
           cat .env
       - run: npm install
       - run: npm run build
