@@ -9,6 +9,8 @@
   transition: transform 0.5s ease;
   left: 50%;
   transform: translateX(-50%);
+  border-radius: 12px;
+  height: 400px !important;
 }
 
 .card:hover {
@@ -34,6 +36,9 @@
 
 .card-footer {
   font-size: 0.8rem;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 }
 
 .sliit-foss-btn {
@@ -80,4 +85,12 @@
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
     'Lucida Sans', Arial, sans-serif;
   text-transform: uppercase;
+}
+
+.card-img {
+  border-radius: 12px 12px 0px 0px;
+  padding-bottom: 50%;
+  background-color: azure;
+  background-position: center;
+  background-size: cover;
 }

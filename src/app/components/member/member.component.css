@@ -11,6 +11,16 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.section-2 {
+  background-color: #f4f4f4;
+}
+
+.mascot {
+  width: 200px;
+  height: 260px;
+}
+
 .txt {
   position: absolute;
   text-align: justify;

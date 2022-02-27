@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { getUpcomingEvents } from 'src/app/services/event.service';
+import Event from '../../models/event.model';
 
 @Component({
   selector: 'app-events',
@@ -8,5 +10,9 @@ import { Component, OnInit } from '@angular/core';
 export class EventsComponent implements OnInit {
   constructor() {}
 
-  ngOnInit(): void {}
+  upcomingEvents: Event[] = [];
+
+  async ngOnInit() {
+    this.upcomingEvents = await getUpcomingEvents();
+  }
 }
