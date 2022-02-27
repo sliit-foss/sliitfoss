@@ -1,0 +1,66 @@
+.page-title {
+  color: #20b6b0 !important;
+}
+
+.head-title::before {
+  background: #20b6b0 !important;
+}
+
+.head-title::after {
+  background: #20b6b0 !important;
+}
+
+.time-value {
+  color: #20b6b0;
+}
+
+.speaker-img {
+  width: 15vw;
+  height: 20vw;
+}
+
+.stream-logo {
+  width: 8vw;
+  height: 8vw;
+  margin-left: 20px;
+  margin-right: 20px;
+  transition: all 400ms;
+}
+
+.stream-logo:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.wso2-banner {
+  position: sticky;
+  left: 100%;
+  bottom: 0;
+  width: 410px;
+  z-index: 100000;
+}
+
+@media (max-width: 1567px) {
+  .stream-logo {
+    width: 12vw;
+    height: 12vw;
+  }
+}
+
+@media (max-width: 1167px) {
+  .stream-logo {
+    width: 18vw;
+    height: 18vw;
+  }
+}
+
+@media (max-width: 667px) {
+  .stream-logo {
+    width: 28vw;
+    height: 28vw;
+    margin-bottom: 30px;
+  }
+
+  .wso2-banner {
+    width: 250px;
+  }
+}

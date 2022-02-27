@@ -72,7 +72,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "pretty-quick --staged",
+      "pre-commit": "npx pretty-quick --staged",
       "pre-push": "ng build --aot true"
     }
   },
