@@ -1,13 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
-type Event = {
-  image: string;
-  title: string;
-  speaker: string;
-  description: string;
-  tags: string;
-  registrationLink: string;
-};
+import { getUpcomingEvents } from 'src/app/services/event.service';
+import Event from '../../models/event.model';
 
 @Component({
   selector: 'app-events',
@@ -19,5 +12,7 @@ export class EventsComponent implements OnInit {
 
   upcomingEvents: Event[] = [];
 
-  ngOnInit(): void {}
+  async ngOnInit() {
+    this.upcomingEvents = await getUpcomingEvents();
+  }
 }

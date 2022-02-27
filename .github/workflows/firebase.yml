@@ -13,7 +13,13 @@ jobs:
       - uses: actions/checkout@master
       - uses: actions/setup-node@master
         with:
-          node-version: '10.x'
+          node-version: '16.x'
+      - name: Create environment file
+        run: |
+          cd src
+          cd environments
+          echo export const environment = \{production:true,emailServiceId:\"${{ secrets.emailServiceId }}\",emailTemplateId:\"${{ secrets.emailTemplateId }}\",emailUserId:\"${{ secrets.emailUserId }}\",firebaseConfig:\"${{ secrets.FIREBASE_WEB_CONFIG }}\"\} > environment.production.ts
+          cat environment.production.ts
       - run: npm install
       - run: npm run build
       - uses: w9jds/firebase-action@master

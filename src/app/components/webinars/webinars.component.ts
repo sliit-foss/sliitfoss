@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as EventsData from '../../../assets/data/webinars.json';
+import { getWebinars } from 'src/app/services/webinar.service';
+import Webinar from '../../models/webinar.model';
 
 @Component({
   selector: 'app-webinars',
@@ -7,7 +8,8 @@ import * as EventsData from '../../../assets/data/webinars.json';
   styleUrls: ['./webinars.component.css'],
 })
 export class WebinarsComponent implements OnInit {
-  slides: any = [];
+  slides: Webinar[] = [];
+  loading: Boolean = false;
 
   customOptions: any = {
     loop: true,
@@ -37,7 +39,9 @@ export class WebinarsComponent implements OnInit {
     nav: false,
   };
 
-  ngOnInit() {
-    this.slides = EventsData.webinars;
+  async ngOnInit() {
+    this.loading = true;
+    this.slides = await getWebinars();
+    this.loading = false;
   }
 }

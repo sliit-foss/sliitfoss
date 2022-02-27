@@ -16,6 +16,7 @@ import {
   FontAwesomeModule,
 } from '@fortawesome/angular-fontawesome';
 import { faCoffee, faHandsHelping } from '@fortawesome/free-solid-svg-icons';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 import {
   faCloudscale,
@@ -83,6 +84,7 @@ import { MatSelectModule } from '@angular/material/select';
     }),
     MatFormFieldModule,
     MatSelectModule,
+    MatProgressSpinnerModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
