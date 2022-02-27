@@ -3,8 +3,9 @@
   "version": "0.0.1",
   "scripts": {
     "ng": "ng",
-    "start": "yarn && ng serve -o",
-    "build": "ng build --prod",
+    "config": "node --experimental-modules --loader ts-node/esm ./scripts/setEnv.ts",
+    "start": "yarn run config && ng serve -o",
+    "build": "yarn run config && ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
