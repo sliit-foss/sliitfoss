@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "scripts": {
     "ng": "ng",
-    "config": "node --experimental-modules --loader ts-node/esm ./scripts/setEnv.ts",
+    "config": "node --loader ts-node/esm ./scripts/setEnv.ts",
     "start": "yarn run config && ng serve -o",
     "build": "yarn run config && ng build --prod",
     "test": "ng test",
