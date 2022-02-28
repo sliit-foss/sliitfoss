@@ -3,7 +3,8 @@
     <p class="page-title pb-0" data-aos="fade-up">
       Introduction to Compiler Construction
     </p>
-    <h2 class="head-title">Ballerina language as a case study</h2>
+    <h1 class="font-weight-bold pt-2">Ballerina language as a case study</h1>
+    <div class="head-title pb-2"></div>
   </div>
   <br />
   <div class="text-center">
@@ -79,11 +80,18 @@
     </div>
   </div>
 </section>
-<!-- <a href="https://wso2.com/" target="_blank">
+<a href="https://ballerina.io" target="_blank">
   <img
-    src="../../../../assets/img/special-events/ballerina/wso2.png"
+    src="../../../../assets/img/special-events/ballerina/ballerina.png"
     id="logo"
     alt="navbar image"
     class="wso2-banner"
   />
-</a> -->
+</a>
+
+<ng-particles
+  [id]="id"
+  [options]="particlesOptions"
+  (particlesLoaded)="particlesLoaded($event)"
+  (particlesInit)="particlesInit($event)"
+></ng-particles>

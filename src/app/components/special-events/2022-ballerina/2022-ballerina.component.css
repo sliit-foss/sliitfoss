@@ -4,10 +4,16 @@
 
 .head-title::before {
   background: #20b6b0 !important;
+  transform: translateY(0);
 }
 
 .head-title::after {
   background: #20b6b0 !important;
+  transform: translateY(0px);
+}
+
+.ballerina-title {
+  margin: 0 !important;
 }
 
 .time-value {
@@ -95,6 +101,11 @@
 }
 
 @media (max-width: 1567px) {
+  .speaker-img,
+  .flip-card {
+    width: 22vw;
+    height: 30vw;
+  }
   .stream-logo {
     width: 12vw;
     height: 12vw;
@@ -102,6 +113,11 @@
 }
 
 @media (max-width: 1167px) {
+  .speaker-img,
+  .flip-card {
+    width: 35vw;
+    height: 50vw;
+  }
   .stream-logo {
     width: 18vw;
     height: 18vw;
@@ -109,6 +125,11 @@
 }
 
 @media (max-width: 667px) {
+  .speaker-img,
+  .flip-card {
+    width: 55vw;
+    height: 75vw;
+  }
   .stream-logo {
     width: 28vw;
     height: 28vw;
