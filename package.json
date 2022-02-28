@@ -73,7 +73,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "npx pretty-quick --staged",
-      "pre-push": "ng build --aot true"
+      "pre-push": "npm run build --aot true"
     }
   },
   "type":"module"
