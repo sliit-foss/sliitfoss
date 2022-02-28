@@ -15,8 +15,63 @@
 }
 
 .speaker-img {
-  width: 15vw;
+  width: 14vw;
   height: 20vw;
+  border-radius: 15px !important;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 14vw;
+  height: 20vw;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  border-radius: 15px !important;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  border-radius: 15px !important;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #20b6b0;
+  color: black;
+  border-radius: 15px !important;
+}
+
+.flip-card-back {
+  background-color: #20b6b0;
+  color: white;
+  transform: rotateY(180deg);
+  border-radius: 15px !important;
+}
+
+.social-icon {
+  color: #000000 !important;
+  transition: all 400ms;
+}
+
+.social-icon:hover {
+  color: #ffffff !important;
 }
 
 .stream-logo {
