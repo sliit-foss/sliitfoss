@@ -1,12 +1,15 @@
 .upcoming-event-card {
-  max-width: 100%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 70vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08), 0 11px 20px 0 rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .upcoming-event-description {
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
   text-align: inherit;
+  line-height: 2;
 }
 
 .btn {
@@ -24,4 +27,24 @@
 .btn:hover {
   background: #7272f5;
   border-color: #7272f5;
+}
+.upcoming-image {
+  height: 35vh;
+  object-fit: contain;
+}
+
+.event-decorator {
+  height: 13px;
+  background-color: #5a5af3;
+  width: 100%;
+  z-index: 0;
+  top: 48%;
+  left: 0%;
+  border-radius: 50px;
+}
+
+@media (max-width: 1167px) {
+  .upcoming-event-card {
+    width: 85vw;
+  }
 }

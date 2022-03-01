@@ -26,6 +26,12 @@ export class NavbarComponent implements OnInit {
       $('#top').click(function () {
         $('html, body').animate({ scrollTop: 0 }, 800);
       });
+
+      if ($(window).scrollTop() === 0) {
+        document.getElementById('foss_logo').style.opacity = '0%';
+      } else {
+        document.getElementById('foss_logo').style.opacity = '100%';
+      }
     });
 
     this.refreshNavLinks();
@@ -38,9 +44,11 @@ export class NavbarComponent implements OnInit {
   scrollFunction() {
     if ($(window).scrollTop() > 60) {
       $('#logo').fadeOut();
+      document.getElementById('foss_logo').style.opacity = '100%';
       $('.navbar').addClass(['navbar-fixed', 'shadow']);
     } else {
       $('#logo').fadeIn();
+      document.getElementById('foss_logo').style.opacity = '0%';
       $('.navbar').removeClass(['navbar-fixed', 'shadow']);
     }
   }

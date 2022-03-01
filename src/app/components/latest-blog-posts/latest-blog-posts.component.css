@@ -11,6 +11,7 @@
   transform: translateX(-50%);
   border-radius: 12px;
   height: 400px !important;
+  transition: all 200ms;
 }
 
 .card:hover {
