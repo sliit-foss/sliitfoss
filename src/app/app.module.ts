@@ -11,6 +11,7 @@ import { MemberComponent } from './components/member/member.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { CodeOfConductComponent } from './components/code-of-conduct/code-of-conduct.component';
+import { BallerinaComponent } from './components/special-events/2022-ballerina/2022-ballerina.component';
 import {
   FaIconLibrary,
   FontAwesomeModule,
@@ -63,6 +64,7 @@ import { MatSelectModule } from '@angular/material/select';
     PodcastsectionComponent,
     WebinarsComponent,
     Page404Component,
+    BallerinaComponent,
   ],
   imports: [
     BrowserModule,
