@@ -13,37 +13,41 @@
   <div
     data-aos="fade-up"
     data-aos-duration="1000"
-    *ngFor="let event of upcomingEvents"
+    *ngFor="let event of upcomingEvents; let i = index"
+    [attr.data-index]="i"
   >
-    <mat-card class="upcoming-event-card">
-      <div class="row">
-        <div class="col-md-4 col-sm-12 py-3 my-auto">
-          <img
-            alt="event image"
-            mat-card-image
-            src="{{ event.image_url }}"
-            class="w-100 m-0"
-          />
-        </div>
+    <div class="position-relative w-100 d-flex justify-content-center">
+      <mat-card class="upcoming-event-card" style="z-index: 1">
+        <div class="row">
+          <div class="col-md-4 col-sm-12 py-3 my-auto">
+            <img
+              alt="event image"
+              mat-card-image
+              src="{{ event.image_url }}"
+              class="upcoming-image w-100 m-0"
+            />
+          </div>
 
-        <div class="col-md-8 col-sm-12">
-          <mat-card-content
-            ><br /><br /><br />
-            <mat-card-title>{{ event.title }}</mat-card-title>
-            <mat-card-subtitle>{{ event.speaker }}</mat-card-subtitle>
-            <p class="upcoming-event-description mt-4">
-              {{ event.description }}
-            </p>
-            <p class="text-color-primary">{{ event.tags }}</p>
-          </mat-card-content>
-          <mat-card-actions>
-            <a href="{{ event.link }}" target="_blank" class="btn"
-              >View Event</a
-            >
-          </mat-card-actions>
+          <div class="col-md-8 col-sm-12">
+            <mat-card-content
+              ><br /><br /><br />
+              <mat-card-title>{{ event.title }}</mat-card-title>
+              <mat-card-subtitle>{{ event.speaker }}</mat-card-subtitle>
+              <p class="upcoming-event-description mt-4">
+                {{ event.description }}
+              </p>
+              <p class="text-color-primary">{{ event.tags }}</p>
+            </mat-card-content>
+            <mat-card-actions>
+              <a href="{{ event.link }}" target="_blank" class="btn"
+                >View Event</a
+              >
+            </mat-card-actions>
+          </div>
         </div>
-      </div>
-    </mat-card>
+      </mat-card>
+      <div *ngIf="i == 0" class="position-absolute event-decorator"></div>
+    </div>
   </div>
 </section>
 
