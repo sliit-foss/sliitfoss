@@ -9,6 +9,10 @@
   <br />
   <div class="text-center">
     <div
+      *ngIf="seconds > 0"
+      ;
+      else
+      elseBlock
       class="timer display-4 display-md-3 font-weight-bold pb-5"
       data-aos="fade-up"
     >
@@ -16,6 +20,13 @@
       <span class="time-value">{{ hours }}</span> H
       <span class="time-value">{{ mins }}</span> M
       <span class="time-value">{{ seconds }}</span> S
+    </div>
+    <div
+      #elseBlock
+      class="timer display-4 display-md-3 font-weight-bold pb-5"
+      data-aos="fade-up"
+    >
+      <span class="time-value">THIS EVENT HAS ENDED</span>
     </div>
   </div>
   <div class="text-center">
