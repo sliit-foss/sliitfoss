@@ -35,16 +35,25 @@
         <h3 class="name">{{ member.name }}</h3>
         <p class="title">{{ member.position }}</p>
         <div class="social">
-          <a href="{{ member.facebook }}" target="_blank"
+          <a
+            *ngIf="member.facebook"
+            href="{{ member.facebook }}"
+            target="_blank"
             ><i class="fa fa-facebook-official"></i
           ></a>
-          <a href="{{ member.twitter }}" target="_blank"
+          <a *ngIf="member.twitter" href="{{ member.twitter }}" target="_blank"
             ><i class="fa fa-twitter"></i
           ></a>
-          <a href="{{ member.instagram }}" target="_blank"
+          <a
+            *ngIf="member.instagram"
+            href="{{ member.instagram }}"
+            target="_blank"
             ><i class="fa fa-instagram"></i
           ></a>
-          <a href="{{ member.linkedin }}" target="_blank"
+          <a
+            *ngIf="member.linkedin"
+            href="{{ member.linkedin }}"
+            target="_blank"
             ><i class="fa fa-linkedin"></i
           ></a>
         </div>
