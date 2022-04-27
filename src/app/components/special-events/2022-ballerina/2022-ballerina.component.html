@@ -3,11 +3,16 @@
     <p class="page-title pb-0" data-aos="fade-up">
       Introduction to Compiler Construction
     </p>
-    <h2 class="head-title">Ballerina language as a case study</h2>
+    <h1 class="font-weight-bold pt-2">Ballerina language as a case study</h1>
+    <div class="head-title pb-md-2"></div>
   </div>
   <br />
   <div class="text-center">
     <div
+      *ngIf="seconds > 0"
+      ;
+      else
+      elseBlock
       class="timer display-4 display-md-3 font-weight-bold pb-5"
       data-aos="fade-up"
     >
@@ -15,6 +20,13 @@
       <span class="time-value">{{ hours }}</span> H
       <span class="time-value">{{ mins }}</span> M
       <span class="time-value">{{ seconds }}</span> S
+    </div>
+    <div
+      #elseBlock
+      class="timer display-4 display-md-3 font-weight-bold pb-5"
+      data-aos="fade-up"
+    >
+      <span class="time-value">THIS EVENT HAS ENDED</span>
     </div>
   </div>
   <div class="text-center">
@@ -64,26 +76,37 @@
     <div
       class="w-100 d-flex justify-content-center align-items-center flex-wrap"
     >
-      <img
-        class="stream-logo shadow-lg rounded"
-        src="assets/img/streaming/youtube.png"
-      />
-      <img
-        class="stream-logo shadow-lg rounded"
-        src="assets/img/streaming/twitch.png"
-      />
-      <img
-        class="stream-logo shadow-lg rounded"
-        src="assets/img/streaming/facebook.png"
-      />
+      <a href="https://www.youtube.com/watch?v=894DMRFQmI0" target="_blank"
+        ><img
+          class="stream-logo shadow-lg"
+          src="assets/img/streaming/youtube.png"
+      /></a>
+      <a href="https://www.twitch.tv/sliitfoss" target="_blank"
+        ><img
+          class="stream-logo shadow-lg"
+          src="assets/img/streaming/twitch.png"
+      /></a>
+      <a
+        href="https://www.facebook.com/231416053648942/posts/3434245230032659/"
+        target="_blank"
+        ><img
+          class="stream-logo shadow-lg"
+          src="assets/img/streaming/facebook.png"
+      /></a>
     </div>
   </div>
 </section>
-<!-- <a href="https://wso2.com/" target="_blank">
+<a href="https://ballerina.io" target="_blank">
   <img
-    src="../../../../assets/img/special-events/ballerina/wso2.png"
+    src="../../../../assets/img/special-events/ballerina/ballerina.png"
     id="logo"
     alt="navbar image"
     class="wso2-banner"
   />
-</a> -->
+</a>
+<img
+  src="../../../../assets/img/special-events/ballerina/bg.jpg"
+  id="logo"
+  alt="bg"
+  class="ballerina-bg"
+/>

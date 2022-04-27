@@ -68,6 +68,7 @@
   height: 400px !important;
   left: 50%;
   transform: translateX(-50%);
+  transition: all 200ms;
 }
 
 .card-img-top {
