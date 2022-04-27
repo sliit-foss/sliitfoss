@@ -7,6 +7,8 @@ const environmentFileContent = `
 export const environment = {
     production: true,
     firebaseConfig: "${process.env.FIREBASE_WEB_CONFIG}",
+    authEmail: "${process.env.AUTH_EMAIL}",
+    authPass: "${process.env.AUTH_PASS}",
     emailUserId: "${process.env.emailUserId}",
     emailTemplateId: "${process.env.emailTemplateId}",
     emailServiceId: "${process.env.emailServiceId}",
