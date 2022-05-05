@@ -143,11 +143,12 @@ p {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
+  transition: all 0.3s ease;
 }
 
 .contact .email-form input:focus,
 .contact .email-form textarea:focus {
-  background-color: #68a4c4;
+  background-color: #edeeff;
 }
 
 .contact .email-form input {
@@ -170,7 +171,7 @@ p {
 }
 
 .contact .email-form button[type='submit']:hover {
-  background: #8dbad2;
+  filter: brightness(1.2);
 }
 
 @-webkit-keyframes animate-loading {
@@ -197,6 +198,21 @@ fa-icon {
 
 .info-box {
   background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.info-box:hover {
+  background-color: #edeeff;
+}
+
+.info-box a {
+  color: #000000;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.info-box a:hover {
+  color: #6d75e5;
 }
 
 form {
