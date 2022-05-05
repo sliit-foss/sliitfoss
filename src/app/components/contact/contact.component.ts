@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
+import emailjs from 'emailjs-com';
 import {
   faAddressBook,
   faEnvelope,
@@ -32,21 +32,22 @@ export class ContactComponent implements OnInit {
   }
 
   contact(e: Event) {
-    emailjs
-      .sendForm(
-        environment.emailServiceId,
-        environment.emailTemplateId,
-        e.target as HTMLFormElement,
-        environment.emailUserId
-      )
-      .then(
-        (result: EmailJSResponseStatus) => {
-          console.log('EmailJs Resp : ' + result.text);
-          this.contactForm.reset();
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    if (this.contactForm.status === 'VALID') {
+      emailjs
+        .sendForm(
+          environment.emailServiceId,
+          environment.emailTemplateId,
+          e.target as HTMLFormElement,
+          environment.emailUserId
+        )
+        .then(
+          () => {
+            this.contactForm.reset();
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+    }
   }
 }

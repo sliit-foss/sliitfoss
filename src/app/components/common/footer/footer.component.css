@@ -115,6 +115,10 @@ ul {
   color: #fff;
   font-size: 16px;
   margin-right: 15px;
+  transition: all 0.3s ease;
+}
+.footer-social-icon a:hover {
+  color: #5a5af3;
 }
 .footer-social-icon i {
   height: 40px;
@@ -154,6 +158,9 @@ ul {
   width: 50%;
   margin-bottom: 12px;
 }
+.footer-widget ul li a {
+  transition: all 0.3s ease 0s;
+}
 .footer-widget ul li a:hover {
   color: #5a5af3;
 }
@@ -182,6 +189,10 @@ ul {
   top: 0;
   height: 100%;
   outline: none;
+  transition: all 0.3s ease;
+}
+.subscribe-form button:hover {
+  filter: brightness(1.2);
 }
 .subscribe-form button i {
   color: #fff;
@@ -203,6 +214,9 @@ ul {
 .footer-menu li {
   display: inline-block;
   margin-left: 20px;
+}
+.footer-menu li a {
+  transition: all 0.3s ease;
 }
 .footer-menu li:hover a {
   color: #5a5af3;
