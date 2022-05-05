@@ -165,7 +165,7 @@
               </div>
             </div>
             <div class="text-center">
-              <button type="submit" [disabled]="!this.contactForm.valid">
+              <button type="submit" (click)="this.contactForm.markAllAsTouched()">
                 Send Message
               </button>
             </div>
