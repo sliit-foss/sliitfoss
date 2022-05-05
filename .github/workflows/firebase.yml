@@ -17,9 +17,9 @@ jobs:
       - name: Create env file
         run: |
           touch .env
-          echo emailServiceId=${{ secrets.emailServiceId }} >> .env
-          echo emailTemplateId=${{ secrets.emailTemplateId }} >> .env
-          echo emailUserId=${{ secrets.emailUserId }} >> .env
+          echo EMAIL_SERVICE_ID=${{ secrets.EMAIL_SERVICE_ID }} >> .env
+          echo EMAIL_TEMPLATE_ID=${{ secrets.EMAIL_TEMPLATE_ID }} >> .env
+          echo EMAIL_USER_ID=${{ secrets.EMAIL_USER_ID }} >> .env
           echo FIREBASE_WEB_CONFIG=${{ secrets.FIREBASE_WEB_CONFIG }} >> .env
           echo AUTH_EMAIL=${{ secrets.AUTH_EMAIL }} >> .env
           echo AUTH_PASS=${{ secrets.AUTH_PASS }} >> .env
