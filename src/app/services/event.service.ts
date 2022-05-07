@@ -2,21 +2,21 @@ import Event from '../models/event.model';
 import { read } from './core/firestore.service';
 
 export const getPastEvents = () => {
-  return (read(
+  return read(
     'events',
     [{ key: 'upcoming', value: false, operator: '==' }],
     [{ key: 'date', direction: 'desc' }]
-  ) as unknown) as Promise<Event[]>;
+  ) as Promise<Event[]>;
 };
 
 export const getUpcomingEvents = () => {
-  return (read(
+  return read(
     'events',
     [{ key: 'upcoming', value: true, operator: '==' }],
     [{ key: 'date', direction: 'desc' }]
-  ) as unknown) as Promise<Event[]>;
+  ) as Promise<Event[]>;
 };
 
 export const getAllEvents = () => {
-  return (read('events') as unknown) as Promise<Event[]>;
+  return read('events') as Promise<Event[]>;
 };

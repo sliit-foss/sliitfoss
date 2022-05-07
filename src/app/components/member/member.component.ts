@@ -12,6 +12,7 @@ import * as $ from 'jquery';
 })
 export class MemberComponent implements OnInit {
   eventCount: number = 0;
+  memberCount: number = 0;
   reposCount: number = 0;
   webinarCount: number = 0;
 
@@ -22,6 +23,11 @@ export class MemberComponent implements OnInit {
       this.eventCount = data.length;
       this.loadCounters('events');
     });
+    this.http.get(`${Config.DISCORD_BACKEND_SERVER_URL}/member/count`).subscribe(
+      (data: any) => (this.memberCount = data.data),
+      (err) => (this.memberCount = 119),
+      () => this.loadCounters('members')
+    );
     this.http.get(Config.GITHUB_API_ORG_REPO_URL).subscribe(
       (data: Array<Object>) => (this.reposCount = data.length),
       (err) => (this.reposCount = 30),
