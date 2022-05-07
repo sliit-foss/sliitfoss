@@ -6,7 +6,7 @@ export const getPastEvents = () => {
     'events',
     [{ key: 'upcoming', value: false, operator: '==' }],
     [{ key: 'date', direction: 'desc' }]
-  ) as unknown) as Event[];
+  ) as unknown) as Promise<Event[]>;
 };
 
 export const getUpcomingEvents = () => {
@@ -14,5 +14,9 @@ export const getUpcomingEvents = () => {
     'events',
     [{ key: 'upcoming', value: true, operator: '==' }],
     [{ key: 'date', direction: 'desc' }]
-  ) as unknown) as Event[];
+  ) as unknown) as Promise<Event[]>;
+};
+
+export const getAllEvents = () => {
+  return (read('events') as unknown) as Promise<Event[]>;
 };

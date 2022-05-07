@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
 import { HttpClient } from '@angular/common/http';
+import { getAllEvents } from 'src/app/services/event.service';
+import { getWebinars } from 'src/app/services/webinar.service';
 import Config from '../../../config/config';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-member',
@@ -9,36 +11,31 @@ import Config from '../../../config/config';
   styleUrls: ['./member.component.css'],
 })
 export class MemberComponent implements OnInit {
-  reposCount: number;
+  eventCount: number = 0;
+  reposCount: number = 0;
+  webinarCount: number = 0;
 
   constructor(private http: HttpClient) {}
 
-  ngOnInit(): void {
-    this.loadCounters();
-
-    let count = 0;
-    this.getGitHubRepositoryCount()
-      .forEach(() => {
-        count++;
-      })
-      .then((r) => {})
-      .catch((e) => {
-        console.error(e.message);
-      });
-
-    // If GET request failed
-    if (count === 0) {
-      count = 10;
-    }
+  async ngOnInit(): Promise<void> {
+    getAllEvents().then((data) => {
+      this.eventCount = data.length;
+      this.loadCounters('events');
+    });
+    this.http.get(Config.GITHUB_API_ORG_REPO_URL).subscribe(
+      (data: Array<Object>) => (this.reposCount = data.length),
+      (err) => (this.reposCount = 30),
+      () => this.loadCounters('repos')
+    );
+    getWebinars().then((data) => {
+      this.webinarCount = data.length;
+      this.loadCounters('webinars');
+    });
   }
 
-  getGitHubRepositoryCount() {
-    return this.http.get(Config.GITHUB_API_ORG_REPO_URL);
-  }
-
-  loadCounters() {
+  loadCounters(type: String) {
     $(document).ready(function () {
-      $('.counter').each(function () {
+      $(`.counter-${type}`).each(function () {
         $(this)
           .prop('Counter', 0)
           .animate(

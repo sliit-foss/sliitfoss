@@ -6,5 +6,5 @@ export const getWebinars = () => {
     'webinars',
     [],
     [{ key: 'date', direction: 'asc' }]
-  ) as unknown) as Webinar[];
+  ) as unknown) as Promise<Webinar[]>;
 };
