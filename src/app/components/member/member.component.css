@@ -57,7 +57,7 @@ img {
 .description-text {
   font-size: 1.2rem;
   line-height: 2rem;
-  color: #525151;
+  color: var(--text-color-primary);
   text-align: justify;
 }
 
@@ -179,7 +179,7 @@ ul {
 
 .counter-box {
   display: block;
-  background: #f6f6f6;
+  background: var(--card-color-secondary);
   padding: 40px 20px 37px;
   text-align: center;
   border-radius: 30px;

@@ -1,71 +1,37 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
   <div class="container-fluid">
     <a class="navbar-brand" routerLink="/">
-      <img
-        id="foss_logo"
-        class="navbar-brand"
-        src="../../../../assets/img/logo-dark.webp"
-        width="100"
-      />
+      <img id="foss_logo" class="navbar-brand" src="{{ navbarLogo }}" width="100" />
     </a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarNavDropdown"
-      aria-controls="navbarNavDropdown"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <div class="navbar-container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="theme-toggler" (click)="toggleTheme()">
+        <fa-icon icon="{{ toggleIcon }}" id="toggle-icon" class="fa-2x icon"></fa-icon>
+      </div>
+    </div>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a
-            class="nav-link"
-            routerLink="/"
-            [routerLinkActive]="['active']"
-            [routerLinkActiveOptions]="{ exact: true }"
-            >Home</a
-          >
+          <a class="nav-link" routerLink="/" [routerLinkActive]="['active']"
+            [routerLinkActiveOptions]="{ exact: true }">Home</a>
         </li>
         <li class="nav-item">
-          <a
-            class="nav-link"
-            routerLink="/about"
-            [routerLinkActive]="['active']"
-            >About</a
-          >
+          <a class="nav-link" routerLink="/about" [routerLinkActive]="['active']">About</a>
         </li>
         <li class="nav-item">
-          <a
-            class="nav-link"
-            routerLink="/events"
-            [routerLinkActive]="['active']"
-            >Events</a
-          >
+          <a class="nav-link" routerLink="/events" [routerLinkActive]="['active']">Events</a>
         </li>
         <li class="nav-item">
-          <a
-            class="nav-link"
-            routerLink="/board"
-            [routerLinkActive]="['active']"
-            >Board</a
-          >
+          <a class="nav-link" routerLink="/board" [routerLinkActive]="['active']">Board</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/blog" [routerLinkActive]="['active']"
-            >Blogs</a
-          >
+          <a class="nav-link" routerLink="/blog" [routerLinkActive]="['active']">Blogs</a>
         </li>
         <li class="nav-item">
-          <a
-            class="nav-link"
-            routerLink="/contact"
-            [routerLinkActive]="['active']"
-            >Contact</a
-          >
+          <a class="nav-link" routerLink="/contact" [routerLinkActive]="['active']">Contact</a>
         </li>
       </ul>
     </div>
@@ -73,9 +39,5 @@
 </nav>
 
 <div class="exclusive-banner">
-  <img
-    src="../../../../assets/img/FOSS-logo.webp"
-    id="logo"
-    alt="navbar image"
-  />
+  <img src="../../../../assets/img/FOSS-logo.webp" id="logo" alt="navbar image" />
 </div>

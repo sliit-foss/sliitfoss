@@ -1,4 +1,5 @@
 import { Component, OnInit, HostListener } from '@angular/core';
+import { faIcons } from '@fortawesome/free-solid-svg-icons';
 import * as $ from 'jquery';
 
 @Component({
@@ -7,6 +8,9 @@ import * as $ from 'jquery';
   styleUrls: ['./navbar.component.css'],
 })
 export class NavbarComponent implements OnInit {
+  toggleIcon: string;
+  navbarLogo: string;
+
   constructor() {}
 
   ngOnInit(): void {
@@ -33,10 +37,12 @@ export class NavbarComponent implements OnInit {
         document.getElementById('foss_logo').style.opacity = '100%';
       }
     });
-
+    this.setTheme(localStorage.getItem('theme'));
     this.refreshNavLinks();
+    this.refreshTogglerAlignment();
     $(window).on('resize', () => {
       this.refreshNavLinks();
+      this.refreshTogglerAlignment();
     });
   }
 
@@ -54,7 +60,7 @@ export class NavbarComponent implements OnInit {
   }
 
   refreshNavLinks() {
-    const mediaQuery = window.matchMedia('(max-width: 992px)');
+    const mediaQuery = window.matchMedia('(max-width: 991px)');
     const navElements = document.querySelectorAll('.nav-link');
 
     navElements.forEach((element) => {
@@ -66,5 +72,50 @@ export class NavbarComponent implements OnInit {
         element.removeAttribute('data-bs-target');
       }
     });
+  }
+
+  refreshTogglerAlignment() {
+    const mediaQuery = window.matchMedia('(max-width: 991px)');
+    const row = document.querySelectorAll('.container-fluid')[0];
+    if (mediaQuery.matches) {
+      const elem = row.children[2];
+      if (elem.classList.contains('navbar-container')) {
+        elem.remove();
+        row.children[0].after(elem);
+      }
+    } else {
+      const elem = row.children[1];
+      if (elem.classList.contains('navbar-container')) {
+        elem.remove();
+        row.appendChild(elem);
+      }
+    }
+  }
+
+  setTheme(theme: string) {
+    const icon = document.getElementById('toggle-icon') as HTMLElement;
+    if (theme === 'dark') {
+      this.toggleIcon = 'sun';
+      this.navbarLogo = '../../../../assets/img/logo-light.webp';
+      icon.style.color = '#ffffff';
+      localStorage.setItem('theme', 'dark');
+      document.documentElement.setAttribute("data-theme", "dark");
+    } else {
+      this.toggleIcon = 'moon';
+      this.navbarLogo = '../../../../assets/img/logo-dark.webp';
+      icon.style.color = '#212121';
+      icon.style.transform = 'scaleX(-1)';
+      localStorage.setItem('theme', 'light');
+      document.documentElement.setAttribute("data-theme", "light");
+    }
+  }
+
+  toggleTheme() {
+    console.log('toggle');
+    if (localStorage.getItem('theme') === 'dark') {
+      this.setTheme('light');
+    } else {
+      this.setTheme('dark');
+    }
   }
 }
