@@ -1,0 +1,17 @@
+// this file contains the css variables for the app dark theme
+
+html {}
+
+[data-theme='dark'] {
+  --background-color-primary: #141414;
+  --background-gradient-primary: linear-gradient(to right bottom, #141414 0%, rgba(90, 90, 243, 0.1) 100%);
+  --background-color-secondary: #141414;
+  --text-color-primary: #d9d9d9;
+  --text-color-title: #ffffff;
+  --card-color: #121212;
+  --card-color-secondary: #141414;
+  --card-border: none;
+  --box-shadow-primary: 0 2px 45px 0 rgba(0, 0, 0, 0.6);
+  --navbar-color: #5a5af3;
+  --nav-link-color: #000000;
+}

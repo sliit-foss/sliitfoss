@@ -1,15 +1,15 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
   <div class="container-fluid">
     <a class="navbar-brand" routerLink="/">
-      <img id="foss_logo" class="navbar-brand" src="../../../../assets/img/logo-dark.webp" width="100" />
+      <img id="foss_logo" class="navbar-brand" src="{{ navbarLogo }}" width="100" />
     </a>
     <div class="navbar-container">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="theme-toggler" (click)="toggleTheme">
-        <fa-icon icon="sun" class="fa-2x icon"></fa-icon>
+      <div class="theme-toggler" (click)="toggleTheme()">
+        <fa-icon icon="{{ toggleIcon }}" id="toggle-icon" class="fa-2x icon"></fa-icon>
       </div>
     </div>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">

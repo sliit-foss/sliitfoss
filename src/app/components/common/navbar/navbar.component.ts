@@ -1,4 +1,5 @@
 import { Component, OnInit, HostListener } from '@angular/core';
+import { faIcons } from '@fortawesome/free-solid-svg-icons';
 import * as $ from 'jquery';
 
 @Component({
@@ -7,6 +8,9 @@ import * as $ from 'jquery';
   styleUrls: ['./navbar.component.css'],
 })
 export class NavbarComponent implements OnInit {
+  toggleIcon: string;
+  navbarLogo: string;
+
   constructor() {}
 
   ngOnInit(): void {
@@ -33,7 +37,7 @@ export class NavbarComponent implements OnInit {
         document.getElementById('foss_logo').style.opacity = '100%';
       }
     });
-
+    this.setTheme(localStorage.getItem('theme'));
     this.refreshNavLinks();
     this.refreshTogglerAlignment();
     $(window).on('resize', () => {
@@ -88,14 +92,30 @@ export class NavbarComponent implements OnInit {
     }
   }
 
-  toggleTheme() {
-    const theme = localStorage.getItem('theme');
+  setTheme(theme: string) {
+    const icon = document.getElementById('toggle-icon') as HTMLElement;
     if (theme === 'dark') {
-      localStorage.setItem('theme', 'light');
-      document.body.classList.remove('dark-theme');
-    } else {
+      this.toggleIcon = 'sun';
+      this.navbarLogo = '../../../../assets/img/logo-light.webp';
+      icon.style.color = '#ffffff';
       localStorage.setItem('theme', 'dark');
-      document.body.classList.add('dark-theme');
+      document.documentElement.setAttribute("data-theme", "dark");
+    } else {
+      this.toggleIcon = 'moon';
+      this.navbarLogo = '../../../../assets/img/logo-dark.webp';
+      icon.style.color = '#212121';
+      icon.style.transform = 'scaleX(-1)';
+      localStorage.setItem('theme', 'light');
+      document.documentElement.setAttribute("data-theme", "light");
+    }
+  }
+
+  toggleTheme() {
+    console.log('toggle');
+    if (localStorage.getItem('theme') === 'dark') {
+      this.setTheme('light');
+    } else {
+      this.setTheme('dark');
     }
   }
 }

@@ -27,7 +27,9 @@
               "src/manifest.webmanifest"
             ],
             "styles": [
-              "src/styles.css",
+              "src/styles/index.css",
+              "src/styles/themes/light.css",
+              "src/styles/themes/dark.css",
               "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
               "node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.carousel.min.css",
               "node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.theme.default.min.css"
@@ -97,7 +99,9 @@
             ],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
-              "src/styles.css"
+              "src/styles/index.css",
+              "src/styles/themes/light.css",
+              "src/styles/themes/dark.css"
             ],
             "scripts": []
           }

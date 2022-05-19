@@ -1,3 +1,7 @@
+.navbar {
+  background-color: var(--navbar-color) !important;
+}
+
 .navbar-container {
   display: flex;
   flex-direction:row;
@@ -12,7 +16,7 @@
 }
 
 .nav-link.active {
-  color: #5449cc !important;
+  color: var(--nav-link-color) !important;
   border-bottom: 3px solid #5449cc;
 }
 
@@ -29,7 +33,6 @@
 }
 
 .theme-toggler .icon {
-  color: #ffa200 !important;
   vertical-align: middle !important;
   cursor: pointer;
 }
@@ -40,7 +43,7 @@
 }
 
 .theme-toggler:hover {
-  transform: rotate(180deg);
+  transform: rotate(210deg);
   filter: brightness(1.1);
 }
 

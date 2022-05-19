@@ -1,4 +1,4 @@
-@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 html,
 body {
@@ -9,12 +9,17 @@ body {
   margin: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
     'Lucida Sans', Arial, sans-serif;
-  background-color: #121212;
+  background-color: var(--background-color-primary);
+  background-image: var(--background-gradient-primary) !important;
   padding-top: 100px;
 }
 
 h2 {
   line-height: 2.5rem !important;
+}
+
+.bg-secondary {
+  background-color: var(--background-color-secondary) !important;
 }
 
 .text-color-primary {
@@ -49,6 +54,7 @@ h2 {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
     'Lucida Sans', Arial, sans-serif;
   text-transform: uppercase;
+  color: var(--text-color-primary);
 }
 
 .page-title {
@@ -85,6 +91,39 @@ h2 {
 .mat-progress-spinner circle,
 .mat-spinner circle {
   stroke: #5a5af3 !important;
+}
+
+.card {
+  border: var(--card-border) !important;
+  background-color: var(--card-color) !important;
+}
+
+.card-body,
+.app-card {
+  background-color: var(--card-color) !important;
+}
+
+.card-text,
+.card-title,
+.card-subtitle {
+  color: var(--text-color-primary) !important;
+}
+
+.title {
+  color: var(--text-color-title) !important;
+}
+
+.lead {
+  font-size: 1.5rem;
+  color: var(--text-color-primary) !important;
+}
+
+.app-box-shadow {
+  box-shadow: var(--box-shadow-primary) !important;
+}
+
+.description {
+  color: var(--text-color-primary) !important;
 }
 
 @media (max-width: 575.98px) {
