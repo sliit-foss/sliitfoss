@@ -3,15 +3,28 @@
 html {}
 
 [data-theme='dark'] {
+  /* core */
   --background-color-primary: #141414;
   --background-gradient-primary: linear-gradient(to right bottom, #141414 0%, rgba(90, 90, 243, 0.1) 100%);
   --background-color-secondary: #141414;
   --text-color-primary: #d9d9d9;
+  --text-color-tertiary: #d9d9d9;
   --text-color-title: #ffffff;
+
+  /* navbar */
+  --navbar-color: #5a5af3;
+  --nav-link-color: #d9d9d9;
+  --nav-link-active-color: #000000;
+
+  /* cards */
   --card-color: #121212;
   --card-color-secondary: #141414;
   --card-border: none;
   --box-shadow-primary: 0 2px 45px 0 rgba(0, 0, 0, 0.6);
-  --navbar-color: #5a5af3;
-  --nav-link-color: #000000;
+  --box-shadow-secondary: 0 1px 25px 0 rgba(0, 0, 0, 0.6);
+  --box-shadow-tertiary: 0 1px 25px 0 rgba(0, 0, 0, 0.3);
+
+  /* special events */
+  --bg-opacity: 1 ;
+  --bg-brightness: brightness(5%);
 }

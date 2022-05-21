@@ -13,11 +13,12 @@
   font-weight: bold;
   margin: 0 1em;
   text-align: center;
+  color: var(--nav-link-color) !important;
 }
 
 .nav-link.active {
-  color: var(--nav-link-color) !important;
-  border-bottom: 3px solid #5449cc;
+  color: var(--nav-link-active-color) !important;
+  border-bottom: 3px solid var(--nav-link-active-color);
 }
 
 .exclusive-banner {
@@ -43,7 +44,7 @@
 }
 
 .theme-toggler:hover {
-  transform: rotate(210deg);
+  transform: rotate(360deg);
   filter: brightness(1.1);
 }
 

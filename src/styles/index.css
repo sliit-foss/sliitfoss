@@ -122,6 +122,14 @@ h2 {
   box-shadow: var(--box-shadow-primary) !important;
 }
 
+.app-box-shadow-v2 {
+  box-shadow: var(--box-shadow-secondary) !important;
+}
+
+.app-box-shadow-v3 {
+  box-shadow: var(--box-shadow-tertiary) !important;
+}
+
 .description {
   color: var(--text-color-primary) !important;
 }

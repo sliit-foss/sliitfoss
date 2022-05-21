@@ -96,14 +96,14 @@ export class NavbarComponent implements OnInit {
     const icon = document.getElementById('toggle-icon') as HTMLElement;
     if (theme === 'dark') {
       this.toggleIcon = 'sun';
-      this.navbarLogo = '../../../../assets/img/logo-light.webp';
+      this.navbarLogo = '../../../../assets/img/logo-light.png';
       icon.style.color = '#ffffff';
       localStorage.setItem('theme', 'dark');
       document.documentElement.setAttribute("data-theme", "dark");
     } else {
-      this.toggleIcon = 'moon';
+      this.toggleIcon = 'cloud-moon';
       this.navbarLogo = '../../../../assets/img/logo-dark.webp';
-      icon.style.color = '#212121';
+      icon.style.color = '#5449cc';
       icon.style.transform = 'scaleX(-1)';
       localStorage.setItem('theme', 'light');
       document.documentElement.setAttribute("data-theme", "light");
