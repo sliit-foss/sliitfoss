@@ -27,10 +27,10 @@
 }
 
 .flip-card {
-  background-color: #ffffff;
+  background-color: var(--background-color-primary);
   width: 14vw;
   height: 20vw;
-  border: 1px solid #f1f1f1;
+  border: 1px solid var(--background-color-primary);
   perspective: 1000px;
   border-radius: 15px !important;
 }
@@ -110,7 +110,8 @@
   height: 100%;
   object-fit: cover;
   z-index: -1;
-  opacity: 0.3;
+  opacity: var(--bg-opacity);
+  filter: var(--bg-brightness);
 }
 
 @media (max-width: 1567px) {

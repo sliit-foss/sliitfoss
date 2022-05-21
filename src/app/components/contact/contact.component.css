@@ -50,6 +50,7 @@ p {
 
 .lead {
   text-align: left;
+  line-height: 2rem;
 }
 .contact .info-box {
   color: #444;

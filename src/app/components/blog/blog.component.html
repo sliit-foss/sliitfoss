@@ -1,7 +1,7 @@
 <section class="auto-space auto-space-vertical">
   <div class="row align-items-center">
     <div class="col-12 col-md-6 col-lg-6">
-      <h1 class="headerText">The Blog</h1>
+      <h1 class="headerText title">The Blog</h1>
       <p class="lead">
         Far far away, behind the word mountains, far from the countries Vokalia
         and Consonantia, there live the blind texts.
@@ -16,43 +16,28 @@
 <section class="auto-space auto-space-vertical pt-0">
   <div class="row">
     <div class="col-sm-12">
-      <h2 class="section-title font-weight-bold mb-5">Latest Blog Posts</h2>
+      <h2 class="section-title description font-weight-bold mb-5">Latest Blog Posts</h2>
     </div>
   </div>
   <div class="row">
-    <div
-      *ngFor="
+    <div *ngFor="
         let post of blogPost
           | paginate
             : { itemsPerPage: 8, currentPage: page, totalItems: totalLength }
-      "
-      class="col-sm-6 col-md-4 col-lg-3 my-3"
-    >
+      " class="col-sm-6 col-md-4 col-lg-3 my-3">
       <div class="card">
-        <div
-          class="card-img"
-          [style]="{ backgroundImage: 'url(' + post.thumbnail + ')' }"
-        ></div>
+        <div class="card-img" [style]="{ backgroundImage: 'url(' + post.thumbnail + ')' }"></div>
         <div class="card-body">
           <div class="views text-muted mb-2">
             Published on {{ getDaysCount(post.pubDate) }}
           </div>
           <h4 class="card-title font-weight-bold">{{ post.title }}</h4>
           <div>
-            <span
-              class="badge badge-info mx-1"
-              *ngFor="let category of post.categories"
-              >{{ category }}</span
-            >
+            <span class="badge badge-info mx-1" *ngFor="let category of post.categories">{{ category }}</span>
           </div>
         </div>
         <div class="card-footer text-right bg-transparent border-top-0">
-          <a
-            class="btn sliit-foss-btn w-100"
-            href="{{ post.link }}"
-            target="_blank"
-            >Read More</a
-          >
+          <a class="btn sliit-foss-btn w-100" href="{{ post.link }}" target="_blank">Read More</a>
         </div>
       </div>
     </div>
@@ -60,24 +45,12 @@
 </section>
 
 <section class="auto-space auto-space-vertical py-0 text-center">
-  <a
-    href="https://medium.com/sliit-foss"
-    target="_blank"
-    class="bg-dark text-white p-4 view-on-medium"
-    >Read More on <strong>Medium</strong> &nbsp;
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      style="width: 25px; height: 25px"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke="#ffffff"
-    >
-      <path
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="2"
-        d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
-      />
+  <a href="https://medium.com/sliit-foss" target="_blank" class="bg-dark text-white p-4 view-on-medium">Read More on
+    <strong>Medium</strong> &nbsp;
+    <svg xmlns="http://www.w3.org/2000/svg" style="width: 25px; height: 25px" fill="none" viewBox="0 0 24 24"
+      stroke="#ffffff">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+        d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
     </svg>
   </a>
 </section>
