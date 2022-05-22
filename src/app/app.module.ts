@@ -16,7 +16,7 @@ import {
   FaIconLibrary,
   FontAwesomeModule,
 } from '@fortawesome/angular-fontawesome';
-import { faCoffee, faHandsHelping, faCloudMoon, faSun } from '@fortawesome/free-solid-svg-icons';
+import { faCoffee, faHandsHelping } from '@fortawesome/free-solid-svg-icons';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 import {
@@ -102,8 +102,6 @@ export class AppModule {
       faInstagram,
       faTwitter,
       faYoutube,
-      faSun,
-      faCloudMoon
     );
   }
 }
