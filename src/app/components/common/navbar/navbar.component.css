@@ -33,16 +33,17 @@
   width: 100%;
 }
 
-.theme-toggler svg {
-  height: 1.5rem !important;
-  width: 1.5rem !important;
-  color: var(--nav-link-color);
-  cursor: pointer;
-}
-
 .theme-toggler {
+  margin-left: 1rem;
   transition: all 0.3s;
   transform-origin: center;
+}
+
+.theme-toggler svg {
+  height: 1.7rem !important;
+  width: 1.7rem !important;
+  color: var(--nav-link-color);
+  cursor: pointer;
 }
 
 .theme-toggler:hover {
@@ -62,7 +63,12 @@
     justify-content: end !important;
   }
   .theme-toggler {
-    margin-right: 1rem;
+    margin-right: 1.5rem;
+  }
+
+  .theme-toggler svg {
+    height: 2rem !important;
+    width: 2rem !important;
   }
 }
 
