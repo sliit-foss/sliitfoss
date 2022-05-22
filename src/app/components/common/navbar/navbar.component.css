@@ -33,8 +33,10 @@
   width: 100%;
 }
 
-.theme-toggler .icon {
-  vertical-align: middle !important;
+.theme-toggler svg {
+  height: 1.5rem !important;
+  width: 1.5rem !important;
+  color: var(--nav-link-color);
   cursor: pointer;
 }
 
@@ -44,7 +46,7 @@
 }
 
 .theme-toggler:hover {
-  transform: rotate(360deg);
+  transform: rotate(15deg);
   filter: brightness(1.1);
 }
 
