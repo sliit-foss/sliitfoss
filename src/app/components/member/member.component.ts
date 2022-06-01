@@ -15,6 +15,7 @@ export class MemberComponent implements OnInit {
   memberCount: number = 0;
   reposCount: number = 0;
   webinarCount: number = 0;
+  repoCountLoaded: boolean = false;
 
   constructor(private http: HttpClient) {}
 
@@ -28,16 +29,31 @@ export class MemberComponent implements OnInit {
       (err) => (this.memberCount = 119),
       () => this.loadCounters('members')
     );
-    this.http.get(Config.GITHUB_API_ORG_REPO_URL).subscribe(
-      (data: Array<Object>) => (this.reposCount = data.length),
-      (err) => (this.reposCount = 30),
-      () => this.loadCounters('repos')
-    );
+    this.loadRepoCount(1);
     getWebinars().then((data) => {
       this.webinarCount = data.length;
       this.loadCounters('webinars');
     });
     this.initCardListeners();
+  }
+
+  loadRepoCount(page: number) {
+    this.http.get(`${Config.GITHUB_API_ORG_REPO_URL}?page=${page}`).subscribe(
+      (data: Array<Object>) => {
+        if (data.length > 0) {
+          this.reposCount += data.length;
+          this.loadRepoCount(page + 1);
+        } else {
+          this.repoCountLoaded = true;
+        }
+      },
+      (err) => (this.reposCount = 50),
+      () => {
+        if (this.repoCountLoaded) {
+          this.loadCounters('repos')
+        }
+      }
+    );
   }
 
   loadCounters(type: String) {
