@@ -9,4 +9,5 @@ h2,
 h3,
 p {
   text-align: justify;
+  color: var(--text-color-primary)
 }
