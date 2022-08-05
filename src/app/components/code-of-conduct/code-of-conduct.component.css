@@ -7,7 +7,8 @@
 
 h2,
 h3,
-p {
+p,
+ul {
   text-align: justify;
-  color: var(--text-color-primary)
+  color: var(--text-color-primary);
 }
