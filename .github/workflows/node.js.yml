@@ -31,8 +31,8 @@ jobs:
           echo AUTH_EMAIL=${{ secrets.AUTH_EMAIL }} >> .env
           echo AUTH_PASS=${{ secrets.AUTH_PASS }} >> .env
           cat .env
-      - run: npm install
-      - run: npm run build
+      - run: yarn
+      - run: yarn build
 
   docker-build:
     runs-on: ubuntu-latest

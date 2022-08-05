@@ -24,8 +24,8 @@ jobs:
           echo AUTH_EMAIL=${{ secrets.AUTH_EMAIL }} >> .env
           echo AUTH_PASS=${{ secrets.AUTH_PASS }} >> .env
           cat .env
-      - run: npm install
-      - run: npm run build
+      - run: yarn
+      - run: yarn build
       - uses: w9jds/firebase-action@master
         with:
           args: deploy --only hosting
