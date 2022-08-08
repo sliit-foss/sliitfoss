@@ -4,19 +4,20 @@
 
 .navbar-container {
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
   align-items: center;
 }
 
 .nav-link {
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 500;
   margin: 0 1em;
   text-align: center;
   color: var(--nav-link-color) !important;
 }
 
 .nav-link.active {
+  font-weight: 600 !important;
   color: var(--nav-link-active-color) !important;
   border-bottom: 3px solid var(--nav-link-active-color);
 }
