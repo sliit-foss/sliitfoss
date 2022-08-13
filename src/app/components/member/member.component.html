@@ -11,10 +11,7 @@
           SLIIT.
         </p>
         <br />
-        <a
-          href="https://docs.google.com/forms/d/e/1FAIpQLSeBgZRwt3cgGczRKLsQWimdh97XcCFxrzVUw5g8HNAJePQp_Q/viewform"
-          target="_blank"
-        >
+        <a href="https://forms.gle/SVc2WoS9rgLCyr1x7" target="_blank">
           <button
             class="member-btn btn animate__animated animate__shakeX animate__delay-2s 2s"
           >
@@ -28,7 +25,9 @@
     </div>
   </div>
 
-  <div class="container-fluid auto-space auto-space-vertical section-2">
+  <div
+    class="container-fluid bg-secondary auto-space auto-space-vertical section-2"
+  >
     <div class="row justify-content-center">
       <div class="col col-md-8 text-center">
         <h2 class="h2">What We Do?</h2>
@@ -65,26 +64,30 @@
   <div class="container-fluid auto-space auto-space-vertical pt-0">
     <div class="row">
       <div class="four col-sm-6 col-md-3 my-2">
-        <div class="counter-box colored">
-          <i class="fa fa-calendar"></i> <span class="counter">100</span>
+        <div class="counter-box colored app-box-shadow-v3">
+          <i class="fa fa-calendar"></i>
+          <span class="counter counter-events">{{ eventCount }}</span>
           <p>Events</p>
         </div>
       </div>
       <div class="four col-sm-6 col-md-3 my-2">
-        <div class="counter-box">
-          <i class="fa fa-group"></i> <span class="counter">1000</span>
+        <div class="counter-box app-box-shadow-v3">
+          <i class="fa fa-group"></i>
+          <span class="counter counter-members">{{ memberCount }}</span>
           <p>Members</p>
         </div>
       </div>
       <div class="four col-sm-6 col-md-3 my-2">
-        <div class="counter-box">
-          <i class="fa fa-github"></i> <span class="counter">10</span>
+        <div class="counter-box app-box-shadow-v3">
+          <i class="fa fa-github"></i>
+          <span class="counter counter-repos">{{ reposCount }}</span>
           <p>Projects</p>
         </div>
       </div>
       <div class="four col-sm-6 col-md-3 my-2">
-        <div class="counter-box">
-          <i class="fa fa-video-camera"></i> <span class="counter">10</span>
+        <div class="counter-box app-box-shadow-v3">
+          <i class="fa fa-video-camera"></i>
+          <span class="counter counter-webinars">{{ webinarCount }}</span>
           <p>Webinars</p>
         </div>
       </div>

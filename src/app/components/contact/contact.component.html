@@ -3,7 +3,7 @@
   <div class="container">
     <div class="row align-items-center">
       <div class="col-12 col-md-6 col-lg-6">
-        <h1 class="headerText">Contact Us</h1>
+        <h1 class="headerText title">Contact Us</h1>
         <p class="lead">
           Fill up the form and our Team will get back to you within 24 hours.
         </p>
@@ -43,14 +43,16 @@
               <div class="info-box">
                 <fa-icon [icon]="faEnvelope"></fa-icon>
                 <h3>Email Us</h3>
-                <p>infosliitfoss@gmail.com</p>
+                <a href="mailto:infosliitfoss@gmail.com"
+                  >infosliitfoss@gmail.com</a
+                >
               </div>
             </div>
             <div class="col-md-6">
               <div class="info-box">
                 <fa-icon [icon]="faPhoneAlt"></fa-icon>
                 <h3>Call Us</h3>
-                <p>+94775633985</p>
+                <a href="tel:94775633985">+94775633985</a>
               </div>
             </div>
           </div>
@@ -165,7 +167,10 @@
               </div>
             </div>
             <div class="text-center">
-              <button type="submit" [disabled]="!this.contactForm.valid">
+              <button
+                type="submit"
+                (click)="this.contactForm.markAllAsTouched()"
+              >
                 Send Message
               </button>
             </div>

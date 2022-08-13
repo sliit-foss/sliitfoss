@@ -1,0 +1,27 @@
+// this file contains the css variables for the app light theme
+
+html {
+}
+
+[data-theme='light'] {
+  /* core */
+  --background-color-primary: #ffffff;
+  --background-color-secondary: #f4f4f4;
+  --text-color-primary: #343a40;
+  --text-color-tertiary: #666;
+
+  /* navbar */
+  --navbar-color: #ffffff;
+  --nav-link-color: #5449cc;
+  --nav-link-active-color: #5449cc;
+
+  /* cards */
+  --card-color: #ffffff;
+  --card-color-secondary: #f6f6f6;
+  --card-border: 0.5px solid rgba(0, 0, 0, 0.15);
+  --box-shadow-primary: 0 5px 25px 0 rgba(214, 215, 216, 0.6);
+
+  /* special events */
+  --bg-opacity: 0.3;
+  --bg-brightness: brightness(100%);
+}

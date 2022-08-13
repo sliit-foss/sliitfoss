@@ -6,7 +6,7 @@
   <div>
     <owl-carousel-o [options]="customOptions">
       <ng-template *ngFor="let slide of slides; let i = index" carouselSlide>
-        <div class="card h-100">
+        <div class="card app-box-shadow-v2 h-100">
           <img
             alt="Image not available"
             class="card-img-top"
@@ -14,7 +14,7 @@
           />
           <div class="card-body">
             <h5 class="card-title">{{ slide.title }}</h5>
-            <div>
+            <div class="card-subtitle">
               <small>
                 <i class="fa fa-calendar">&nbsp;</i
                 >{{

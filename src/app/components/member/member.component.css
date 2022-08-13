@@ -57,7 +57,7 @@ img {
 .description-text {
   font-size: 1.2rem;
   line-height: 2rem;
-  color: #525151;
+  color: var(--text-color-primary);
   text-align: justify;
 }
 
@@ -179,10 +179,15 @@ ul {
 
 .counter-box {
   display: block;
-  background: #f6f6f6;
+  background: var(--card-color-secondary);
   padding: 40px 20px 37px;
   text-align: center;
   border-radius: 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+.counter-box:hover {
+  background: #5a5af3;
 }
 
 .counter-box p {
@@ -197,13 +202,13 @@ ul {
   font-size: 60px;
   margin: 0 0 15px;
   color: #d2d2d2;
+  transition: all 0.3s ease-in-out;
 }
 
 .counter {
   display: block;
   font-size: 32px;
   font-weight: 700;
-  color: #666;
   line-height: 28px;
 }
 
@@ -214,5 +219,11 @@ ul {
 .counter-box.colored p,
 .counter-box.colored i,
 .counter-box.colored .counter {
-  color: #fff;
+  pointer-events: none;
+}
+
+.counter-box p,
+.counter-box .counter {
+  color: var(--text-color-tertiary) !important;
+  transition: all 0.3s ease-in-out;
 }
