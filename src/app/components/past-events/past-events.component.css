@@ -62,7 +62,7 @@
 }
 
 .card {
-  width: 16.5rem;
+  width: calc(100% - 40px);
   text-align: center;
   display: block;
   position: relative;
