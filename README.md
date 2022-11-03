@@ -12,6 +12,14 @@
   <img src="https://contrib.rocks/image?repo=sliit-foss/sliitfoss" />
 </a>
 
+## Setup Instructions
+
+1. Clone the Repo and run below command to set the environment variables.
+
+```bash
+npm run config
+```
+
 ## Contribution Guide
 
 1. Fork the repository
