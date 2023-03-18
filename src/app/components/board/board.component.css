@@ -54,6 +54,13 @@
   color: inherit;
 }
 
+.circle-img {
+  width: 8rem; 
+  height: 8rem;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
 .name {
   color: var(--text-color-primary) !important;
 }
